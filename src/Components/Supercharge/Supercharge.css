@@ -1,0 +1,10 @@
+.supercharge * {
+    transition: .3s ease-in-out;
+}
+.supercharge .card:hover{
+    box-shadow: 0 10px 30px 0px #0000001F;
+}
+
+.supercharge .card:hover img {
+    filter: invert(37%) sepia(37%) saturate(2195%) hue-rotate(149deg) brightness(82%) contrast(102%);
+}

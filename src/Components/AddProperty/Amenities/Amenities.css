@@ -1,0 +1,4 @@
+.form-checkbox:checked+label {
+    border-color: #00858e;
+    background-color: #00858E40;
+}

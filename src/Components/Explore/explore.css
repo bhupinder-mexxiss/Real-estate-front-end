@@ -1,0 +1,9 @@
+.explore img {
+    transition: .3s;
+}
+
+@media (min-width: 768px) {
+    .explore img:hover {
+        transform: scale(1.2);
+    }
+}

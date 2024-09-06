@@ -1,0 +1,15 @@
+.productDetail .slick-dots{
+    bottom: 15px;
+}
+.productDetail .slick-dots li{
+    width: 10px;
+}
+.productDetail .slick-dots li button:before{
+    color: #fff;
+
+}
+.productDetail .slick-dots li.slick-active button:before{
+    color: #fff;
+    font-size: 10px;
+    opacity: 1;
+}

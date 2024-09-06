@@ -1,0 +1,25 @@
+
+.rc-slider-rail{
+    background-color: #D3D3D3;
+    height: 3px;
+}
+.rc-slider-track{
+    background-color: #00858E;
+}
+.rc-slider-handle{
+    background-color: #00858E;
+    border-color: #00858E;
+    opacity: 1;
+}
+.rc-slider-handle:hover{
+    border-color: #00858E;
+}
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging{
+    border-color: #00858E;
+    box-shadow: 0 0 0 5px #5cc5cd78;
+}
+  .bar-chart-canvas {
+    width: 100%;
+    height: 40px;
+  }
+  

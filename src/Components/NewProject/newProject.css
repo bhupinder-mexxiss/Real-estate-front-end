@@ -1,0 +1,33 @@
+.newProject .card *{
+    transition: .3s;
+}
+
+.newProject .card:hover span {
+    color: #E1E1E1;
+}
+
+.newProject .card:hover h6,
+.newProject .card:hover p {
+    color: #fff;
+}
+.newProject .card:hover .card_Thumb img{
+    transform: scale(1.06);
+}
+
+.newProject .card button img {
+    filter: invert(38%) sepia(37%) saturate(2195%) hue-rotate(149deg) brightness(62%) contrast(102%)
+}
+
+.newProject .card:hover button img {
+    filter: none;
+}
+
+.newProject .card:hover p span img {
+    filter: invert(100%) sepia(10%) saturate(0%) hue-rotate(130deg) brightness(142%) contrast(100%);
+}
+
+.newProject .card:hover button {
+    background-color: #00858e;
+    color: #fff;
+    border-color: white;
+}

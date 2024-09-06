@@ -1,0 +1,32 @@
+.shopPage .context-box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #ECECEC url(/src/assets/images/mapBg.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    z-index: 9;
+    object-fit: cover;
+    background-position: bottom right;
+    margin: auto;
+}
+
+.shopPage select:not([size]) {
+    background-image: none;
+}
+
+.shopPage select option {
+    padding: 2px 10px !important;
+}
+
+.shopPage .mobileFilter{
+    transition: .3s;
+    transform: translateY(100%);
+}
+.shopPage .mobileFilter.filter_show{
+    transform: translatey(0);
+}
