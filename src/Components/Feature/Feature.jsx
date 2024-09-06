@@ -32,7 +32,7 @@ const Feature = () => {
         <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-[34px] mb-8 md:mb-[50px]">
           {data.map((e) => (
             <div className="grid sm:grid-cols-2 bg-white sm:gap-4 rounded-2xl sm:rounded-[40px] lg:rounded-3xl xl:rounded-[58px] overflow-hidden card cursor-pointer">
-              <div className="h-full w-full max-h-[250px] 2xl:max-h-[280px] overflow-hidden">
+              <div className="h-full w-full overflow-hidden">
                 <img
                   src={e.img}
                   alt=""
@@ -40,10 +40,10 @@ const Feature = () => {
                 />
               </div>
               <div className="p-4 xs:p-6 sm:py-6 2xl:py-8 pr-6 xl:pr-12">
-                <p className="text-xl font-medium text-[#040404] mb-2 xs:mb-3 sm:mb-4 xl:mb-6 2xl:mb-9">
+                <p className="text-xl font-medium text-[#040404] mb-2 xs:mb-3">
                   <span>{e.price}</span> <span>AED</span>
                 </p>
-                <h5 className="text-xl font-medium text-[#040404] mb-2 xs:mb-3 xl:mb-5 2xl:mb-8">
+                <h5 className="text-xl font-medium text-[#040404] mb-2 xs:mb-3 xl:mb-5 text-ellipsis overflow-hidden text-nowrap">
                   {e.title}
                 </h5>
                 <p className="text-sm font-normal mb-2 xs:mb-4 md:mb-6 flex items-center gap-1.5 text-text2 ">

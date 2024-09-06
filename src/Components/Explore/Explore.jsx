@@ -5,6 +5,7 @@ import house5 from "../../assets/images/house5.png";
 import house6 from "../../assets/images/house6.png";
 import house7 from "../../assets/images/house7.png";
 import "./explore.css";
+import { Link } from "react-router-dom";
 
 const Explore = () => {
   let sliderRef = useRef(null);
@@ -12,12 +13,19 @@ const Explore = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 4000,
     arrows: false,
     responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+        },
+      },
       {
         breakpoint: 576,
         settings: {
@@ -28,8 +36,8 @@ const Explore = () => {
       {
         breakpoint: 400,
         settings: {
-              slidesToShow: 1,
-              dots: true,
+          slidesToShow: 1,
+          dots: true,
         },
       },
     ],
@@ -43,7 +51,7 @@ const Explore = () => {
   return (
     <div className="explore">
       <div className="container mx-auto">
-        <div className="md:max-w-[660px] mx-auto mb-10 lg:mb-16 xl:mb-24">
+        <div className="md:max-w-[660px] mx-auto mb-10 lg:mb-14">
           <h4 className="text-[22px] sm:text-2xl  md:text-3xl lg:text-[38px] text-text1 font-medium text-center mb-3 lg:mb-5">
             Explore the UAE <span className="title_Border pb-2">market</span>
           </h4>
@@ -53,31 +61,8 @@ const Explore = () => {
             decision.
           </p>
         </div>
-        <div></div>
       </div>
-      <div className="md:grid grid-cols-4 hidden ">
-        <div>
-          <div className="mr-[18px] lg:mr-[36px]">
-            <img src={house4} alt="" className="w-full" />
-          </div>
-        </div>
-        <div>
-          <div className="mr-[12px] lg:mr-[23px] ml-1.5 lg:ml-[13px]">
-            <img src={house5} alt="" className="w-full" />
-          </div>
-        </div>
-        <div>
-          <div className="ml-[12px] lg:ml-[23px] mr-1.5 lg:mr-[13px]">
-            <img src={house6} alt="" className="w-full" />
-          </div>
-        </div>
-        <div>
-          <div className="ml-[18px] lg:ml-[36px]">
-            <img src={house7} alt="" className="w-full" />
-          </div>
-        </div>
-      </div>
-      <div className=" block md:hidden">
+      <div className=" block select-none">
         <Slider
           {...settings}
           ref={(slider) => {
@@ -85,23 +70,37 @@ const Explore = () => {
           }}
         >
           <div>
-            <div className="mx-2">
+            <div className="mx-2 box relative">
               <img src={house4} alt="" className="w-full" />
+              <Link className="box_inner absolute left-0 top-0 bg-[#0000008c] w-full h-full flex justify-center items-center">
+                <span className="text-3xl font-medium text-white">Dubai</span>
+              </Link>
             </div>
           </div>
           <div>
-            <div className="mx-2">
+            <div className="mx-2 box relative">
               <img src={house5} alt="" className="w-full" />
+              <Link className="box_inner absolute left-0 top-0 bg-[#0000008c] w-full h-full flex justify-center items-center">
+                <span className="text-3xl font-medium text-white">
+                  Abu Dhabi
+                </span>
+              </Link>
             </div>
           </div>
           <div>
-            <div className="mx-2">
+            <div className="mx-2 box relative">
               <img src={house6} alt="" className="w-full" />
+              <Link className="box_inner absolute left-0 top-0 bg-[#0000008c] w-full h-full flex justify-center items-center">
+                <span className="text-3xl font-medium text-white">Sharjah</span>
+              </Link>
             </div>
           </div>
           <div>
-            <div className="mx-2">
+            <div className="mx-2 box relative">
               <img src={house7} alt="" className="w-full" />
+              <Link className="box_inner absolute left-0 top-0 bg-[#0000008c] w-full h-full flex justify-center items-center">
+                <span className="text-3xl font-medium text-white">Ajman</span>
+              </Link>
             </div>
           </div>
         </Slider>

@@ -7,7 +7,10 @@ import email from "../../assets/icons/email.png";
 import shareIcon from "../../assets/icons/shareIcon.png";
 import location_pinIcon from "../../assets/icons/location_pinIcon.png";
 import { Link } from "react-router-dom";
-import { KeyboardArrowUpOutlined } from "@mui/icons-material";
+import {
+  KeyboardArrowLeftOutlined,
+  KeyboardArrowUpOutlined,
+} from "@mui/icons-material";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import house1 from "../../assets/images/house1.png";
 import house2 from "../../assets/images/house2.png";
@@ -63,18 +66,26 @@ const BrokerDetail = () => {
   return (
     <div className="pt-6 pb-12">
       <div className="container mx-auto">
+        <button className="mb-6 text-text2 text-xl font-medium flex items-center">
+          <KeyboardArrowLeftOutlined className="!text-2xl" /> Back
+        </button>
         <div className="brokerInfo">
           <div className=" bg-primary py-5 md:py-10 xl:py-0 xl:pl-10 xl:pr-7 px-4 md:px-7 rounded-xl sm:rounded-2xl md:rounded-[30px] relative">
             <div className="xl:flex justify-between">
-              <div className=" md:flex items-center xl:py-10">
+              <div className=" md:flex items-start xl:py-10">
                 <div className="mx-auto w-60 md:w-72 rounded-xl md:rounded-[20px] overflow-hidden">
                   <img src={comp1} alt="" className=" w-full" />
                 </div>
                 <div className="md:pl-8 mt-5 md:mt-0 sm:md-0">
-                  <p className="min-h-6 mb-3.5 text-center md:text-left">
-                    <span className="text-[13px] text-primary bg-white px-2.5 py-1 rounded-full">
-                      18 Super agent
-                    </span>
+                  <p className="min-h-6 mb-3.5 flex justify-center gap-3 text-center md:text-left md:block">
+                    <div className="self-center">
+                      <span className="text-[13px] text-primary bg-white px-2.5 py-1 rounded-full">
+                        18 Super agent
+                      </span>
+                    </div>
+                    <button className="md:hidden xs:w-9 h-9 rounded-full md:border border-white flex items-center justify-center">
+                      <img src={shareIcon} alt="" className="w-4" />
+                    </button>
                   </p>
                   <h5 className="text-2xl md:text-3xl font-medium text-white mb-5 md:mb-8 leading-5 w-full overflow-hidden text-nowrap text-ellipsis text-center md:text-left">
                     AGCO PROPERTIES
@@ -113,12 +124,12 @@ const BrokerDetail = () => {
                 </div>
               </div>
               <div className="xl:pb-10 pt-6 flex flex-col justify-between md:pl-5">
-                <div className="flex gap-3 justify-end absolute xl:static top-2 2xs:top-4 md:top-7 right-2 2xs:right-4 md:right-7 ">
+                <div className="hidden md:flex gap-3 justify-end absolute xl:static top-2 2xs:top-4 md:top-7 right-2 2xs:right-4 md:right-7 ">
                   <button className="xs:w-9 h-9 rounded-full xs:border border-white flex items-center justify-center">
                     <img src={shareIcon} alt="" className="w-4" />
                   </button>
                 </div>
-                <div className="flex xl:block gap-4">
+                <div className="flex xl:block flex-col xs:flex-row gap-2 sm:gap-4">
                   <button className="flex items-center justify-center xl:mb-[18px] lg:min-w-[270px] w-full text-sm xs:text-base sm:text-xl text-primary text-center bg-white py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                     <img
                       src={phone}

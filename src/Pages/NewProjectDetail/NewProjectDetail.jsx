@@ -7,6 +7,7 @@ import comp1 from "../../assets/images/comp1.png";
 import email from "../../assets/icons/email.png";
 import whatsapp from "../../assets/icons/whatsapp.png";
 import {
+  KeyboardArrowLeftOutlined,
   KeyboardArrowRightOutlined,
   PhotoCameraOutlined,
 } from "@mui/icons-material";
@@ -71,6 +72,9 @@ const NewProjectDetail = () => {
   return (
     <div className="pt-6 pb-12 productDetail">
       <div className="container mx-auto">
+        <button className="mb-6 text-text2 text-xl font-medium flex items-center">
+          <KeyboardArrowLeftOutlined className="!text-2xl" /> Back
+        </button>
         <div className="product_imgs mb-6 sm:mb-10 md:mb-16">
           <div className="hidden md:flex gap-5 2xl:gap-9">
             <div className="w-[65%] rounded-2xl overflow-hidden relative">

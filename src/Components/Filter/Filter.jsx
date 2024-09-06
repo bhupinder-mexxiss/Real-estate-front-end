@@ -4,7 +4,7 @@ import PriceRangeSlider from "../utils/PriceRangeSlider/PriceRangeSlider";
 
 const Filter = () => {
   return (
-    <div className="pt-4 pb-7 px-5 filter ">
+    <div className="pt-4 pb-7 lg:px-5 filter ">
       <div className="grid sm:grid-cols-2 gap-4 lg:block mb-4">
         <div className="md-6 md:mb-10">
           <p className="mb-4 sm:mb-6 text-lg text-[#040404] font-medium">Purpose</p>
@@ -12,7 +12,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="buy"
                 name="purpose"
                 value="buy"
@@ -24,7 +24,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="rent"
                 name="purpose"
                 value="rent"
@@ -36,7 +36,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Townhouses"
                 name="purpose"
                 value="Townhouses"
@@ -48,7 +48,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Land"
                 name="purpose"
                 value="Land"
@@ -60,7 +60,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Duplexes"
                 name="purpose"
                 value="Duplexes"
@@ -79,7 +79,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Apartments"
                 name="purpose"
                 value="Apartments"
@@ -91,7 +91,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Villas"
                 name="purpose"
                 value="Villas"
@@ -103,7 +103,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="New Project"
                 name="purpose"
                 value="New Project"
@@ -115,7 +115,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Commercial Rent"
                 name="purpose"
                 value="Commercial Rent"
@@ -127,7 +127,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Commercial Buy"
                 name="purpose"
                 value="Commercial Buy"
@@ -177,7 +177,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="All furnishings"
                 name="Furnishing"
                 value="All furnishings"
@@ -189,7 +189,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Furnished"
                 name="Furnishing"
                 value="Furnished"
@@ -201,7 +201,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Unfurnished"
                 name="Furnishing"
                 value="Unfurnished"
@@ -213,7 +213,7 @@ const Filter = () => {
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
-                className="text-primary rounded w-[26px] h-[26px] border-2"
+                className="text-primary rounded w-5 md:w-[26px] h-5 md:h-[26px] border-2"
                 id="Partly furnished"
                 name="Furnishing"
                 value="Partly furnished"
@@ -248,7 +248,7 @@ const Filter = () => {
         </div>
       </div>
       <div>
-        <button className="rounded-full w-full inline-block py-3 px-6 bg-primary text-[22px] text-white font-medium">
+        <button className="rounded-full w-full inline-block py-2 md:py-3 px-6 bg-primary text-lg lg:text-[22px] text-white font-medium">
           Apply Filter
         </button>
       </div>

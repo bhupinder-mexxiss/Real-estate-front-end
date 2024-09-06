@@ -6,7 +6,10 @@ import whatsapp from "../../assets/icons/whatsapp.png";
 import shareIcon from "../../assets/icons/shareIcon.png";
 import location_pinIcon from "../../assets/icons/location_pinIcon.png";
 import { Link } from "react-router-dom";
-import { KeyboardArrowUpOutlined } from "@mui/icons-material";
+import {
+  KeyboardArrowLeftOutlined,
+  KeyboardArrowUpOutlined,
+} from "@mui/icons-material";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import house1 from "../../assets/images/house1.png";
 import house2 from "../../assets/images/house2.png";
@@ -60,19 +63,27 @@ const AgentDetail = () => {
   return (
     <div className="pt-6 pb-12">
       <div className="container mx-auto">
+        <button className="mb-6 text-text2 text-xl font-medium flex items-center">
+          <KeyboardArrowLeftOutlined className="!text-2xl" /> Back
+        </button>
         <div className="agentInfo">
           <div className="lg:flex gap-6">
             <div className="lg:w-[70%] xl:w-4/5 bg-primary py-5 md:py-10 xl:py-0 xl:pl-10 xl:pr-7 px-4 md:px-7 rounded-xl sm:rounded-2xl md:rounded-[30px] relative">
               <div className="xl:flex justify-between">
                 <div className=" sm:flex items-center xl:py-10">
-                  <div className="mx-auto w-60 md:w-72 rounded-xl md:rounded-[20px] overflow-hidden">
+                  <div className="mx-auto sm:mx-0 xl:mx-auto w-60 md:w-72 rounded-xl md:rounded-[20px] overflow-hidden">
                     <img src={agent1} alt="" className=" w-full" />
                   </div>
                   <div className="sm:pl-4 md:pl-8 text-center sm:text-left mt-5 sm:mt-0">
-                    <p className="min-h-6 mb-3.5">
-                      <span className="text-[13px] text-primary bg-white px-2.5 py-1 rounded-full">
-                        Super agent
-                      </span>
+                    <p className="min-h-6 mb-3.5 flex justify-center sm:block gap-3">
+                      <div className="self-center">
+                        <span className="text-[13px] text-primary bg-white px-2.5 py-1 rounded-full">
+                          Super agent
+                        </span>
+                      </div>
+                      <button className="sm:hidden xs:w-9 h-9 rounded-full sm:border border-white flex items-center justify-center">
+                        <img src={shareIcon} alt="" className="w-4" />
+                      </button>
                     </p>
                     <h5 className="text-2xl md:text-3xl font-medium text-white mb-5 md:mb-8 leading-5 w-full overflow-hidden text-nowrap text-ellipsis">
                       Kristina Kimeridze
@@ -108,7 +119,7 @@ const AgentDetail = () => {
                   </div>
                 </div>
                 <div className="xl:pb-10 pt-6 flex flex-col justify-between">
-                  <div className="flex gap-3 justify-end absolute xl:static top-2 2xs:top-4 md:top-7 right-2 2xs:right-4 md:right-7 ">
+                  <div className="hidden sm:flex gap-3 justify-end absolute xl:static top-2 2xs:top-4 md:top-7 right-2 2xs:right-4 md:right-7 ">
                     <button className="xs:w-9 h-9 rounded-full xs:border border-white flex items-center justify-center">
                       <img src={shareIcon} alt="" className="w-4" />
                     </button>
@@ -165,8 +176,8 @@ const AgentDetail = () => {
             <p className="text-2xl font-medium text-[#040404]">Track Record</p>
             <div>
               <div className=" rounded-xl xl:rounded-full bg-white my-7 border-2 border-[#B4B4B4]">
-                <div className="flex flex-wrap md:flex-nowrap justify-between gap-4 sm:gap-y-5 py-5 px-4 text-center">
-                  <div className=" w-full xs:w-1/2 md:w-fit flex flex-col xs:pr-6 lg:px-10 xl:px-16 xs:border-r border-border1">
+                <div className="flex flex-wrap md:flex-nowrap justify-between gap-y-4 py-5 px-4 text-center">
+                  <div className=" border-b xs:border-b-0 pb-3 xs:pb-0 w-full xs:w-1/2 md:w-fit flex flex-col xs:pr-5 lg:px-10 xl:px-16 xs:border-r border-border1">
                     <span className="text-text2 mb-1 sm:mb-2">
                       Closed Deals
                     </span>
@@ -174,13 +185,13 @@ const AgentDetail = () => {
                       16
                     </span>
                   </div>
-                  <div className="w-full xs:w-1/2 md:w-fit flex flex-col xs:pl-6 md:px-6 lg:px-10 xl:px-16 md:border-r border-border1">
+                  <div className="border-b xs:border-b-0 pb-3 xs:pb-0 w-full xs:w-1/2 md:w-fit flex flex-col xs:pl-6 md:px-6 lg:px-10 xl:px-16 md:border-r border-border1">
                     <span className="text-text2 mb-1 sm:mb-2">Deal Type</span>
                     <span className="text-base md:text-xl font-medium text-[#040404]">
                       9 Sale, 7 Rent
                     </span>
                   </div>
-                  <div className="w-full xs:w-1/2 md:w-fit flex flex-col xs:pr-6 md:px-6 lg:px-10 xl:px-16 xs:border-r border-border1">
+                  <div className="border-b xs:border-b-0 pb-3 xs:pb-0 w-full xs:w-1/2 md:w-fit flex flex-col xs:pr-6 md:px-6 lg:px-10 xl:px-16 xs:border-r border-border1">
                     <span className="text-text2 mb-1 sm:mb-2 px">
                       Rent, Total Deals Value
                     </span>
@@ -295,16 +306,22 @@ const AgentDetail = () => {
                 <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">
                   Experience Since:
                 </span>
-                <span className="text-lg sm:text-xl text-[#040404] font-medium">2023</span>
+                <span className="text-lg sm:text-xl text-[#040404] font-medium">
+                  2023
+                </span>
               </li>
               <li className="flex mb-4 sm:mb-5">
-                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">BRN#:</span>
+                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">
+                  BRN#:
+                </span>
                 <span className="text-lg sm:text-xl text-[#040404] font-medium">
                   66916
                 </span>
               </li>
               <li className="flex mb-4 sm:mb-5">
-                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">Links:</span>
+                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">
+                  Links:
+                </span>
                 <span className="text-lg sm:text-xl text-[#040404] font-medium border-b-2 border-black cursor-pointer">
                   LinkedIn
                 </span>

@@ -31,6 +31,9 @@ import AddProperty from "./Pages/AddProperties/AddProperty";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import DashboardHome from "./Components/Dashboard/Home";
 import Leads from "./Components/Dashboard/Leads";
+import Listing from "./Components/Dashboard/Listing";
+import MyProfile from "./Components/Dashboard/MyProfile";
+import ChangePassword from "./Components/Dashboard/ChangePassword";
 
 const router = createBrowserRouter([
   {
@@ -158,6 +161,18 @@ const router = createBrowserRouter([
       {
         path: "leads",
         element: <Leads />,
+      },
+      {
+        path: "my-listings",
+        element: <Listing />,
+      },
+      {
+        path: "my-profile",
+        element: <MyProfile />,
+      },
+      {
+        path: "change-password",
+        element: <ChangePassword />,
       },
     ],
   },

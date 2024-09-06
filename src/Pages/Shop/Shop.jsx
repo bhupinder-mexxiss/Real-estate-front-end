@@ -266,19 +266,28 @@ const Shop = () => {
         {/* Mobile Filter */}
         <div>
           <div
-            className={`mobileFilter fixed w-full h-[80vh] bottom-0 bg-white z-[9999] shadow-[0_0_20px_10px_#00000017] overflow-auto py-5 ${
+            className={`mobileFilter fixed w-full h-[80vh] bottom-0 bg-white z-[9999] shadow-[0_0_20px_10px_#00000017] overflow-auto pt-5 rounded-t-3xl ${
               filterShow && "filter_show"
             }`}
           >
             <div className="container mx-auto">
-              <div className="relative">
-                <Filter />
-                <span
-                  className="absolute top-0 right-0"
-                  onClick={() => setFilterShow(false)}
-                >
-                  <CloseOutlined />
-                </span>
+              <div className="relative px-3 ">
+                <div className="flex items-center justify-between border-b pb-2">
+                  <p className="text-lg font-medium text-[#040404]">
+                    Filter Place
+                  </p>
+                  <div className="flex items-end gap-3">
+                    <button className="text-sm text-[#8B8B8B] underline">
+                      Clear all
+                    </button>
+                    <span className="" onClick={() => setFilterShow(false)}>
+                      <CloseOutlined className="!text-xl" />
+                    </span>
+                  </div>
+                </div>
+                <div className="">
+                  <Filter />
+                </div>
               </div>
             </div>
           </div>
