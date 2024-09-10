@@ -94,12 +94,12 @@ const Header = () => {
             </div>
             <NavMenu />
             <div className="flex items-center gap-3 lg:pb-2">
-              <Link to="/user/saved-properties" className="w-8 md:w-10 h-8 md:h-10 rounded-full flex items-center justify-center sm:border border-border1 hover:text-white hover:bg-primary hover:border-primary duration-300 saveBtn">
+              <Link to="/user/saved-properties" className="hidden w-8 md:w-10 h-8 md:h-10 rounded-full lg:flex items-center justify-center sm:border border-border1 hover:text-white hover:bg-primary hover:border-primary duration-300 saveBtn">
                 <FavoriteBorderOutlined className="!text-lg md:!text-xl" />
               </Link>
               <Link
                 to="/add-property"
-                className="loginBtn font-medium lg:font-normal active:text-[#56c1c8] hover:text-[#00C4F4] lg:hover:text-white lg:hover:bg-primary duration-300 py-1.5 lg:py-2 sm:px-2.5 2xl:px-5 text-base lg:text-lg xl:text-xl sm:border hover:border-primary border-white rounded-md lg:rounded-xl text-white"
+                className="hidden lg:inline-block loginBtn font-medium lg:font-normal active:text-[#56c1c8] hover:text-[#00C4F4] lg:hover:text-white lg:hover:bg-primary duration-300 py-1.5 lg:py-2 sm:px-2.5 2xl:px-5 text-base lg:text-lg xl:text-xl sm:border hover:border-primary border-white rounded-md lg:rounded-xl text-white"
               >
                 List Property
               </Link>

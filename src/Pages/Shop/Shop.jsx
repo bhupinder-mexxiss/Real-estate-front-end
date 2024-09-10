@@ -111,13 +111,13 @@ const Shop = () => {
                 </p>
               </div>
               <div className="w-full lg:w-1/2  xl:w-[40%] order-1  lg:order-2 relative ">
-                <div className="py-1.5 md:py-2 pl-3 md:pl-6 pr-2 md:pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex">
+                <div className="py-1.5 pl-3 md:pl-6 pr-2 md:pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex">
                   <input
                     type="text"
                     className="inline-block w-full border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg xl:text-[22px] font-normal px-0 py-0 leading-4 md:leading-8 pr-4 placeholder:text-text2"
                     placeholder="Search"
                   />
-                  <span className="min-w-8 min-h-8 md:min-w-10 xl:min-w-12 md:h-10 xl:h-12 rounded-full flex items-center justify-center bg-primary ">
+                  <span className="min-w-8 min-h-8 md:min-w-10 md:h-10 rounded-full flex items-center justify-center bg-primary ">
                     <img src={searchIcon} alt="" className=" w-3 md:w-[15px]" />
                   </span>
                 </div>
@@ -127,7 +127,7 @@ const Shop = () => {
                   328 results found
                 </p>
                 <div
-                  className="py-1.5 md:py-4 px-3 md:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary hidden xl:flex justify-between items-center cursor-pointer"
+                  className="py-1.5 md:py-2.5 px-3 md:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary hidden xl:flex justify-between items-center cursor-pointer"
                   onClick={toggleMenu}
                 >
                   <div
@@ -135,9 +135,9 @@ const Shop = () => {
                       sortShow ? "active" : ""
                     }`}
                   >
-                    <label className="text-[#8B8B8B]">Short By :</label>
+                    <label className="text-[#8B8B8B]">Short By : </label>
                     <div className="select-btn">
-                      <span className="sBtn-text">{selectedOption}</span>
+                      <span className="sBtn-text">&nbsp; {selectedOption}</span>
                     </div>
                     {sortShow && (
                       <div className="w-full md:w-[84%] left-1/2 top-full absolute z-[20] mt-2.5 -translate-x-1/2">
@@ -196,7 +196,7 @@ const Shop = () => {
                       }`}
                     >
                       {sortShow && (
-                        <div className="w-fit xl:w-[84%] right-12 sm:right-8 md:right-[100px] lg:right-0 xl:right-auto xl:left-1/2 top-full absolute z-[20] mt-2 sm:-mt-2  lg:-mt-10 xl:mt-2.5 xl:-translate-x-1/2">
+                        <div className="w-fit xl:w-[84%] right-12 sm:right-8 md:right-[100px] lg:right-0 xl:right-auto xl:left-1/2 top-full absolute z-[20] mt-2 sm:-mt-2  lg:-mt-6 xl:mt-2.5 xl:-translate-x-1/2">
                           <ul className="options !p-0 rounded-lg overflow-hidden">
                             {options.map((option, index) => (
                               <li

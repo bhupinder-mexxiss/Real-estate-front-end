@@ -16,11 +16,17 @@ const Blog = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     arrows: false,
     responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
       {
         breakpoint: 992,
         settings: {
@@ -51,13 +57,13 @@ const Blog = () => {
             Latest on the Blog
           </h4>
           <div className="w-full relative  order-1 md:order-2">
-            <div className="py-1.5 md:py-2 pl-3 md:pl-6 pr-2 md:pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary duration-300 cursor-pointer font-medium flex">
+            <div className="py-1.5 pl-3 md:pl-6 pr-2 md:pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary duration-300 cursor-pointer font-medium flex">
               <input
                 type="text"
                 className="inline-block w-full border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg xl:text-[22px] font-normal px-0 py-0 leading-4 md:leading-8 pr-4 placeholder:text-text2 bg-transparent"
                 placeholder="Looking for something special?"
               />
-              <span className="min-w-8 min-h-8 md:min-w-10 xl:min-w-12 md:h-10 xl:h-12 rounded-full flex items-center justify-center bg-primary ">
+              <span className="min-w-8 min-h-8 md:min-w-10 md:h-10 rounded-full flex items-center justify-center bg-primary ">
                 <img src={searchIcon} alt="" className=" w-3 md:w-[15px]" />
               </span>
             </div>
@@ -121,12 +127,18 @@ const Blog = () => {
                       Decor
                     </span>
                   </p>
-                  <Link to="/blog/market-watch-digest-residential" className="inline-block text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer mb-8">
+                  <Link
+                    to="/blog/market-watch-digest-residential"
+                    className="inline-block text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer mb-8"
+                  >
                     UAE Q2 2024, Market Watch Digest Residential Real Estate
                     Insights
                   </Link>
                   <p className="text-text2 flex justify-between items-center ">
-                    <Link to="/blog/market-watch-digest-residential" className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium">
+                    <Link
+                      to="/blog/market-watch-digest-residential"
+                      className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium"
+                    >
                       Read{" "}
                       <KeyboardArrowRightOutlined className="text-primary" />
                     </Link>{" "}
@@ -136,7 +148,10 @@ const Blog = () => {
                     </span>
                   </p>
                 </div>
-                <Link to="/blog/market-watch-digest-residential" className="sm:w-2/5 h-full order-1 sm:order-2">
+                <Link
+                  to="/blog/market-watch-digest-residential"
+                  className="sm:w-2/5 h-full order-1 sm:order-2"
+                >
                   <img
                     src={house1}
                     alt=""
@@ -152,12 +167,18 @@ const Blog = () => {
                       Decor
                     </span>
                   </p>
-                  <Link to="/blog/market-watch-digest-residential" className="inline-block text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer mb-8">
+                  <Link
+                    to="/blog/market-watch-digest-residential"
+                    className="inline-block text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer mb-8"
+                  >
                     UAE Q2 2024, Market Watch Digest Residential Real Estate
                     Insights
                   </Link>
                   <p className="text-text2 flex justify-between items-center ">
-                    <Link to="/blog/market-watch-digest-residential" className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium">
+                    <Link
+                      to="/blog/market-watch-digest-residential"
+                      className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium"
+                    >
                       Read{" "}
                       <KeyboardArrowRightOutlined className="text-primary" />
                     </Link>{" "}
@@ -167,7 +188,10 @@ const Blog = () => {
                     </span>
                   </p>
                 </div>
-                <Link to="/blog/market-watch-digest-residential" className="sm:w-2/5 h-full order-1 sm:order-2">
+                <Link
+                  to="/blog/market-watch-digest-residential"
+                  className="sm:w-2/5 h-full order-1 sm:order-2"
+                >
                   <img
                     src={house1}
                     alt=""
@@ -183,12 +207,18 @@ const Blog = () => {
                       Decor
                     </span>
                   </p>
-                  <Link to="/blog/market-watch-digest-residential" className="inline-block text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer mb-8">
+                  <Link
+                    to="/blog/market-watch-digest-residential"
+                    className="inline-block text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer mb-8"
+                  >
                     UAE Q2 2024, Market Watch Digest Residential Real Estate
                     Insights
                   </Link>
                   <p className="text-text2 flex justify-between items-center ">
-                    <Link to="/blog/market-watch-digest-residential" className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium">
+                    <Link
+                      to="/blog/market-watch-digest-residential"
+                      className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium"
+                    >
                       Read{" "}
                       <KeyboardArrowRightOutlined className="text-primary" />
                     </Link>{" "}
@@ -198,7 +228,10 @@ const Blog = () => {
                     </span>
                   </p>
                 </div>
-                <Link to="/blog/market-watch-digest-residential" className="sm:w-2/5 h-full order-1 sm:order-2">
+                <Link
+                  to="/blog/market-watch-digest-residential"
+                  className="sm:w-2/5 h-full order-1 sm:order-2"
+                >
                   <img
                     src={house1}
                     alt=""
@@ -275,19 +308,19 @@ const Blog = () => {
         {/* Top Picks */}
         <div>
           <div className="flex lg:gap-7 gap-2 xs:gap-4 justify-center mb-11 flex-wrap *:duration-300">
-            <button className="px-6 sm:px-10 py-2 sm:py-3.5 border font-medium text-base xs:text-xl rounded-full bg-primary border-primary text-white">
+            <button className="px-6 sm:px-10 py-2 sm:py-3 border font-medium text-base xs:text-xl rounded-full bg-primary border-primary text-white">
               Top Picks
             </button>
-            <button className="px-6 sm:px-10 py-2 sm:py-3.5 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
+            <button className="px-6 sm:px-10 py-2 sm:py-3 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
               Lifestyle
             </button>
-            <button className="px-6 sm:px-10 py-2 sm:py-3.5 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
+            <button className="px-6 sm:px-10 py-2 sm:py-3 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
               The Guide
             </button>
-            <button className="px-6 sm:px-10 py-2 sm:py-3.5 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
+            <button className="px-6 sm:px-10 py-2 sm:py-3 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
               Where to Live
             </button>
-            <button className="px-6 sm:px-10 py-2 sm:py-3.5 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
+            <button className="px-6 sm:px-10 py-2 sm:py-3 border text-text2 text-base xs:text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
               Laws
             </button>
           </div>
@@ -297,7 +330,10 @@ const Blog = () => {
           <Slider {...settings}>
             <div className="px-4">
               <div className=" rounded-[20px] bg-white overflow-hidden flex flex-col justify-between ">
-                <Link to="/blog/market-watch-digest-residential" className="h-full">
+                <Link
+                  to="/blog/market-watch-digest-residential"
+                  className="h-full"
+                >
                   <img
                     src={house1}
                     alt=""
@@ -311,14 +347,20 @@ const Blog = () => {
                       Decor
                     </span>
                   </p>
-                  <Link to="/blog/market-watch-digest-residential" className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer">
+                  <Link
+                    to="/blog/market-watch-digest-residential"
+                    className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer"
+                  >
                     UAE Q2 2024, Market Watch Digest Residential Real Estate
                     Insights
                   </Link>
                   <div className="mt-7 border-t pt-4">
                     {" "}
                     <p className="text-text2 flex justify-between items-center ">
-                      <Link to="/blog/market-watch-digest-residential" className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium">
+                      <Link
+                        to="/blog/market-watch-digest-residential"
+                        className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium"
+                      >
                         Read{" "}
                         <KeyboardArrowRightOutlined className="text-primary" />
                       </Link>{" "}
@@ -333,7 +375,10 @@ const Blog = () => {
             </div>
             <div className="px-4">
               <div className=" rounded-[20px] bg-white overflow-hidden flex flex-col justify-between ">
-                <Link to="/blog/market-watch-digest-residential" className="h-full">
+                <Link
+                  to="/blog/market-watch-digest-residential"
+                  className="h-full"
+                >
                   <img
                     src={house1}
                     alt=""
@@ -347,14 +392,20 @@ const Blog = () => {
                       Decor
                     </span>
                   </p>
-                  <Link to="/blog/market-watch-digest-residential" className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer">
+                  <Link
+                    to="/blog/market-watch-digest-residential"
+                    className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer"
+                  >
                     UAE Q2 2024, Market Watch Digest Residential Real Estate
                     Insights
                   </Link>
                   <div className="mt-7 border-t pt-4">
                     {" "}
                     <p className="text-text2 flex justify-between items-center ">
-                      <Link to="/blog/market-watch-digest-residential" className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium">
+                      <Link
+                        to="/blog/market-watch-digest-residential"
+                        className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium"
+                      >
                         Read{" "}
                         <KeyboardArrowRightOutlined className="text-primary" />
                       </Link>{" "}
@@ -369,7 +420,10 @@ const Blog = () => {
             </div>
             <div className="px-4">
               <div className=" rounded-[20px] bg-white overflow-hidden flex flex-col justify-between ">
-                <Link to="/blog/market-watch-digest-residential" className="h-full">
+                <Link
+                  to="/blog/market-watch-digest-residential"
+                  className="h-full"
+                >
                   <img
                     src={house1}
                     alt=""
@@ -383,14 +437,20 @@ const Blog = () => {
                       Decor
                     </span>
                   </p>
-                  <Link to="/blog/market-watch-digest-residential" className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer">
+                  <Link
+                    to="/blog/market-watch-digest-residential"
+                    className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer"
+                  >
                     UAE Q2 2024, Market Watch Digest Residential Real Estate
                     Insights
                   </Link>
                   <div className="mt-7 border-t pt-4">
                     {" "}
                     <p className="text-text2 flex justify-between items-center ">
-                      <Link to="/blog/market-watch-digest-residential" className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium">
+                      <Link
+                        to="/blog/market-watch-digest-residential"
+                        className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium"
+                      >
                         Read{" "}
                         <KeyboardArrowRightOutlined className="text-primary" />
                       </Link>{" "}
@@ -405,7 +465,10 @@ const Blog = () => {
             </div>
             <div className="px-4">
               <div className=" rounded-[20px] bg-white overflow-hidden flex flex-col justify-between ">
-                <Link to="/blog/market-watch-digest-residential" className="h-full">
+                <Link
+                  to="/blog/market-watch-digest-residential"
+                  className="h-full"
+                >
                   <img
                     src={house1}
                     alt=""
@@ -419,14 +482,20 @@ const Blog = () => {
                       Decor
                     </span>
                   </p>
-                  <Link to="/blog/market-watch-digest-residential" className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer">
+                  <Link
+                    to="/blog/market-watch-digest-residential"
+                    className="text-lg font-medium text-text1 hover:text-primary duration-300 cursor-pointer"
+                  >
                     UAE Q2 2024, Market Watch Digest Residential Real Estate
                     Insights
                   </Link>
                   <div className="mt-7 border-t pt-4">
                     {" "}
                     <p className="text-text2 flex justify-between items-center ">
-                      <Link to="/blog/market-watch-digest-residential" className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium">
+                      <Link
+                        to="/blog/market-watch-digest-residential"
+                        className="flex items-center hover:text-primary duration-300 cursor-pointer font-medium"
+                      >
                         Read{" "}
                         <KeyboardArrowRightOutlined className="text-primary" />
                       </Link>{" "}
@@ -441,7 +510,7 @@ const Blog = () => {
             </div>
           </Slider>
           <div className="text-center mt-16">
-            <button className="border border-border1 rounded-full py-3 md:py-[18px] px-14 md:px-12 text-lg md:text-[22px] text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
+            <button className="border border-border1 rounded-full py-2.5 px-10 text-lg md:text-xl text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
               View All Articles
             </button>
           </div>

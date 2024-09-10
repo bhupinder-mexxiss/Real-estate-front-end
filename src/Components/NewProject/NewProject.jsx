@@ -372,7 +372,7 @@ const NewProject = () => {
           </Slider>
         </div>
         <div className="text-center">
-          <button className="border border-border1 rounded-full py-2 sm:py-3 md:py-[15px] px-8 sm:px-11 text-base sm:text-lg md:text-[22px] text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
+          <button className="border border-border1 rounded-full py-2 px-8 text-base sm:text-lg md:text-xl text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
             See All New Projects
           </button>
         </div>

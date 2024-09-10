@@ -349,7 +349,7 @@ const AgentDetail = () => {
               My Properties
             </p>
             <div
-              className="my-3 md:my-0 py-2.5 lg:py-4 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit min-w-[170px]"
+              className="my-3 md:my-0 py-2.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit min-w-[130px]"
               onClick={toggleoption}
             >
               <div

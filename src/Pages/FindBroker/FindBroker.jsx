@@ -63,26 +63,26 @@ const FindBroker = () => {
             </div>
           </div>
         </div>
-        <div className="relative z-0 mt-[-60px] sm:mt-[-66px] md:-mt-[88px] xl:-mt-24 seachTab">
+        <div className="relative z-0 mt-[-60px] sm:mt-[-66px] md:-mt-[83px] seachTab">
           <div className="container mx-auto">
             <div className="p-3 sm:p-5 lg:px-7 lg:py-3 xl:py-5 bg-white rounded-xl lg:rounded-[58px] max-w-[970px] mx-auto">
               <div className="">
                 <div className="flex flex-wrap xs:flex-nowrap lg:w-full gap-1.5 xs:gap-2 xl:gap-4 mb-5">
                   <Link
                     to="/find-agent"
-                    className="py-2.5 md:py-3 lg:py-[18px] text-nowrap px-8 lg:px-10 rounded-xl  sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text-base md:text-lg xl:text-[22px] font-normal"
+                    className="py-2.5 md:py-3 text-nowrap px-8 lg:px-10 rounded-xl  sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text-base md:text-lg xl:text-[22px] font-normal"
                   >
                     Agent
                   </Link>
                   <Link
                     to="/find-broker"
-                    className="py-2.5 md:py-3 lg:py-[18px] text-nowrap px-8 lg:px-10 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg xl:text-[22px] font-medium"
+                    className="py-2.5 md:py-3text-nowrap px-8 lg:px-10 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg xl:text-[22px] font-medium"
                   >
                     Companies
                   </Link>
                 </div>
                 <div className="md:flex items-center gap-3 lg:gap-5">
-                  <div className="py-2.5 lg:py-4 pl-4 lg:pl-6 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary w-full">
+                  <div className="py-2.5 pl-4 lg:pl-6 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary w-full">
                     <input
                       type="text"
                       className="w-full border-none ring-0 focus:ring-0 text-text2 text-base md:text-xl xl:text-[22px] font-normal px-0 py-0 pl-6 md:pl-10 leading-4 md:leading-8 placeholder:text-text2"
@@ -97,7 +97,7 @@ const FindBroker = () => {
                     </span>
                   </div>
                   <div
-                    className="my-3 md:my-0 py-2.5 lg:py-4 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer min-w-[250px] lg:min-w-[300px]"
+                    className="my-3 md:my-0 py-2.5  px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer min-w-[250px] lg:min-w-[300px]"
                     onClick={toggleMenu}
                     ref={serviceRef}
                   >
@@ -131,7 +131,7 @@ const FindBroker = () => {
                       <KeyboardArrowUpOutlined />
                     </span>
                   </div>
-                  <button className="w-full md:w-fit md:min-w-[54px] lg:min-w-[64px] h-[45px] md:h-[54px] lg:h-[64px] rounded-full flex items-center justify-center bg-primary">
+                  <button className="w-full md:w-fit md:min-w-[53px] h-[45px] md:h-[53px] rounded-full flex items-center justify-center bg-primary">
                     <img
                       src={searchIcon}
                       alt=""
@@ -153,7 +153,7 @@ const FindBroker = () => {
             <CompanyCard />
           </div>
           <div className="text-center">
-            <button className="border border-border1 rounded-full py-3 md:py-[18px] px-14 md:px-24 text-lg md:text-[22px] text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
+            <button className="border border-border1 rounded-full py-2.5 px-10 text-lg md:text-xl text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
               View more
             </button>
           </div>

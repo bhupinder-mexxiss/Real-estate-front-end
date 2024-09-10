@@ -36,7 +36,7 @@ const ProductCard = ({ products, link }) => {
                     <img
                       src={location_pinIcon2}
                       alt=""
-                      className="min-w-[15px] lg:w-[17px]"
+                      className="w-[15px]"
                     />
                   </span>
                   <span className="text-sm px-2 text-text2 text-nowrap overflow-hidden text-ellipsis">

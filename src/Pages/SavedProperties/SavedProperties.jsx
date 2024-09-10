@@ -93,11 +93,11 @@ const SavedProperties = () => {
                 328 results found
               </p>
               <div className="flex justify-end gap-2 xs:gap-3 xl:gap-5">
-                <button className=" text-sm sm:text-base xl:text-xl 2xl:text-[22px] text-primary py-1.5 md:py-1 xl:py-2.5 2xl:py-4 px-2 sm:px-4 xl:px-6 2xl:px-11 border border-primary rounded-lg lg:rounded-3xl xl:rounded-full">
+                <button className=" text-sm sm:text-base xl:text-xl 2xl:text-xl text-primary py-1.5 md:py-1 xl:py-2.5 px-2 sm:px-4 xl:px-6 2xl:px-11 border border-primary rounded-lg lg:rounded-3xl xl:rounded-full">
                   Delete All
                 </button>
                 <div
-                  className={`py-1.5 md:py-1 xl:py-2.5 2xl:py-4 px-2 sm:px-4 xl:px-5 rounded-lg lg:rounded-3xl xl:rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit ${
+                  className={`py-1.5 md:py-1 xl:py-2.5 px-2 sm:px-4 xl:px-5 rounded-lg lg:rounded-3xl xl:rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit ${
                     optionCatShow && "bg-[#00858e1a]"
                   } ${
                     selectedCateOption !== "All" &&
@@ -107,7 +107,7 @@ const SavedProperties = () => {
                   ref={cateRef}
                 >
                   <div
-                    className={`lg:min-w-[230px] xl:min-w-[270px] select-menu flex text-text2  text-sm sm:text-base xl:text-xl 2xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                    className={`lg:min-w-[230px] xl:min-w-[270px] select-menu flex text-text2  text-sm sm:text-base xl:text-xl 2xl:text-xl font-normal leading-4 md:leading-8 ${
                       optionCatShow ? "active" : ""
                     }`}
                   >
@@ -268,7 +268,7 @@ const SavedProperties = () => {
                   </span>
                 </div>
                 <div
-                  className={`py-1.5 md:py-1 xl:py-2.5 2xl:py-4 px-2 sm:px-4 xl:px-5 rounded-lg lg:rounded-3xl xl:rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit ${
+                  className={`py-1.5 md:py-1 xl:py-2.5 px-2 sm:px-4 xl:px-5 rounded-lg lg:rounded-3xl xl:rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit ${
                     optionSortShow && "bg-[#00858e1a]"
                   } ${
                     selectedSortOption !== "Recently Saved" &&
@@ -278,7 +278,7 @@ const SavedProperties = () => {
                   ref={sortRef}
                 >
                   <div
-                    className={`lg:min-w-[206px] xl:min-w-[245px] select-menu flex text-text2  text-sm sm:text-base xl:text-xl 2xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                    className={`lg:min-w-[206px] xl:min-w-[245px] select-menu flex text-text2  text-sm sm:text-base xl:text-xl 2xl:text-xl font-normal leading-4 md:leading-8 ${
                       optionSortShow ? "active" : ""
                     }`}
                   >

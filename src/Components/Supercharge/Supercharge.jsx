@@ -15,13 +15,13 @@ const Supercharge = () => {
         <div className="mt-4 xs:mt-6 md:mt-9">
           <div className="flex justify-center">
             <ul className="flex gap-2 xs:gap-3 md:gap-6 *:duration-300">
-              <li className="min-w-20 xs:min-w-24 md:min-w-36 xl:min-w-[180px] flex items-center justify-center text-base xs:text-lg md:text-xl lg:text-[22px] font-medium px-5 py-1.5 md:py-2 xl:py-[15px] text-white bg-primary border border-primary rounded-full">
+              <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg md:text-xl lg:text-[22px] font-medium px-5 py-1.5 md:py-2 text-white bg-primary border border-primary rounded-full">
                 Rent
               </li>
-              <li className="min-w-20 xs:min-w-24 md:min-w-36 xl:min-w-[180px] flex items-center justify-center text-base xs:text-lg md:text-xl lg:text-[22px] font-normal px-5 py-1.5 md:py-2 xl:py-[15px] rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+              <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg md:text-xl lg:text-[22px] font-normal px-5 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
                 Buy
               </li>
-              <li className="min-w-20 xs:min-w-24 md:min-w-36 xl:min-w-[180px] flex items-center justify-center text-base xs:text-lg md:text-xl lg:text-[22px] font-normal px-5 py-1.5 md:py-2 xl:py-[15px] rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+              <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg md:text-xl lg:text-[22px] font-normal px-5 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
                 Invest
               </li>
             </ul>

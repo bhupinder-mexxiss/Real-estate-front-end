@@ -43,7 +43,7 @@ const DataGuru = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 4000,
@@ -52,38 +52,6 @@ const DataGuru = () => {
     responsive: [
       {
         breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          dots: true,
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
-
-  const communitySettings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1400,
         settings: {
           slidesToShow: 3,
         },
@@ -95,8 +63,48 @@ const DataGuru = () => {
         },
       },
       {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          infinite: true,
+          centerMode: true,
+        },
+      },
+    ],
+  };
+
+  const communitySettings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
         breakpoint: 576,
         settings: {
+          infinite: true,
           slidesToShow: 1,
           centerMode: true,
           dots: true,
@@ -143,7 +151,8 @@ const DataGuru = () => {
         <div className="container mx-auto mt-16 md:mt-24">
           <div className="flex items-center justify-between mb-8">
             <h4 className=" text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
-              Features powered by <span className="title_Border pb-2 ">DataGuru</span>
+              Features Powered by{" "}
+              <span className="title_Border pb-2 ">DataGuru</span>
             </h4>
             <div className=" md:flex gap-2 hidden">
               <button
@@ -179,7 +188,7 @@ const DataGuru = () => {
           <div>
             <Slider {...featureSettings} ref={featureSliderRef}>
               <div className="px-4">
-                <div className="py-10 px-6 bg-white rounded-[48px] flex flex-col ">
+                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
                       src={NewProject}
@@ -188,10 +197,10 @@ const DataGuru = () => {
                     />
                   </div>
                   <div>
-                    <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-5">
+                    <p className="text-lg text-text3 font-medium mb-3">
                       New Projects
                     </p>
-                    <p className="text-base text-text3 mb-5">
+                    <p className="text-sm text-text3 mb-5">
                       Are you looking for new and upcoming properties? View all
                       new projects in the UAE.
                     </p>
@@ -202,7 +211,7 @@ const DataGuru = () => {
                 </div>
               </div>
               <div className="px-4">
-                <div className="py-10 px-6 bg-white rounded-[48px] flex flex-col ">
+                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
                       src={NewProject}
@@ -211,10 +220,10 @@ const DataGuru = () => {
                     />
                   </div>
                   <div>
-                    <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-5">
+                    <p className="text-lg text-text3 font-medium mb-3">
                       Historical Transactions
                     </p>
-                    <p className="text-base text-text3 mb-5">
+                    <p className="text-sm text-text3 mb-5">
                       View transaction records in any location of Dubai.
                     </p>
                     <span className="text-primary font-medium">
@@ -224,7 +233,7 @@ const DataGuru = () => {
                 </div>
               </div>
               <div className="px-4">
-                <div className="py-10 px-6 bg-white rounded-[48px] flex flex-col ">
+                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
                       src={NewProject}
@@ -233,10 +242,10 @@ const DataGuru = () => {
                     />
                   </div>
                   <div>
-                    <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-5">
+                    <p className="text-lg text-text3 font-medium mb-3">
                       Price Map
                     </p>
-                    <p className="text-base text-text3 mb-5">
+                    <p className="text-sm text-text3 mb-5">
                       Not sure in which area you can afford to rent or buy? View
                       the prices by different areas.
                     </p>
@@ -247,7 +256,7 @@ const DataGuru = () => {
                 </div>
               </div>
               <div className="px-4">
-                <div className="py-10 px-6 bg-white rounded-[48px] flex flex-col ">
+                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
                       src={NewProject}
@@ -256,10 +265,10 @@ const DataGuru = () => {
                     />
                   </div>
                   <div>
-                    <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-5">
+                    <p className="text-lg text-text3 font-medium mb-3">
                       Explore Area Price
                     </p>
-                    <p className="text-base text-text3 mb-5">
+                    <p className="text-sm text-text3 mb-5">
                       Are you looking for new and upcoming properties? View all
                       new projects in the UAE.
                     </p>
@@ -278,14 +287,15 @@ const DataGuru = () => {
         <div className="container mx-auto mt-16 md:mt-24">
           <div className="flex items-center justify-between mb-8">
             <h4 className="title_Border text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
-              Discover popular communities
+              Explore Dubai's Price{" "}
+              <span className="title_Border pb-2">Map</span>
             </h4>
           </div>
           <div className="flex">
-            <button className="mr-5 px-6 sm:px-11 py-2 sm:py-3.5 border font-medium text-xl rounded-full bg-primary border-primary text-white">
+            <button className="mr-5 px-6 sm:px-11 py-2.5 border font-medium text-xl rounded-full bg-primary border-primary text-white">
               For Rent
             </button>
-            <button className="mr-5 px-6 sm:px-11 py-2 sm:py-3.5 border text-text2 text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
+            <button className="mr-5 px-6 sm:px-11 py-2.5 border text-text2 text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
               For Buy
             </button>
           </div>
@@ -303,7 +313,8 @@ const DataGuru = () => {
         <div className="container mx-auto mt-16 md:mt-24">
           <div className="flex items-center justify-between mb-8">
             <h4 className=" text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
-              Discover popular <span className="title_Border pb-2">communities</span>
+              Discover Popular{" "}
+              <span className="title_Border pb-2">Communities</span>
             </h4>
           </div>
           <div>
@@ -364,7 +375,7 @@ const DataGuru = () => {
             <div>
               <Slider {...communitySettings} ref={communitySliderRef}>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -372,23 +383,21 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
                           5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -396,23 +405,43 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-[#F7C55F] rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                          5/5
+                        </span>
+                        <p className="text-base text-text3">2 review</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="px-4">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
+                    <div className="">
+                      <img
+                        src={house1}
+                        alt=""
+                        className="w-full max-h-[304px] object-cover h-full"
+                      />
+                    </div>
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                        Al Barari
+                      </p>
+                      <div className="flex items-center gap-3">
+                        <span className="text-lg text-white bg-[#F7C55F] rounded-full px-6 py-2">
                           3.5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -420,23 +449,21 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
                           5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -444,17 +471,15 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
                           5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
@@ -462,7 +487,7 @@ const DataGuru = () => {
               </Slider>
             </div>
             <div className="text-center mt-10">
-              <button className="border border-border1 rounded-full py-3 md:py-[18px] px-14 md:px-12 text-lg md:text-[22px] text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
+              <button className="border border-border1 rounded-full py-2.5 px-10 text-lg md:text-xl text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
                 See all communities
               </button>
             </div>
@@ -473,8 +498,9 @@ const DataGuru = () => {
       <div className="sub_communities">
         <div className="container mx-auto">
           <div className="flex items-center justify-between mb-8">
-            <h4 className=" text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
-              See top buildings & <span className="pb-2 title_Border">sub-communities</span>
+            <h4 className="capitalize text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
+              See top buildings &{" "}
+              <span className="pb-2 title_Border">sub-communities</span>
             </h4>
           </div>
           <div>
@@ -535,7 +561,7 @@ const DataGuru = () => {
             <div>
               <Slider {...communitySettings} ref={communitySliderRef}>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -543,23 +569,21 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
                           5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -567,23 +591,21 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
                           5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -591,23 +613,21 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
                           5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="px-4">
-                  <div className="overflow-hidden bg-white rounded-3xl md:rounded-[48px] flex flex-col ">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
                         src={house1}
@@ -615,17 +635,37 @@ const DataGuru = () => {
                         className="w-full max-h-[304px] object-cover h-full"
                       />
                     </div>
-                    <div className="p-3 pb-5 md:px-7 md:pt-3 md:pb-7">
-                      <p className="text-2xl lg:text-[28px] text-text3 font-medium mb-2.5">
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2.5">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
                           5/5
                         </span>
-                        <p className="text-base text-text3">
-                          2 Building review
-                        </p>
+                        <p className="text-base text-text3">2 review</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="px-4">
+                  <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
+                    <div className="">
+                      <img
+                        src={house1}
+                        alt=""
+                        className="w-full max-h-[304px] object-cover h-full"
+                      />
+                    </div>
+                    <div className="p-3 pb-5 md:pt-3 md:pb-5">
+                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                        Al Barari
+                      </p>
+                      <div className="flex items-center gap-3">
+                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                          5/5
+                        </span>
+                        <p className="text-base text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
@@ -633,7 +673,7 @@ const DataGuru = () => {
               </Slider>
             </div>
             <div className="text-center mt-10">
-              <button className="border border-border1 rounded-full py-3 md:py-[18px] px-6 xs:px-10 sm:px-14 md:px-12 text-lg md:text-[22px] text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
+              <button className="border border-border1 rounded-full py-2.5 px-10 text-lg md:text-xl text-text2 inline-block hover:border-primary hover:bg-primary hover:text-white duration-300">
                 See all buildings & sub-communities
               </button>
             </div>

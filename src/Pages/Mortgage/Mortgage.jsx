@@ -198,7 +198,7 @@ const Mortgage = () => {
                 </div>
               </div>
               <div className="lg:w-1/2 xl:w-[60%] mt-20 lg:mt-0">
-                <div className="rounded-3xl lg:rounded-[58px] bg-white py-7 px-4 sm:px-11">
+                <div className="rounded-3xl bg-white py-7 px-4 sm:px-11">
                   <p className="text-xl text-text3 font-medium mb-4">
                     Estimate your monthly mortgage payment
                   </p>
@@ -225,7 +225,7 @@ const Mortgage = () => {
                     </button>
                   </div>
                 </div>
-                <div className="rounded-3xl lg:rounded-[58px] bg-white py-6 px-4 sm:px-9 mt-4 relative">
+                <div className="rounded-3xl bg-white py-6 px-4 sm:px-9 mt-4 relative">
                   <img
                     src={mortage1}
                     alt=""
@@ -250,14 +250,14 @@ const Mortgage = () => {
                 <span className="title_Border pb-2">needs</span>
               </h6>
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-[30px]">
-                <div className="row-span-2 rounded-3xl lg:rounded-[58px] px-5 xs:px-8 py-5 md:py-12 bg-white flex items-center">
+                <div className="row-span-2 rounded-3xl px-5 xs:px-8 py-5 md:py-12 bg-white flex items-center">
                   <div>
                     <div>
                       <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
                         <img src={super1} alt="" className=" w-8 md:w-11" />
                       </span>
                     </div>
-                    <h5 className="text-xl md:text-2xl xl:text-[28px] text-text3 mt-10 mb-5 font-medium">
+                    <h5 className="text-xl md:text-2xl text-text3 my-5 font-medium">
                       We work for you, Not the bank
                     </h5>
                     <p className="text-text3 mb-3 xs:mb-5 text-sm xs:text-base">
@@ -268,12 +268,12 @@ const Mortgage = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="rounded-3xl lg:rounded-[58px] px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
                     <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
                       <img src={mortgage1} alt="" className=" w-8 md:w-11" />
                     </span>
-                    <span className="text-[28px] text-primary font-medium">
+                    <span className="text-[24px] text-primary font-medium">
                       10 minutes
                     </span>
                   </div>
@@ -282,12 +282,12 @@ const Mortgage = () => {
                     a call within 10 minutes
                   </p>
                 </div>
-                <div className="rounded-3xl lg:rounded-[58px] px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
                     <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
                       <img src={mortgage2} alt="" className=" w-8 md:w-11" />
                     </span>
-                    <span className="text-[28px] text-primary font-medium">
+                    <span className="text-[24px] text-primary font-medium">
                       4.9
                     </span>
                   </div>
@@ -295,23 +295,23 @@ const Mortgage = () => {
                     Customer reviews from 300+ people
                   </p>
                 </div>
-                <div className="rounded-3xl lg:rounded-[58px] px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
                     <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
                       <img src={mortgage3} alt="" className=" w-8 md:w-11" />
                     </span>
-                    <span className="text-[28px] text-primary font-medium">
+                    <span className="text-[24px] text-primary font-medium">
                       5,000 AED
                     </span>
                   </div>
                   <p className="mt-4 text-text3">Average savings with 0 fees</p>
                 </div>
-                <div className="rounded-3xl lg:rounded-[58px] px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
                     <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
                       <img src={mortgage4} alt="" className=" w-8 md:w-11" />
                     </span>
-                    <span className="text-[28px] text-primary font-medium">
+                    <span className="text-[24px] text-primary font-medium">
                       100,000+
                     </span>
                   </div>
@@ -328,7 +328,7 @@ const Mortgage = () => {
               <div>
                 <Slider {...settings}>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl lg:rounded-[58px] overflow-hidden relative min-h-[400px]">
+                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
                       <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage5}
@@ -342,10 +342,10 @@ const Mortgage = () => {
                         </span>
                       </div>
                       <div className=" pl-7 pr-4 pb-9">
-                        <p className="text-[28px] text-text3 font-medium mb-1.5">
+                        <p className="text-[22px] text-text3 font-medium mb-1.5">
                           Planning
                         </p>
-                        <p className="text-text3">
+                        <p className="text-text3 text-sm">
                           Start by saving for your deposit: 15% for locals, 20%
                           for expats, and 40% for non-residents or second
                           property buyers. Remember to budget for extra costs
@@ -357,7 +357,7 @@ const Mortgage = () => {
                     </div>
                   </div>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl lg:rounded-[58px] overflow-hidden relative min-h-[400px]">
+                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
                       <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage6}
@@ -371,10 +371,10 @@ const Mortgage = () => {
                         </span>
                       </div>
                       <div className=" pl-7 pr-4 pb-9">
-                        <p className="text-[28px] text-text3 font-medium mb-1.5">
+                        <p className="text-[22px] text-text3 font-medium mb-1.5">
                           Get pre-approval
                         </p>
-                        <p className="text-text3">
+                        <p className="text-text3 text-sm">
                           We collect all the necessary details to determine your
                           borrowing limit. You receive our mortgage recommend
                           tailored to your specific financial needs. We send the
@@ -386,7 +386,7 @@ const Mortgage = () => {
                     </div>
                   </div>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl lg:rounded-[58px] overflow-hidden relative min-h-[400px]">
+                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
                       <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage7}
@@ -400,10 +400,10 @@ const Mortgage = () => {
                         </span>
                       </div>
                       <div className=" pl-7 pr-4 pb-9">
-                        <p className="text-[28px] text-text3 font-medium mb-1.5">
+                        <p className="text-[22px] text-text3 font-medium mb-1.5">
                           Find property
                         </p>
-                        <p className="text-text3">
+                        <p className="text-text3 text-sm">
                           If you're still searching for your dream home, explore
                           properties within your pre-approved range on Property
                           Finder with insights on buildings, communities, and
@@ -413,7 +413,7 @@ const Mortgage = () => {
                     </div>
                   </div>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl lg:rounded-[58px] overflow-hidden relative min-h-[400px]">
+                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
                       <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage8}
@@ -427,10 +427,10 @@ const Mortgage = () => {
                         </span>
                       </div>
                       <div className=" pl-7 pr-4 pb-9">
-                        <p className="text-[28px] text-text3 font-medium mb-1.5">
+                        <p className="text-[22px] text-text3 font-medium mb-1.5">
                           Offer and valuation
                         </p>
-                        <p className="text-text3">
+                        <p className="text-text3 text-sm">
                           Upon finding the ideal property, make an offer. If
                           accepted, the agent will draft an MOU (Memorandum of
                           Understanding). Ensure Mortgage Finder's advisor
