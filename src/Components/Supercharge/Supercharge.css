@@ -8,3 +8,6 @@
 .supercharge .card:hover img {
     filter: invert(37%) sepia(37%) saturate(2195%) hue-rotate(149deg) brightness(82%) contrast(102%);
 }
+.supercharge .slick-dots {
+    bottom: -15px;
+}

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import house1 from "../../assets/images/house1.png";
 import house2 from "../../assets/images/house2.png";
 import house3 from "../../assets/images/house3.png";
@@ -10,7 +10,7 @@ import "./newProject.css";
 import Slider from "react-slick";
 
 const NewProject = () => {
-  let sliderRef = useRef(null);
+  const [isActive, setIsActive] = useState("Dubai");
   const settings = {
     dots: false,
     infinite: true,
@@ -55,12 +55,6 @@ const NewProject = () => {
       },
     ],
   };
-  const next = () => {
-    sliderRef.slickNext();
-  };
-  const previous = () => {
-    sliderRef.slickPrev();
-  };
   return (
     <div className="newProject sm:pb-16 py-12 sm:pt-20">
       <div className="container mx-auto">
@@ -73,17 +67,45 @@ const NewProject = () => {
         </p>
 
         <div className="flex justify-center mt-8">
-          <ul className="flex gap-2 xs:gap-3 md:gap-4 *:duration-300">
-            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-medium px-8 py-1.5 md:py-2 text-white bg-primary border border-primary rounded-full">
+          <ul className="flex flex-wrap justify-center gap-2 xs:gap-3 md:gap-4 *:duration-300">
+            <li
+              className={`min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg px-5 py-1.5 rounded-full border hover:border-primary hover:text-primary cursor-pointer ${
+                isActive === "Dubai"
+                  ? "text-white font-medium hover:text-white bg-primary border border-primary"
+                  : "border-border1 text-text2 "
+              }`}
+              onClick={() => setIsActive("Dubai")}
+            >
               Dubai
             </li>
-            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-normal px-8 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+            <li
+              className={`min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg px-5 py-1.5 rounded-full border hover:border-primary hover:text-primary cursor-pointer ${
+                isActive === "Abu Dhabi"
+                  ? "text-white font-medium hover:text-white bg-primary border border-primary"
+                  : "border-border1 text-text2 "
+              }`}
+              onClick={() => setIsActive("Abu Dhabi")}
+            >
               Abu Dhabi
             </li>
-            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-normal px-8 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+            <li
+              className={`min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg px-5 py-1.5 rounded-full border hover:border-primary hover:text-primary cursor-pointer ${
+                isActive === "Sharjah"
+                  ? "text-white font-medium hover:text-white bg-primary border border-primary"
+                  : "border-border1 text-text2 "
+              }`}
+              onClick={() => setIsActive("Sharjah")}
+            >
               Sharjah
             </li>
-            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-normal px-8 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+            <li
+              className={`min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg px-5 py-1.5 rounded-full border hover:border-primary hover:text-primary cursor-pointer ${
+                isActive === "Ras Al Khaimah"
+                  ? "text-white font-medium hover:text-white bg-primary border border-primary"
+                  : "border-border1 text-text2 "
+              }`}
+              onClick={() => setIsActive("Ras Al Khaimah")}
+            >
               Ras Al Khaimah
             </li>
           </ul>
@@ -213,7 +235,7 @@ const NewProject = () => {
           <Slider
             {...settings}
             ref={(slider) => {
-              sliderRef = slider;
+              // sliderRef = slider;
             }}
           >
             <div>
