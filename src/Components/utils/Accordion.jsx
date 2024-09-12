@@ -18,7 +18,7 @@ const Accordion = ({ title, children, isOpen, toggleAccordion }) => {
         className="accordion-title flex justify-between items-center cursor-pointer gap-4"
         onClick={toggleAccordion}
       >
-        <span className="text-base sm:text-xl xl:text-[22px] font-medium text-text1 title duration-300">
+        <span className="text-base sm:text-xl font-medium text-text1 title duration-300">
           {title}
         </span>
         <span className="min-w-6 sm:min-w-8 md:min-w-11 min-h-6 sm:min-h-8 md:min-h-11 flex justify-center items-center bg-primary text-white rounded-md md:rounded-xl">

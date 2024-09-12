@@ -245,7 +245,7 @@ const ProductDetail = () => {
                 <h6 className="text-2xl text-[#040404] font-medium mb-4 leading-6">
                   Description
                 </h6>
-                <p className="text-lg sm:text-xl text-text2">
+                <p className=" text-text2">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                   natoque penatibus et magnis dis parturient montes, nascetur
@@ -273,14 +273,14 @@ const ProductDetail = () => {
                 <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 sm:gap-6 2xl:gap-x-8 gap-y-6">
                   {essentialInfo.map((item) => (
                     <div className="flex gap-2 sm:gap-[15px] sm:items-center items-start">
-                      <div className="sm:w-[46px] sm:h-[46px] rounded-full sm:bg-[#00858E14] sm:border border-primary flex items-center justify-center">
-                        <img src={item.icon} alt="" className="w-4 sm:w-5" />
+                      <div className="sm:w-[36px] sm:h-[36px] rounded-full sm:bg-[#00858E14] sm:border border-primary flex items-center justify-center">
+                        <img src={item.icon} alt="" className="w-4" />
                       </div>
                       <div className="flex flex-col">
-                        <span className="text-text2 leading-4 mb-2">
+                        <span className="text-text2 leading-4 mb-1.5 text-sm">
                           {item.title}
                         </span>
-                        <span className="text-[#040404]">{item.value}</span>
+                        <span className="text-[#040404] text-sm">{item.value}</span>
                       </div>
                     </div>
                   ))}
@@ -301,7 +301,7 @@ const ProductDetail = () => {
                         />
                       </div>
                       <div className="flex flex-col">
-                        <span className="text-[#040404]">{item.title}</span>
+                        <span className="text-[#040404] text-sm">{item.title}</span>
                       </div>
                     </div>
                   ))}
@@ -340,7 +340,7 @@ const ProductDetail = () => {
                     isActive ? "-bottom-24" : "bottom-0"
                   }`}
                 >
-                  <button className="flex items-center justify-center lg:mb-[18px] min-w-20 w-full text-sm xs:text-base sm:text-xl text-white text-center bg-primary py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                  <button className="flex items-center justify-center lg:mb-[18px] min-w-20 w-full text-sm xs:text-base sm:text-lg text-white text-center bg-primary py-2.5 pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                     <img
                       src={phone}
                       alt=""
@@ -348,7 +348,7 @@ const ProductDetail = () => {
                     />
                     call
                   </button>
-                  <button className="flex items-center justify-center lg:mb-[18px] w-full text-sm xs:text-base sm:text-xl text-white text-center bg-[#0D3DB7] py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                  <button className="flex items-center justify-center lg:mb-[18px] w-full text-sm xs:text-base sm:text-lg text-white text-center bg-[#0D3DB7] py-2.5 pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                     <img
                       src={email}
                       alt=""
@@ -356,7 +356,7 @@ const ProductDetail = () => {
                     />
                     Email
                   </button>
-                  <button className="flex items-center justify-center w-full text-sm xs:text-base sm:text-xl text-white text-center bg-[#008E17] py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                  <button className="flex items-center justify-center w-full text-sm xs:text-base sm:text-lg text-white text-center bg-[#008E17] py-2.5 pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                     <img
                       src={whatsapp}
                       alt=""

@@ -235,7 +235,7 @@ const NewProjectDetail = () => {
                     <p className="text-xl text-[#040404] mb-3 leading-5 font-medium">
                       28%
                     </p>
-                    <p className="text-base text-text2 mb-4 leading-4">
+                    <p className="text-sm text-text2 mb-4 leading-4">
                       Down payment
                     </p>
                     <p className="text-xs text-text2">At sales launch</p>
@@ -247,7 +247,7 @@ const NewProjectDetail = () => {
                     <p className="text-xl text-[#040404] mb-3 leading-5 font-medium">
                       40%
                     </p>
-                    <p className="text-base text-text2 leading-4">
+                    <p className="text-sm text-text2 leading-4">
                       During construction
                     </p>
                   </div>
@@ -258,7 +258,7 @@ const NewProjectDetail = () => {
                     <p className="text-xl text-[#040404] mb-3 leading-5 font-medium">
                       10%
                     </p>
-                    <p className="text-base text-text2 leading-4">
+                    <p className="text-sm text-text2 leading-4">
                       On handover
                     </p>
                   </div>
@@ -269,7 +269,7 @@ const NewProjectDetail = () => {
                     <p className="text-xl text-[#040404] mb-3 leading-5 font-medium">
                       30%
                     </p>
-                    <p className="text-base text-text2 leading-4">
+                    <p className="text-sm text-text2 leading-4">
                       Post handover
                     </p>
                   </div>
@@ -300,10 +300,10 @@ const NewProjectDetail = () => {
                 </div>
               </div>
               <div className="">
-                <h6 className="text-2xl text-[#040404] font-medium mb-7 leading-6">
+                <h6 className="text-2xl text-[#040404] font-medium mb-5 leading-6">
                   About the project
                 </h6>
-                <p className="text-lg sm:text-xl text-text2">
+                <p className=" text-text2">
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                   natoque penatibus et magnis dis parturient montes, nascetur
@@ -326,11 +326,11 @@ const NewProjectDetail = () => {
                     isActive ? "-bottom-24" : "bottom-0"
                   }`}
                 >
-                  <p className="text-xl text-[#040404] leading-5 xl:mb-7 hidden md:block">
+                  <p className="text-lg text-[#040404] leading-5 xl:mb-7 hidden md:block">
                     Get the latest information about this project.
                   </p>
                   <div className="flex xl:block gap-5">
-                    <button className="flex items-center justify-center xl:mb-[18px] w-full text-base sm:text-xl text-white text-center bg-[#0D3DB7] py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-8 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                    <button className="flex items-center justify-center xl:mb-[18px] w-full text-base sm:text-lg text-white text-center bg-[#0D3DB7] py-2.5 pl-2 pr-3 xs:px-8 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                       <img
                         src={email}
                         alt=""
@@ -338,7 +338,7 @@ const NewProjectDetail = () => {
                       />
                       Email
                     </button>
-                    <button className="flex items-center justify-center w-full text-base sm:text-xl text-white text-center bg-[#008E17] py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-8 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                    <button className="flex items-center justify-center w-full text-base sm:text-lg text-white text-center bg-[#008E17] py-2.5 pl-2 pr-3 xs:px-8 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                       <img
                         src={whatsapp}
                         alt=""

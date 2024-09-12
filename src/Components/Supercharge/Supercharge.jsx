@@ -75,7 +75,7 @@ const Supercharge = () => {
             </ul>
           </div>
           <div className="">
-            <div className="relative px-5 group">
+            <div className="relative md:px-5 group">
               <button
                 className="hidden md:inline-block w-8 h-8 bg-primary rounded-full text-white opacity-30 absolute top-1/2 -translate-y-1/2 z-10 -left-2 hover:!opacity-100 group-hover:opacity-60 duration-300"
                 onClick={() => previous()}

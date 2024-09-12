@@ -41,13 +41,12 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="relative z-0 mt-[-60px] sm:mt-[-66px] md:mt-[-72px] lg:-mt-[42px] seachTab">
+      <div className="relative z-0 mt-[-60px] sm:mt-[-66px] md:mt-[-72px] lg:-mt-[42px] seachTab ">
         <div className="container mx-auto">
-          <div className="p-3 sm:p-5 lg:px-7 lg:py-3 xl:py-5 bg-white rounded-xl lg:rounded-full max-w-[1026px] mx-auto">
+          <div className="p-3 sm:p-5 lg:px-7 xl:py-5 bg-white rounded-xl lg:rounded-full max-w-[1026px] mx-auto border border-primary">
             <div className=" lg:flex gap-2 xl:gap-3 items-center justify-between">
-              <div className="flex flex-wrap xs:flex-nowrap lg:justify-between lg:w-full gap-1.5 xs:gap-2 xl:gap-3 mb-3 lg:mb-0">
-                <button
-                  className={`py-1.5 md:py-2 lg:w-full  text-nowrap px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg xl:text-xl ${
+              <div className="basis-3/5 flex flex-wrap xs:flex-nowrap lg:justify-between gap-1.5 xs:gap-2 xl:gap-3 mb-3 lg:mb-0">
+                <button className={`py-2 text-nowrap flex-1 px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg ${
                     isActive === "Rent"
                       ? "bg-primary border-primary text-white font-medium"
                       : "border-border1 text-text2"
@@ -56,8 +55,7 @@ const Banner = () => {
                 >
                   Rent
                 </button>
-                <button
-                  className={`py-1.5 md:py-2 lg:w-full  text-nowrap px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg xl:text-xl ${
+                <button className={`py-2 text-nowrap flex-1 px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg ${
                     isActive === "Buy"
                       ? "bg-primary border-primary text-white font-medium"
                       : "border-border1 text-text2"
@@ -66,8 +64,7 @@ const Banner = () => {
                 >
                   Buy
                 </button>
-                <button
-                  className={`py-1.5 md:py-2 lg:w-full  text-nowrap px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg xl:text-xl ${
+                <button className={`py-2 text-nowrap flex-1 px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg ${
                     isActive === "New Project"
                       ? "bg-primary border-primary text-white font-medium"
                       : "border-border1 text-text2"
@@ -76,8 +73,7 @@ const Banner = () => {
                 >
                   New Project
                 </button>
-                <button
-                  className={`py-1.5 md:py-2 lg:w-full  text-nowrap px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg xl:text-xl ${
+                <button className={`py-2 text-nowrap flex-1 px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg ${
                     isActive === "Commercial"
                       ? "bg-primary border-primary text-white font-medium"
                       : "border-border1 text-text2"
@@ -87,14 +83,14 @@ const Banner = () => {
                   Commercial
                 </button>
               </div>
-              <div className="py-1.5 pl-3 md:pl-5 pr-2 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex">
+              <div className="basis-2/5 py-1.5 pl-3 md:pl-4 pr-2 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex">
                 <input
                   type="text"
-                  className="lg:w-auto w-full border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg xl:text-xl font-normal px-0 py-0 leading-4 md:leading-8 placeholder:text-text2"
-                  placeholder="Search"
+                  className="lg:w-auto flex-1 border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg font-normal px-0 py-0 leading-4 md:leading-8 placeholder:text-text2 pr-3"
+                  placeholder="Search City, community or builder"
                 />
-                <span className="min-w-8 min-h-8 rounded-full flex items-center justify-center bg-primary cursor-pointer">
-                  <img src={searchIcon} alt="" className=" w-3 md:w-[15px]" />
+                <span className="min-w-8 min-h-8 rounded-full flex items-center justify-center bg-primary cursor-pointer  ">
+                  <img src={searchIcon} alt="" className=" w-2.5 md:w-[15px]" />
                 </span>
               </div>
             </div>

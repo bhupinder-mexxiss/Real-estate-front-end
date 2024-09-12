@@ -129,17 +129,17 @@ const DataGuru = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 lg:h-screen flex items-center banner relative before:!bg-[#00000087]"
+        className="pt-24 2xs:pt-28 pb-24 sm:pt-40 sm:pb-28 flex items-center banner relative before:!bg-[#00000087]"
       >
         <div className="container mx-auto relative z-0">
           <div className="">
-            <p className="text-xl sm:text-2xl md:text-3xl lg:text-[30px] text-white max-w-[830px] mb-6 sm:mb-8 md:mb-10 lg:mb-12">
+            <p className="text-xl sm:text-2xl text-white max-w-[830px] mb-6">
               Explore Dubai
             </p>
-            <h3 className="text-white text-4xl sm:text-[50px] md:text-[70px] lg:text-[90px] xl:text-[110px] sm:leading-[80px] md:leading-[100px] lg:leading-[110px] xl:leading-[130px]">
+            <h3 className="text-white text-4xl sm:text-[50px] md:text-[70px] lg:text-[90px] sm:leading-[80px] md:leading-[100px] lg:leading-[110px]">
               DataGuru
             </h3>
-            <p className="text-base sm:text-lg md:text-xl text-white mt-6 max-w-[830px]">
+            <p className="text-base sm:text-lg text-white mt-6 max-w-[630px]">
               Explore house prices, community and residential insights, to make
               informed decisions when buying or renting property in UAE.
             </p>
@@ -150,7 +150,7 @@ const DataGuru = () => {
       <div className="featured mb-16 md:mb-24">
         <div className="container mx-auto mt-16 md:mt-24">
           <div className="flex items-center justify-between mb-8">
-            <h4 className=" text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
+            <h4 className=" text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] leading-8 xs:leading-[58px] text-text1 font-medium">
               Features Powered by{" "}
               <span className="title_Border pb-2 ">DataGuru</span>
             </h4>
@@ -187,7 +187,7 @@ const DataGuru = () => {
           </div>
           <div>
             <Slider {...featureSettings} ref={featureSliderRef}>
-              <div className="px-4">
+              <div className="px-2.5">
                 <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
@@ -210,7 +210,7 @@ const DataGuru = () => {
                   </div>
                 </div>
               </div>
-              <div className="px-4">
+              <div className="px-2.5">
                 <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
@@ -232,7 +232,7 @@ const DataGuru = () => {
                   </div>
                 </div>
               </div>
-              <div className="px-4">
+              <div className="px-2.5">
                 <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
@@ -255,7 +255,7 @@ const DataGuru = () => {
                   </div>
                 </div>
               </div>
-              <div className="px-4">
+              <div className="px-2.5">
                 <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
@@ -286,16 +286,16 @@ const DataGuru = () => {
       <div className="map mb-16 md:mb-14">
         <div className="container mx-auto mt-16 md:mt-24">
           <div className="flex items-center justify-between mb-8">
-            <h4 className="title_Border text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
+            <h4 className="text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] leading-8 xs:leading-[58px] text-text1 font-medium">
               Explore Dubai's Price{" "}
               <span className="title_Border pb-2">Map</span>
             </h4>
           </div>
           <div className="flex">
-            <button className="mr-5 px-6 sm:px-11 py-2.5 border font-medium text-xl rounded-full bg-primary border-primary text-white">
+            <button className="mr-5 px-6 sm:px-8 py-2 border font-medium text-lg rounded-full bg-primary border-primary text-white">
               For Rent
             </button>
-            <button className="mr-5 px-6 sm:px-11 py-2.5 border text-text2 text-xl rounded-full border-border1 hover:border-primary hover:text-primary">
+            <button className="mr-5 px-6 sm:px-8 py-2 border text-text2 text-lg rounded-full border-border1 hover:border-primary hover:text-primary">
               For Buy
             </button>
           </div>
@@ -312,7 +312,7 @@ const DataGuru = () => {
       <div className="communities mb-16 md:mb-14">
         <div className="container mx-auto mt-16 md:mt-24">
           <div className="flex items-center justify-between mb-8">
-            <h4 className=" text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
+            <h4 className=" text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] leading-8 xs:leading-[58px] text-text1 font-medium">
               Discover Popular{" "}
               <span className="title_Border pb-2">Communities</span>
             </h4>
@@ -327,43 +327,43 @@ const DataGuru = () => {
               onMouseMove={handleCommunityMouseMove}
             >
               <div className=" *:duration-300">
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center font-medium gap-1.5 rounded-full bg-primary border-primary text-white">
-                  <img src={greenAreas} alt="" className="w-5" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center font-medium gap-1.5 rounded-full bg-primary border-primary text-white">
+                  <img src={greenAreas} alt="" className="w-4" />{" "}
                   Budget-friendly
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Luxurious
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Family-friendly
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   High-rise
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Waterfront
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" /> Urban
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" /> Urban
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Suburban
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Affordable
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" /> Green
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" /> Green
                   spaces
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Pet-friendly
                 </button>
               </div>
@@ -374,7 +374,7 @@ const DataGuru = () => {
             </p>
             <div>
               <Slider {...communitySettings} ref={communitySliderRef}>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -384,19 +384,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -406,19 +406,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -428,19 +428,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-[#F7C55F] rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-[#F7C55F] rounded-full px-5 py-1.5">
                           3.5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -450,19 +450,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -472,14 +472,14 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
@@ -498,7 +498,7 @@ const DataGuru = () => {
       <div className="sub_communities">
         <div className="container mx-auto">
           <div className="flex items-center justify-between mb-8">
-            <h4 className="capitalize text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] lg:text-[38px] leading-8 xs:leading-[58px] text-text1 font-medium">
+            <h4 className="capitalize text-xl xs:text-[24px] sm:text-[28px] md:text-[32px] leading-8 xs:leading-[58px] text-text1 font-medium">
               See top buildings &{" "}
               <span className="pb-2 title_Border">sub-communities</span>
             </h4>
@@ -513,43 +513,43 @@ const DataGuru = () => {
               onMouseMove={handleSubCommunityMouseMove}
             >
               <div className=" *:duration-300">
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center font-medium gap-1.5 rounded-full bg-primary border-primary text-white">
-                  <img src={greenAreas} alt="" className="w-5" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center font-medium gap-1.5 rounded-full bg-primary border-primary text-white">
+                  <img src={greenAreas} alt="" className="w-4" />{" "}
                   Budget-friendly
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Luxurious
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Family-friendly
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   High-rise
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Waterfront
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" /> Urban
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" /> Urban
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Suburban
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Affordable
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" /> Green
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" /> Green
                   spaces
                 </button>
-                <button className="mr-5 px-8 py-3.5 border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
-                  <img src={greenAreas} alt="" className="w-5 grayImg" />{" "}
+                <button className="mr-5 px-6 py-2.5 text-sm border inline-flex items-center text-text2 font-medium gap-1.5 rounded-full border-border1 hover:border-primary hover:text-primary">
+                  <img src={greenAreas} alt="" className="w-4 grayImg" />{" "}
                   Pet-friendly
                 </button>
               </div>
@@ -560,7 +560,7 @@ const DataGuru = () => {
             </p>
             <div>
               <Slider {...communitySettings} ref={communitySliderRef}>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -570,19 +570,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -592,19 +592,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -614,19 +614,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -636,19 +636,19 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="px-4">
+                <div className="px-2.5">
                   <div className="overflow-hidden bg-white rounded-3xl  flex flex-col ">
                     <div className="">
                       <img
@@ -658,14 +658,14 @@ const DataGuru = () => {
                       />
                     </div>
                     <div className="p-3 pb-5 md:pt-3 md:pb-5">
-                      <p className="text-2xl text-text3 font-medium mb-2.5">
+                      <p className="text-xl text-text3 font-medium mb-2.5">
                         Al Barari
                       </p>
                       <div className="flex items-center gap-3">
-                        <span className="text-lg text-white bg-primary rounded-full px-6 py-2">
+                        <span className="text-sm text-white bg-primary rounded-full px-5 py-1.5">
                           5/5
                         </span>
-                        <p className="text-base text-text3">2 review</p>
+                        <p className="text-sm text-text3">2 review</p>
                       </div>
                     </div>
                   </div>

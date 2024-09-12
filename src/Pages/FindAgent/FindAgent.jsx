@@ -114,15 +114,15 @@ const FindAgent = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-40 md:pb-32 lg:pt-[220px] lg:pb-[160px] banner relative"
+          className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-40 md:pb-32 lg:pt-[180px] lg:pb-[160px] banner relative"
         >
           <div className="container mx-auto relative z-0">
             <div className="">
               <h3 className=" flex flex-col">
-                <span className="text-[#E2DAD7] text-[28px] 2xs:text-[34px] xs:text-4xl sm:text-[50px] md:text-[70px] lg:text-[90px] xl:text-[110px] 2xs:leading-[50px] md:leading-[70px] lg:leading-[90px] xl:leading-[110px]">
+                <span className="text-[#E2DAD7] text-[28px] 2xs:text-[34px] xs:text-4xl sm:text-[50px] md:text-[60px] 2xs:leading-[50px] md:leading-[70px] lg:leading-[90px]">
                   Find your agent to
                 </span>
-                <span className="text-[34px] 2xs:text-[44px] xs:text-5xl sm:text-[60px] md:text-[80px] lg:text-[110px] xl:text-[130px] text-white leading-10 xs:leading-[60px] sm:leading-[80px] md:leading-[110px] lg:leading-[130px] xl:leading-[150px]">
+                <span className="text-[34px] 2xs:text-[44px] xs:text-5xl sm:text-[60px] md:text-[80px] lg:text-[100px]  text-white leading-10 xs:leading-[60px] sm:leading-[80px] md:leading-[110px] lg:leading-[120px]">
                   Find a home
                 </span>
               </h3>
@@ -131,27 +131,27 @@ const FindAgent = () => {
         </div>
         <div className="relative z-0 mt-[-60px] sm:mt-[-66px] md:-mt-[83px] seachTab">
           <div className="container mx-auto">
-            <div className="p-3 sm:p-4 lg:px-7 lg:py-3 xl:py-5 bg-white rounded-xl lg:rounded-[58px]  mx-auto">
+            <div className="p-3 sm:p-4 lg:px-7 lg:py-3 xl:py-5 bg-white rounded-xl lg:rounded-[38px]  mx-auto">
               <div className="">
                 <div className="flex flex-wrap xl:flex-nowrap lg:w-full gap-1.5 xs:gap-2 xl:gap-4 mb-5">
                   <Link
                     to="/find-agent"
-                    className="py-2.5 md:py-3 text-nowrap px-8 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg xl:text-[22px] font-medium"
+                    className="py-2 text-nowrap px-8 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg font-medium"
                   >
                     Agent
                   </Link>
                   <Link
                     to="/find-broker"
-                    className="py-2.5 md:py-3 text-nowrap px-8 rounded-xl  sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text-base md:text-lg xl:text-[22px] font-normal"
+                    className="py-2 text-nowrap px-8 rounded-xl  sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text:text-[22px] font-normal"
                   >
                     Companies
                   </Link>
                 </div>
                 <div className="md:flex flex-wrap xl:flex-nowrap items-center gap-2 gap-y-3 lg:gap-[15px]">
-                  <div className="py-2.5 pl-4 lg:pl-4 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary md:w-[90%] xl:w-full">
+                  <div className="py-2 pl-4 lg:pl-4 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary md:w-[90%] xl:w-full">
                     <input
                       type="text"
-                      className="w-full border-none ring-0 focus:ring-0 text-text2 text-base md:text-xl xl:text-[22px] font-normal px-0 py-0 pl-6 md:pl-10 leading-4 md:leading-8 placeholder:text-text2"
+                      className="w-full border-none ring-0 focus:ring-0 text-text2 text-base md:text-xl font-normal px-0 py-0 pl-6 md:pl-10 leading-4 md:leading-8 placeholder:text-text2"
                       placeholder="Search"
                     />
                     <span className=" absolute left-4 top-1/2 -translate-y-1/2 z-0 inline-block ">

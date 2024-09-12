@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import bannerImg from "../../assets/images/mortgageBg.png";
 import mortage1 from "../../assets/images/mortage1.png";
 import agent1 from "../../assets/images/agent1.png";
@@ -18,10 +18,12 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "./mortgage.css";
 import Accordion from "../../Components/utils/Accordion";
+import { KeyboardArrowLeftOutlined, KeyboardArrowRightOutlined } from "@mui/icons-material";
 
 const Mortgage = () => {
   const [activeTab, setActiveTab] = useState("resident");
   const [openAccordion, setOpenAccordion] = useState(0);
+  let sliderRef = useRef(null);
 
   const handleToggle = (index) => {
     setOpenAccordion(openAccordion === index ? -1 : index);
@@ -56,6 +58,13 @@ const Mortgage = () => {
       },
     ],
   };
+  const next = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const previous = () => {
+    sliderRef.current.slickPrev();
+  };
   const settings2 = {
     dots: false,
     infinite: true,
@@ -70,32 +79,33 @@ const Mortgage = () => {
       {
         breakpoint: 1280,
         settings: {
-            centerPadding: "250px",
+          centerPadding: "250px",
         },
       },
       {
         breakpoint: 992,
         settings: {
-            centerPadding: "150px",
+          centerPadding: "150px",
         },
       },
       {
         breakpoint: 768,
         settings: {
-            centerPadding: "100px",
+          centerPadding: "40px",
         },
       },
       {
         breakpoint: 576,
         settings: {
-            centerPadding: "60px",
+          centerPadding: "60px",
         },
       },
       {
         breakpoint: 420,
         settings: {
-            centerPadding: "0",
-            centerMode: false,
+          centerPadding: "0",
+          centerMode: false,
+          dots: true
         },
       },
     ],
@@ -109,15 +119,15 @@ const Mortgage = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-40 md:pb-32 lg:min-h-screen flex items-center banner relative"
+        className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-48 md:pb-28 flex items-center banner relative"
       >
         <div className="container mx-auto relative z-0">
           <div className="">
             <h3 className=" flex flex-col">
-              <span className="text-[#E2DAD7] text-[28px] 2xs:text-[34px] xs:text-4xl sm:text-[50px] md:text-[70px] lg:text-[90px] xl:text-[110px] 2xs:leading-[50px] md:leading-[70px] lg:leading-[90px] xl:leading-[130px]">
+              <span className="text-[#E2DAD7] text-[28px] 2xs:text-[34px] xs:text-4xl sm:text-[50px] md:text-[70px] 2xs:leading-[50px] md:leading-[70px]">
                 Get the right
               </span>
-              <span className="text-[34px] 2xs:text-[44px] xs:text-5xl sm:text-[60px] md:text-[80px] lg:text-[110px] xl:text-[130px] text-white leading-10 xs:leading-[60px] sm:leading-[80px] md:leading-[110px] lg:leading-[150px] xl:leading-[150px]">
+              <span className="text-[34px] 2xs:text-[44px] xs:text-5xl sm:text-[60px] md:text-[80px] lg:text-[100px] text-white leading-10 xs:leading-[60px] sm:leading-[80px] md:leading-[110px] lg:leading-[150px]">
                 Mortgage for you
               </span>
             </h3>
@@ -199,28 +209,28 @@ const Mortgage = () => {
               </div>
               <div className="lg:w-1/2 xl:w-[60%] mt-20 lg:mt-0">
                 <div className="rounded-3xl bg-white py-7 px-4 sm:px-11">
-                  <p className="text-xl text-text3 font-medium mb-4">
+                  <p className="text-lg text-text3 font-medium mb-3">
                     Estimate your monthly mortgage payment
                   </p>
                   <div className="flex gap-6 sm:gap-14 mb-6">
                     <div>
                       <p className="text-text3 mb-1">Monthly payment</p>
-                      <span className="text-text3 text-xl sm:text-[22px] font-medium">
+                      <span className="text-text3 text-xl font-medium">
                         5,035 AED
                       </span>
                     </div>
                     <div>
                       <p className="text-text3 mb-1">with interest rate of</p>
-                      <span className="text-text3 text-xl sm:text-[22px] font-medium">
+                      <span className="text-text3 text-xl font-medium">
                         9.45%
                       </span>
                     </div>
                   </div>
                   <div>
-                    <button className="w-full text-center text-primary border border-primary rounded-full py-3 px-6 text-xl sm:text-[22px] hover:bg-primary hover:text-white duration-300">
+                    <button className="w-full text-center text-primary border border-primary rounded-full py-2 px-6 md:text-xl hover:bg-primary hover:text-white duration-300">
                       View upfront costs
                     </button>
-                    <button className="w-full text-center text-white bg-primary border border-primary rounded-full py-3 px-6 text-xl sm:text-[22px] hover:bg-white hover:text-primary duration-300 mt-4">
+                    <button className="w-full text-center text-white bg-primary border border-primary rounded-full py-2 px-6 md:text-xl hover:bg-white hover:text-primary duration-300 mt-4">
                       Get a mortgage quote
                     </button>
                   </div>
@@ -231,12 +241,12 @@ const Mortgage = () => {
                     alt=""
                     className="absolute 2xl:h-full right-0 bottom-0 w-[180px] md:w-[200px] 2xl:w-auto hidden xs:inline-block"
                   />
-                  <p className="text-xl sm:text-[22px] text-text3 mb-3">
+                  <p className="text-lg md:text-xl text-text3 mb-3">
                     We found{" "}
                     <span className="font-medium">30,175 properties</span>{" "}
                     within your budget.
                   </p>
-                  <button className=" text-center text-primary border border-primary rounded-full py-3 px-8 text-xl sm:text-[22px] hover:bg-primary hover:text-white duration-300 w-full xs:w-auto">
+                  <button className=" text-center text-primary border border-primary rounded-full py-2 px-8 text-lg hover:bg-primary hover:text-white duration-300 w-full xs:w-auto">
                     View Properties
                   </button>
                 </div>
@@ -245,16 +255,16 @@ const Mortgage = () => {
 
             {/* Why thousands of home buyers  */}
             <div className="mt-14 sm:mt-24">
-              <h6 className=  "text-[22px] xs:text-[26px] sm:text-[30px] xl:text-[38px] text-text1 font-medium mb-10">
+              <h6 className="text-[22px] xs:text-[26px] sm:text-3xl text-text1 font-medium mb-10">
                 Why thousands of home buyers trust us with their mortgage{" "}
                 <span className="title_Border pb-2">needs</span>
               </h6>
               <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-[30px]">
-                <div className="row-span-2 rounded-3xl px-5 xs:px-8 py-5 md:py-12 bg-white flex items-center">
+                <div className="row-span-2 rounded-3xl px-6 py-6 bg-white flex items-center">
                   <div>
                     <div>
-                      <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                        <img src={super1} alt="" className=" w-8 md:w-11" />
+                      <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                        <img src={super1} alt="" className=" w-8" />
                       </span>
                     </div>
                     <h5 className="text-xl md:text-2xl text-text3 my-5 font-medium">
@@ -268,10 +278,10 @@ const Mortgage = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-6 py-6 bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
-                    <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                      <img src={mortgage1} alt="" className=" w-8 md:w-11" />
+                    <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                      <img src={mortgage1} alt="" className=" w-8" />
                     </span>
                     <span className="text-[24px] text-primary font-medium">
                       10 minutes
@@ -282,10 +292,10 @@ const Mortgage = () => {
                     a call within 10 minutes
                   </p>
                 </div>
-                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-6 py-6 bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
-                    <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                      <img src={mortgage2} alt="" className=" w-8 md:w-11" />
+                    <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                      <img src={mortgage2} alt="" className=" w-8" />
                     </span>
                     <span className="text-[24px] text-primary font-medium">
                       4.9
@@ -295,10 +305,10 @@ const Mortgage = () => {
                     Customer reviews from 300+ people
                   </p>
                 </div>
-                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-6 py-6 bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
-                    <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                      <img src={mortgage3} alt="" className=" w-8 md:w-11" />
+                    <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                      <img src={mortgage3} alt="" className=" w-8" />
                     </span>
                     <span className="text-[24px] text-primary font-medium">
                       5,000 AED
@@ -306,10 +316,10 @@ const Mortgage = () => {
                   </div>
                   <p className="mt-4 text-text3">Average savings with 0 fees</p>
                 </div>
-                <div className="rounded-3xl px-5 xs:px-8 pt-5 pb-[26px] bg-white shadow-[10px_10px_30px_0px_#0000001F]">
+                <div className="rounded-3xl px-6 py-6 bg-white shadow-[10px_10px_30px_0px_#0000001F]">
                   <div className="flex items-center gap-[22px]">
-                    <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                      <img src={mortgage4} alt="" className=" w-8 md:w-11" />
+                    <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                      <img src={mortgage4} alt="" className=" w-8" />
                     </span>
                     <span className="text-[24px] text-primary font-medium">
                       100,000+
@@ -322,22 +332,28 @@ const Mortgage = () => {
 
             {/* 6 steps to get your place */}
             <div className="mt-14 sm:mt-24">
-              <h6 className=" text-[22px] xs:text-[26px] sm:text-[30px] xl:text-[38px] text-text1 font-medium mb-6 md:mb-10 text-center">
+              <h6 className=" text-[22px] xs:text-[26px] sm:text-3xl text-text1 font-medium mb-6 md:mb-10 text-center">
                 6 steps to get your place
               </h6>
-              <div>
-                <Slider {...settings}>
+              <div className="relative md:px-5 group">
+              <button
+                className="hidden md:inline-block w-8 h-8 bg-primary rounded-full text-white opacity-30 absolute top-1/2 -translate-y-1/2 z-10 -left-2 hover:!opacity-100 group-hover:opacity-60 duration-300"
+                onClick={() => previous()}
+              >
+                <KeyboardArrowLeftOutlined />
+              </button>
+                <Slider {...settings} ref={sliderRef}>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
-                      <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
+                    <div className="bg-white rounded-3xl overflow-hidden relative md:min-h-[300px]">
+                      <span className="w-[80px] xs:w-[100px] h-[80px] xs:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage5}
                           alt=""
-                          className=" w-8 md:w-11 lg:w-[74px]"
+                          className="w-10 xs:w-[56px]"
                         />
                       </span>
                       <div className="flex items-center gap-[22px] pt-5 pl-6 mb-4">
-                        <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center">
+                        <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center">
                           01
                         </span>
                       </div>
@@ -357,16 +373,16 @@ const Mortgage = () => {
                     </div>
                   </div>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
-                      <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
+                    <div className="bg-white rounded-3xl overflow-hidden relative md:min-h-[300px]">
+                      <span className="w-[80px] xs:w-[100px] h-[80px] xs:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage6}
                           alt=""
-                          className=" w-8 md:w-11 lg:w-[74px]"
+                          className="w-10 xs:w-[56px]"
                         />
                       </span>
                       <div className="flex items-center gap-[22px] pt-5 pl-6 mb-4">
-                        <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center">
+                        <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center">
                           02
                         </span>
                       </div>
@@ -386,16 +402,16 @@ const Mortgage = () => {
                     </div>
                   </div>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
-                      <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
+                    <div className="bg-white rounded-3xl overflow-hidden relative md:min-h-[300px]">
+                      <span className="w-[80px] xs:w-[100px] h-[80px] xs:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage7}
                           alt=""
-                          className=" w-8 md:w-11 lg:w-[74px]"
+                          className="w-10 xs:w-[56px]"
                         />
                       </span>
                       <div className="flex items-center gap-[22px] pt-5 pl-6 mb-4">
-                        <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center">
+                        <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center">
                           03
                         </span>
                       </div>
@@ -413,16 +429,16 @@ const Mortgage = () => {
                     </div>
                   </div>
                   <div className="px-4">
-                    <div className="bg-white rounded-3xl overflow-hidden relative min-h-[350px]">
-                      <span className="w-[80px] md:w-[100px] lg:w-[142px] h-[80px] md:h-[100px] lg:h-[142px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center absolute -right-4 -top-4">
+                    <div className="bg-white rounded-3xl overflow-hidden relative md:min-h-[300px]">
+                      <span className="w-[80px] xs:w-[100px] h-[80px] xs:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center absolute -right-4 -top-4">
                         <img
                           src={mortgage8}
                           alt=""
-                          className=" w-8 md:w-11 lg:w-[74px]"
+                          className="w-10 xs:w-[56px]"
                         />
                       </span>
                       <div className="flex items-center gap-[22px] pt-5 pl-6 mb-4">
-                        <span className="w-[80px] md:w-[100px] h-[80px] md:h-[100px] flex items-center justify-center bg-[#00858E14] rounded-full text-5xl text-primary font-medium text-center">
+                        <span className="w-[70px] h-[70px] flex items-center justify-center bg-[#00858E14] rounded-full text-3xl text-primary font-medium text-center">
                           04
                         </span>
                       </div>
@@ -442,6 +458,12 @@ const Mortgage = () => {
                     </div>
                   </div>
                 </Slider>
+              <button
+                className="hidden md:inline-block w-8 h-8 bg-primary rounded-full text-white opacity-30 absolute top-1/2 -translate-y-1/2 z-10 -right-2 hover:!opacity-100 group-hover:opacity-60 duration-300"
+                onClick={() => next()}
+              >
+                <KeyboardArrowRightOutlined />
+              </button>
               </div>
             </div>
           </div>
@@ -457,16 +479,16 @@ const Mortgage = () => {
             className="banner relative mt-16 sm:mt-24"
           >
             <div
-              className="overflow-hidden py-16 sm:py-20 md:py-28 reviewSec"
+              className="overflow-hidden py-16 sm:py-16 lg:py-28 reviewSec"
               style={{
                 "--quote-icon": `url(${quoteIcon})`,
               }}
             >
               <Slider {...settings2}>
-                <div className="px-3 xs:px-0 sm:px-6 lg:px-10 2xl:px-14">
-                  <div className="bg-[#FFFFFF80] rounded-3xl px-4 sm:px-6 xl:px-9 py-6 xl:py-12 border border-white">
-                    <div className="flex items-center gap-6 mb-5 md:mb-10">
-                      <div className="w-20 h-20 md:w-[100px] md:h-[100px] rounded-full overflow-hidden">
+                <div className="px-3 sm:px-6 lg:px-10 2xl:px-14">
+                  <div className="bg-[#4e4e4e2e] backdrop-blur rounded-3xl px-4 sm:px-6 xl:px-9 py-6 xl:py-12 border border-white">
+                    <div className="flex items-center gap-6 mb-5">
+                      <div className="w-20 h-20 rounded-full overflow-hidden">
                         <img
                           src={agent1}
                           alt=""
@@ -474,13 +496,13 @@ const Mortgage = () => {
                         />
                       </div>
                       <div>
-                        <p className="text-white font-medium text-xl md:text-[26px]">
+                        <p className="text-white font-medium text-xl">
                           Stefan George
                         </p>
-                        <p className="text-white text-xl">Gnosis</p>
+                        <p className="text-white">Gnosis</p>
                       </div>
                     </div>
-                    <p className="text-white md:text-xl sm:pr-10">
+                    <p className="text-white text-sm sm:text-base sm:pr-10">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                       natoque penatibus et magnis dis parturient montes,
@@ -489,10 +511,10 @@ const Mortgage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="px-3 xs:px-0 sm:px-6 lg:px-10 2xl:px-14">
-                  <div className="bg-[#FFFFFF80] rounded-3xl px-4 sm:px-6 xl:px-9 py-6 xl:py-12 border border-white">
-                    <div className="flex items-center gap-6 mb-5 md:mb-10">
-                      <div className="w-20 h-20 md:w-[100px] md:h-[100px] rounded-full overflow-hidden">
+                <div className="px-3 sm:px-6 lg:px-10 2xl:px-14">
+                  <div className="bg-[#4e4e4e2e] backdrop-blur rounded-3xl px-4 sm:px-6 xl:px-9 py-6 xl:py-12 border border-white">
+                    <div className="flex items-center gap-6 mb-5">
+                      <div className="w-20 h-20 rounded-full overflow-hidden">
                         <img
                           src={agent1}
                           alt=""
@@ -500,13 +522,13 @@ const Mortgage = () => {
                         />
                       </div>
                       <div>
-                        <p className="text-white font-medium text-xl md:text-[26px]">
+                        <p className="text-white font-medium text-xl">
                           Stefan George
                         </p>
-                        <p className="text-white md:text-xl ">Gnosis</p>
+                        <p className="text-white ">Gnosis</p>
                       </div>
                     </div>
-                    <p className="text-white md:text-xl sm:pr-10">
+                    <p className="text-white text-sm sm:text-base sm:pr-10">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                       natoque penatibus et magnis dis parturient montes,
@@ -515,10 +537,10 @@ const Mortgage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="px-3 xs:px-0 sm:px-6 lg:px-10 2xl:px-14">
-                  <div className="bg-[#FFFFFF80] rounded-3xl px-4 sm:px-6 xl:px-9 py-6 xl:py-12 border border-white">
-                    <div className="flex items-center gap-6 mb-5 md:mb-10">
-                      <div className="w-20 h-20 md:w-[100px] md:h-[100px] rounded-full overflow-hidden">
+                <div className="px-3 sm:px-6 lg:px-10 2xl:px-14">
+                  <div className="bg-[#4e4e4e2e] backdrop-blur rounded-3xl px-4 sm:px-6 xl:px-9 py-6 xl:py-12 border border-white">
+                    <div className="flex items-center gap-6 mb-5">
+                      <div className="w-20 h-20 rounded-full overflow-hidden">
                         <img
                           src={agent1}
                           alt=""
@@ -526,13 +548,13 @@ const Mortgage = () => {
                         />
                       </div>
                       <div>
-                        <p className="text-white font-medium text-xl md:text-[26px]">
+                        <p className="text-white font-medium text-xl">
                           Stefan George
                         </p>
                         <p className="text-white md:text-xl">Gnosis</p>
                       </div>
                     </div>
-                    <p className="text-white md:text-xl sm:pr-10">
+                    <p className="text-white text-sm sm:text-base sm:pr-10">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                       Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                       natoque penatibus et magnis dis parturient montes,
@@ -548,7 +570,7 @@ const Mortgage = () => {
           {/* Frequently asked questions */}
           <div className="container mx-auto">
             <div className="mt-14 sm:mt-24">
-              <h6 className=" text-[22px] xs:text-[26px] sm:text-[30px] xl:text-[38px] text-text1 font-medium mb-10 text-center">
+              <h6 className=" text-[22px] xs:text-[26px] sm:text-3xl text-text1 font-medium mb-10 text-center">
                 Frequently asked questions
               </h6>
               <div className="lg:flex gap-14">
@@ -564,7 +586,7 @@ const Mortgage = () => {
                       isOpen={openAccordion === 0}
                       toggleAccordion={() => handleToggle(0)}
                     >
-                      <p className="text-[#4C4B4E] text-sm sm:text-base xl:text-xl">
+                      <p className="text-[#4C4B4E] text-sm sm:text-base">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit. Aenean commodo ligula eget dolor. Aenean massa.
                         Cum sociis natoque penatibus et magnis dis parturient
@@ -578,7 +600,7 @@ const Mortgage = () => {
                       isOpen={openAccordion === 1}
                       toggleAccordion={() => handleToggle(1)}
                     >
-                      <p className="text-[#4C4B4E] text-sm sm:text-base xl:text-xl">
+                      <p className="text-[#4C4B4E] text-sm sm:text-base">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit. Aenean commodo ligula eget dolor. Aenean massa.
                         Cum sociis natoque penatibus et magnis dis parturient
@@ -592,7 +614,7 @@ const Mortgage = () => {
                       isOpen={openAccordion === 2}
                       toggleAccordion={() => handleToggle(2)}
                     >
-                      <p className="text-[#4C4B4E] text-sm sm:text-base xl:text-xl">
+                      <p className="text-[#4C4B4E] text-sm sm:text-base">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit. Aenean commodo ligula eget dolor. Aenean massa.
                         Cum sociis natoque penatibus et magnis dis parturient
@@ -606,7 +628,7 @@ const Mortgage = () => {
                       isOpen={openAccordion === 3}
                       toggleAccordion={() => handleToggle(3)}
                     >
-                      <p className="text-[#4C4B4E] text-sm sm:text-base xl:text-xl">
+                      <p className="text-[#4C4B4E] text-sm sm:text-base">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit. Aenean commodo ligula eget dolor. Aenean massa.
                         Cum sociis natoque penatibus et magnis dis parturient
@@ -620,7 +642,7 @@ const Mortgage = () => {
                       isOpen={openAccordion === 4}
                       toggleAccordion={() => handleToggle(4)}
                     >
-                      <p className="text-[#4C4B4E] text-sm sm:text-base xl:text-xl">
+                      <p className="text-[#4C4B4E] text-sm sm:text-base">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
                         elit. Aenean commodo ligula eget dolor. Aenean massa.
                         Cum sociis natoque penatibus et magnis dis parturient
