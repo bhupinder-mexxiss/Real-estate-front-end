@@ -32,7 +32,7 @@ const InsightHub = () => {
       <div className="container mx-auto mt-16 md:mt-24">
       {/* featured */}
         <div className="featured mb-16 md:mb-24">
-          <h4 className="title_Border xs:text-[24px] sm:text-[28px] md:text-[32px] text-text1 font-medium mb-10">
+          <h4 className="title_Border text-[24px] sm:text-[28px] md:text-[32px] text-text1 font-medium mb-10">
             Featured
           </h4>
           <div>
@@ -99,7 +99,7 @@ const InsightHub = () => {
         </div>
         {/* recent_added */}
         <div className="recent_added ">
-          <h4 className="title_Border xs:text-[24px] sm:text-[28px] md:text-[32px] text-text1 font-medium mb-10">
+          <h4 className="title_Border text-[24px] sm:text-[28px] md:text-[32px] text-text1 font-medium mb-10">
             Recent Added
           </h4>
           <div>

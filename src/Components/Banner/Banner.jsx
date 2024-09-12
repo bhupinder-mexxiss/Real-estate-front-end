@@ -43,7 +43,7 @@ const Banner = () => {
       </div>
       <div className="relative z-0 mt-[-60px] sm:mt-[-66px] md:mt-[-72px] lg:-mt-[42px] seachTab ">
         <div className="container mx-auto">
-          <div className="p-3 sm:p-5 lg:px-7 xl:py-5 bg-white rounded-xl lg:rounded-full max-w-[1026px] mx-auto border border-primary">
+          <div className="p-3 sm:p-5 lg:px-7 xl:py-5 bg-white rounded-xl lg:rounded-full max-w-[1026px] mx-auto border border-primary shadow-lg">
             <div className=" lg:flex gap-2 xl:gap-3 items-center justify-between">
               <div className="basis-3/5 flex flex-wrap xs:flex-nowrap lg:justify-between gap-1.5 xs:gap-2 xl:gap-3 mb-3 lg:mb-0">
                 <button className={`py-2 text-nowrap flex-1 px-4 md:px-8 lg:px-5 rounded-xl  sm:rounded-3xl md:rounded-full border text-sm xs:text-base md:text-lg ${
