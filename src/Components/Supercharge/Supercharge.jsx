@@ -10,7 +10,7 @@ const Supercharge = () => {
     <div className="supercharge pb-12 xs:pb-16 md:pb-20 lg:pb-28 ">
       <div className="container mx-auto">
         <h4 className="text-[22px] sm:text-2xl md:text-3xl lg:text- my-5[md:38px] text-text1 font-medium text-center mb-3 lg:mb-5">
-        Supercharge your <span className="title_Border pb-2">search</span>
+          Supercharge your <span className="title_Border pb-2">search</span>
         </h4>
         <div className="mt-4 xs:mt-6 md:mt-9">
           <div className="flex justify-center">
@@ -29,13 +29,13 @@ const Supercharge = () => {
           <div className="mt-8 sm:mt-12">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-[30px]">
               <div className="px-4 xl:px-6 py-6 xl:py-8 bg-white rounded-3xl xl:rounded-[38px] card">
-                <div className="flex items-center gap-4 mb-2 xs:mb-5 md:mb-7 xl:mb-9">
-                  <span className="min-w-[80px] md:min-w-[90px] h-[80px] md:h-[90px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                    <img src={super1} alt="" className=" w-8 md:w-10" />
+                <div className="flex items-center gap-4 mb-2 xs:mb-5 ">
+                  <span className="min-w-[60px] h-[60px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                    <img src={super1} alt="" className=" w-6 md:w-7" />
                   </span>
-                <h5 className="text-xl md:text-2xl text-text3  font-medium">
-                  Listings you can trust
-                </h5>
+                  <h5 className="text-xl md:text-2xl text-text3  font-medium">
+                    Listings you can trust
+                  </h5>
                 </div>
                 <p className="text-text3 mb-3 xs:mb-5 text-sm xs:text-base">
                   Browse the most accurate listings, validated by our team.
@@ -45,35 +45,51 @@ const Supercharge = () => {
                 </Link>
               </div>
               <div className="px-4 xl:px-6 py-6 xl:py-8 bg-white rounded-3xl xl:rounded-[38px] card">
-                <div className="flex items-center gap-4 mb-2 xs:mb-5 md:mb-7 xl:mb-9">
-                  <span className="min-w-[80px] md:min-w-[90px] h-[80px] md:h-[90px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                    <img src={super2} alt="" className=" w-8 md:w-10" />
+                <div className="flex items-center gap-4 mb-2 xs:mb-5 ">
+                  <span className="min-w-[60px] h-[60px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                    <img src={super2} alt="" className=" w-6 md:w-7" />
                   </span>
-                <h5 className="text-xl md:text-2xl text-text3  font-medium">
-                Find a SuperAgent
-                </h5>
+                  <h5 className="text-xl md:text-2xl text-text3  font-medium">
+                    Find a SuperAgent
+                  </h5>
                 </div>
                 <p className="text-text3 mb-3 xs:mb-5 text-sm xs:text-base">
-                The most responsive agents with verified listings.
+                  The most responsive agents with verified listings.
                 </p>
                 <Link className="text-primary font-medium text-sm xs:text-base pb-0.5 border-b border-primary">
-                Find You SuperAgent
+                  Find You SuperAgent
                 </Link>
               </div>
               <div className="px-4 xl:px-6 py-6 xl:py-8 bg-white rounded-3xl xl:rounded-[38px] card">
-                <div className="flex items-center gap-4 mb-2 xs:mb-5 md:mb-7 xl:mb-9">
-                  <span className="min-w-[80px] md:min-w-[90px] h-[80px] md:h-[90px] flex items-center justify-center bg-[#00858E14] rounded-full">
-                    <img src={super3} alt="" className=" w-8 md:w-10" />
+                <div className="flex items-center gap-4 mb-2 xs:mb-5 ">
+                  <span className="min-w-[60px] h-[60px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                    <img src={super3} alt="" className=" w-6 md:w-7" />
                   </span>
-                <h5 className="text-xl md:text-2xl text-text3  font-medium">
-                Rent or buy?
-                </h5>
+                  <h5 className="text-xl md:text-2xl text-text3  font-medium">
+                    Rent or buy?
+                  </h5>
                 </div>
                 <p className="text-text3 mb-3 xs:mb-5 text-sm xs:text-base">
-                We’ve got the tools to help you make an empowered decision.
+                  We’ve got the tools to help you make an empowered decision.
                 </p>
                 <Link className="text-primary font-medium text-sm xs:text-base pb-0.5 border-b border-primary">
-                Try Rent vs. Buy Calculator
+                  Try Rent vs. Buy Calculator
+                </Link>
+              </div>
+              <div className="px-4 xl:px-6 py-6 xl:py-8 bg-white rounded-3xl xl:rounded-[38px] card">
+                <div className="flex items-center gap-4 mb-2 xs:mb-5 ">
+                  <span className="min-w-[60px] h-[60px] flex items-center justify-center bg-[#00858E14] rounded-full">
+                    <img src={super3} alt="" className=" w-6 md:w-7" />
+                  </span>
+                  <h5 className="text-xl md:text-2xl text-text3  font-medium">
+                    Not sure where to live?
+                  </h5>
+                </div>
+                <p className="text-text3 mb-3 xs:mb-5 text-sm xs:text-base">
+                  Pick the right neighborhood with DataGuru’s insights.
+                </p>
+                <Link className="text-primary font-medium text-sm xs:text-base pb-0.5 border-b border-primary">
+                  Find my community
                 </Link>
               </div>
             </div>

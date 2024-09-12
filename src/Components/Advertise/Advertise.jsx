@@ -11,7 +11,7 @@ const Advertise = () => {
             <h4 className="text-[22px] sm:text-2xl lg:text-[32px] xl:text-[38px] xs:leading-9 lg:leading-[46px] xl:leading-[56px] font-medium text-white capitalize mb-5 xl:mb-7 max-w-[620px]">
               Looking to advertise a property? We can help.
             </h4>
-            <button className="py-2.5 lg:py-4 xl:py-5 px-6 xl:px-9 text-sm lg:text-base font-medium text-primary bg-white rounded-full">
+            <button className="py-2.5 lg:py-4 px-6 xl:px-9 text-sm lg:text-base font-medium text-primary bg-white rounded-full">
               List Your Properties with us
             </button>
           </div>

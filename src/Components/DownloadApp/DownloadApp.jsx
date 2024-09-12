@@ -11,7 +11,7 @@ const DownloadApp = () => {
       <div className="container mx-auto relative">
         <div className="md:grid grid-cols-2 ">
           <div className=" text-center sm:text-left">
-            <h4 className="capitalize font-medium text-white text-[22px] sm:text-2xl xl:text-[32px] 2xl:text-[38px] mb-4 xl:mb-5 lg:leading-9 xl:leading-[48px] 2xl:leading-[56px] max-w-[310px] xs:max-w-[400px] md:max-w-full mx-auto sm:mx-0">
+            <h4 className="capitalize font-medium text-white text-[22px] sm:text-2xl xl:text-[32px] mb-4 xl:mb-5 lg:leading-9 xl:leading-[48px] max-w-[310px] xs:max-w-[400px] md:max-w-full mx-auto sm:mx-0">
               Download the UAE’s most trusted property search app.
             </h4>
             <p className="text-base text-white mb-3 lg:mb-9">

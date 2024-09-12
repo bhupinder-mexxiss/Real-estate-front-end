@@ -15,11 +15,11 @@ const Banner = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
-        className="pt-36 pb-40 sm:py-[190px] 2xl:py-[220px] banner relative"
+        className="pt-36 pb-40 sm:py-[170px] 2xl:pt-[200px] 2xl:pb-[180px] banner relative"
       >
         <div className="container mx-auto relative z-0">
           <div className="flex justify-center items-center flex-col">
-            <h3 className="text-3xl sm:text-[38px] md:text-5xl lg:text-[56px] xl:text-[56px] 2xl:text-[70px] flex flex-wrap sm:flex-nowrap justify-center flex-col xs:flex-row text-center font-medium text-white w-fit">
+            <h3 className="text-3xl sm:text-[38px] md:text-5xl lg:text-[56px] xl:text-[56px] flex flex-wrap sm:flex-nowrap justify-center flex-col xs:flex-row text-center font-medium text-white w-fit">
               Find Your{" "}
               <span className="flex">
                 &nbsp;Dream&nbsp;
@@ -35,7 +35,7 @@ const Banner = () => {
                 </span>
               </span>
             </h3>
-            <p className="text-white text-sm xs:text-base sm:text-xl 2xl:text-2xl tracking-wide mt-2 sm:mt-3">
+            <p className="text-white text-sm xs:text-base sm:text-xl tracking-wide mt-2 sm:mt-3">
               Unlock the door to your dream home
             </p>
           </div>

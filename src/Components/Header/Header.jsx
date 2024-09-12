@@ -99,13 +99,13 @@ const Header = () => {
               </Link>
               <Link
                 to="/add-property"
-                className="hidden lg:inline-block loginBtn font-medium lg:font-normal active:text-[#56c1c8] hover:text-[#00C4F4] lg:hover:text-white lg:hover:bg-primary duration-300 py-1.5 lg:py-2 sm:px-2.5 2xl:px-5 text-base lg:text-lg xl:text-xl sm:border hover:border-primary border-white rounded-md lg:rounded-xl text-white"
+                className="hidden lg:inline-block loginBtn font-medium lg:font-normal active:text-[#56c1c8] hover:text-[#00C4F4] lg:hover:text-white lg:hover:bg-primary duration-300 py-1.5 lg:py-2 sm:px-2.5 2xl:px-5 sm:border hover:border-primary border-white rounded-md lg:rounded-xl text-white"
               >
                 List Property
               </Link>
               <Link
                 to="/auth/login"
-                className="loginBtn font-medium lg:font-normal active:text-[#56c1c8] hover:text-[#00C4F4] lg:hover:text-white lg:hover:bg-primary duration-300 py-1.5 lg:py-2 sm:px-2.5 2xl:px-5 text-base lg:text-lg xl:text-xl sm:border hover:border-primary border-white rounded-md lg:rounded-xl text-white"
+                className="loginBtn font-medium lg:font-normal active:text-[#56c1c8] hover:text-[#00C4F4] lg:hover:text-white lg:hover:bg-primary duration-300 py-1.5 lg:py-2 sm:px-2.5 2xl:px-5 sm:border hover:border-primary border-white rounded-md lg:rounded-xl text-white"
               >
                 Log In
               </Link>

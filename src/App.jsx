@@ -34,6 +34,13 @@ import Leads from "./Components/Dashboard/Leads";
 import Listing from "./Components/Dashboard/Listing";
 import MyProfile from "./Components/Dashboard/MyProfile";
 import ChangePassword from "./Components/Dashboard/ChangePassword";
+import Signin from "./Admin/Auth/Signin";
+import AdminResetPassword from "./Admin/Auth/ResetPassword";
+import NewPassword from "./Admin/Auth/NewPassword";
+import SendResetLink from "./Admin/Auth/SendResetLink";
+import AdminDashboard from "./Admin/Dashboard/AdminDashboard";
+import AdminDashboardHome from "./Components/AdminDashboard/Dashboard/Dashboard";
+import Users from "./Components/AdminDashboard/Users/Users";
 
 const router = createBrowserRouter([
   {
@@ -174,6 +181,40 @@ const router = createBrowserRouter([
         path: "change-password",
         element: <ChangePassword />,
       },
+    ],
+  },
+  {
+    path: "/admin/sign-in",
+    element: <Signin />,
+  },
+  {
+    path: "/admin/reset-password",
+    element: <AdminResetPassword />,
+  },
+  {
+    path: "/admin/reset-password/send-link",
+    element: <SendResetLink />,
+  },
+  {
+    path: "/admin/new-password",
+    element: <NewPassword />,
+  },
+  {
+    path: "/admin",
+    element: <AdminDashboard />,
+    children: [
+      {
+        index: true,
+        loader: () => redirect("/admin/dashboard"),
+      },
+      {
+        path:"dashboard",
+        element: <AdminDashboardHome/>
+      },
+      {
+        path:"users",
+        element: <Users/>
+      }
     ],
   },
 ]);

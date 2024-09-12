@@ -51,11 +51,11 @@ const Explore = () => {
   return (
     <div className="explore">
       <div className="container mx-auto">
-        <div className="md:max-w-[660px] mx-auto mb-10 lg:mb-14">
-          <h4 className="text-[22px] sm:text-2xl  md:text-3xl lg:text-[38px] text-text1 font-medium text-center mb-3 lg:mb-5">
+        <div className="md:max-w-[660px] mx-auto mb-8 ">
+          <h4 className="text-xl sm:text-2xl  md:text-3xl  text-text1 font-medium text-center mb-3 lg:mb-5">
             Explore the UAE <span className="title_Border pb-2">market</span>
           </h4>
-          <p className="text-center text-base lg:text-lg text-text3">
+          <p className="text-center text-base text-text3">
             Dive deep into the UAE’s real estate market with prices, transaction
             histories and community insights to help you make an educated
             decision.

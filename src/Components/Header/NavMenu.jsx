@@ -15,7 +15,7 @@ const NavMenu = () => {
           <NavLink
             to="/buy"
             className={({ isActive, isPending }) =>
-              ` text-lg xl:text-xl text-white hover:text-[#00C4F4] nav_item duration-300 ${
+              ` text-lg text-white hover:text-[#00C4F4] nav_item duration-300 ${
                 isActive
                   ? "!border-primary text-[#00C4F4] !font-medium isActive"
                   : isPending
@@ -31,7 +31,7 @@ const NavMenu = () => {
           <NavLink
             to="/rent"
             className={({ isActive, isPending }) =>
-              ` text-lg xl:text-xl text-white hover:text-[#00C4F4] nav_item duration-300 ${
+              ` text-lg text-white hover:text-[#00C4F4] nav_item duration-300 ${
                 isActive
                   ? "!border-primary !text-[#00C4F4] !font-medium isActive"
                   : isPending
@@ -47,7 +47,7 @@ const NavMenu = () => {
           <NavLink
             to="/commercial"
             className={({ isActive, isPending }) =>
-              ` text-lg xl:text-xl text-white hover:text-[#00C4F4] nav_item duration-300 ${
+              ` text-lg text-white hover:text-[#00C4F4] nav_item duration-300 ${
                 isActive
                   ? "!border-primary !text-[#00C4F4] !font-medium isActive"
                   : isPending
@@ -63,7 +63,7 @@ const NavMenu = () => {
           <NavLink
             to="/new-projects"
             className={({ isActive, isPending }) =>
-              ` text-lg xl:text-xl text-white hover:text-[#00C4F4] nav_item duration-300 ${
+              ` text-lg text-white hover:text-[#00C4F4] nav_item duration-300 ${
                 isActive
                   ? "!border-primary !text-[#00C4F4] !font-medium isActive"
                   : isPending
@@ -79,7 +79,7 @@ const NavMenu = () => {
           <NavLink
             to="/find-agent"
             className={({ isActive, isPending }) =>
-              ` text-lg xl:text-xl text-white hover:text-[#00C4F4] nav_item duration-300 ${
+              ` text-lg text-white hover:text-[#00C4F4] nav_item duration-300 ${
                 isActive
                   ? "!border-primary !text-[#00C4F4] !font-medium isActive"
                   : isPending
@@ -98,7 +98,7 @@ const NavMenu = () => {
             onMouseLeave={() => setIsExploreHovered(false)}
           >
             <button
-              className={` text-lg xl:text-xl text-white hover:text-[#00C4F4] nav_item duration-300 relative pb-2 !pt-0 inline ${
+              className={` text-lg text-white hover:text-[#00C4F4] nav_item duration-300 relative pb-2 !pt-0 inline ${
                 isExploreActive
                   ? "isActive !text-[#00C4F4] !font-medium"
                   : isExploreHovered

@@ -64,13 +64,31 @@ const NewProject = () => {
   return (
     <div className="newProject sm:pb-16 py-12 sm:pt-20">
       <div className="container mx-auto">
-        <h4 className="text-[22px] sm:text-2xl  md:text-3xl lg:text-[38px] text-text1 font-medium text-center mb-3 lg:mb-5">
-          Explore new projects in the <span className="title_Border pb-2">UAE</span>
+        <h4 className="text-xl sm:text-2xl  md:text-3xl  text-text1 font-medium text-center mb-3 lg:mb-5">
+          Explore new projects in the{" "}
+          <span className="title_Border pb-2">UAE</span>
         </h4>
-        <p className="text-center text-base lg:text-lg text-text3">
+        <p className="text-center text-base text-text3">
           Discover the latest off-plan properties and be informed.
         </p>
-        <div className="box hidden xl:grid grid-cols-3 my-12 gap-4 xl:gap-[30px] *:duration-300 ">
+
+        <div className="flex justify-center mt-8">
+          <ul className="flex gap-2 xs:gap-3 md:gap-4 *:duration-300">
+            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-medium px-8 py-1.5 md:py-2 text-white bg-primary border border-primary rounded-full">
+              Dubai
+            </li>
+            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-normal px-8 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+              Abu Dhabi
+            </li>
+            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-normal px-8 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+              Sharjah
+            </li>
+            <li className="min-w-20 xs:min-w-24 md:min-w-36 flex items-center justify-center text-base xs:text-lg font-normal px-8 py-1.5 md:py-2 rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary">
+              Ras Al Khaimah
+            </li>
+          </ul>
+        </div>
+        <div className="box hidden xl:grid grid-cols-3 mt-8 mb-12 gap-4 xl:gap-[30px] *:duration-300 ">
           <div className="card p-3 pb-6 bg-white hover:bg-primary rounded-3xl">
             <div className="max-h-[270px] rounded-3xl overflow-hidden card_Thumb">
               <img src={house1} alt="" className="w-full" />

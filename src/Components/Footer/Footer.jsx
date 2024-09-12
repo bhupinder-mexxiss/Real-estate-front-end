@@ -8,9 +8,9 @@ import indeed from "../../assets/icons/in.png";
 const Footer = () => {
   return (
     <div className="">
-      <div className="pt-10 sm:pt-14 lg:pt-[78px] rounded-t-[36px] bg-white">
+      <div className="pt-10 sm:pt-14 lg:pt-16 rounded-t-[36px] bg-white">
         <div className="container mx-auto">
-          <div className="pb-8 xs:pb-11 sm:pb-16 md:pb-20 lg:pb-[120px] relative overflow-hidden">
+          <div className="pb-8 pt-4 xs:pb-11 sm:pb-16 md:pb-20 lg:pb-[120px] relative overflow-hidden">
             <div className="xs:flex flex-wrap pb-4 sm:pb-10 lg:pb-14 border-b-[1.6px] border-border1">
               <div className="w-full xs:w-1/2 lg:w-[30%] 2xl:w-1/4 mb-5 xs:mb-0">
                 <p className="text-sm sm:text-base md:text-lg text-text2 mb-4 xs:mb-6 md:mb-10">
@@ -67,23 +67,23 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="w-full xs:w-1/2 lg:w-[30%] 2xl:w-1/4 mt-5 lg:mt-0">
-                <ul className="flex gap-[18px] lg:justify-end">
+                <ul className="flex gap-3 lg:justify-end">
                   <li>
-                    <span className="xl:w-[50px] sm:w-[44px] w-9 xl:h-[50px] sm:h-[44px] h-9 bg-primary rounded-full flex items-center justify-center">
-                      <img src={facebook} alt="" className="w-3 sm:w-4 xl:w-5" />
-                    </span>
+                    <Link className="w-10 h-10 duration-300 hover:-translate-y-1 bg-primary rounded-full flex items-center justify-center">
+                      <img src={facebook} alt="" className="w-3 sm:w-4" />
+                    </Link>
                   </li>
-                  <li><span className="xl:w-[50px] sm:w-[44px] w-9 xl:h-[50px] sm:h-[44px] h-9 bg-primary rounded-full flex items-center justify-center">
-                      <img src={insta} alt="" className="w-3 sm:w-4 xl:w-5" />
-                    </span>
+                  <li><Link className="w-10 h-10 duration-300 hover:-translate-y-1 bg-primary rounded-full flex items-center justify-center">
+                      <img src={insta} alt="" className="w-3 sm:w-4" />
+                    </Link>
                   </li>
-                  <li><span className="xl:w-[50px] sm:w-[44px] w-9 xl:h-[50px] sm:h-[44px] h-9 bg-primary rounded-full flex items-center justify-center">
-                      <img src={twitter} alt="" className="w-3 sm:w-4 xl:w-5" />
-                    </span>
+                  <li><Link className="w-10 h-10 duration-300 hover:-translate-y-1 bg-primary rounded-full flex items-center justify-center">
+                      <img src={twitter} alt="" className="w-3 sm:w-4" />
+                    </Link>
                   </li>
-                  <li><span className="xl:w-[50px] sm:w-[44px] w-9 xl:h-[50px] sm:h-[44px] h-9 bg-primary rounded-full flex items-center justify-center">
-                      <img src={indeed} alt="" className="w-3 sm:w-4 xl:w-5" />
-                    </span>
+                  <li><Link className="w-10 h-10 duration-300 hover:-translate-y-1 bg-primary rounded-full flex items-center justify-center">
+                      <img src={indeed} alt="" className="w-3 sm:w-4" />
+                    </Link>
                   </li>
                 </ul>
               </div>
