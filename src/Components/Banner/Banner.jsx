@@ -87,7 +87,7 @@ const Banner = () => {
                 <input
                   type="text"
                   className="lg:w-auto flex-1 border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg font-normal px-0 py-0 leading-4 md:leading-8 placeholder:text-text2 pr-3"
-                  placeholder="Search City, community or builder"
+                  placeholder="Search City, community or building"
                 />
                 <span className="min-w-8 min-h-8 rounded-full flex items-center justify-center bg-primary cursor-pointer  ">
                   <img src={searchIcon} alt="" className=" w-2.5 md:w-[15px]" />
