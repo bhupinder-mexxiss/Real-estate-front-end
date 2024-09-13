@@ -286,9 +286,9 @@ const FindAgent = () => {
           </div>
         </div>
       </div>
-      <div className="mt-14">
+      <div className="mt-10 sm:mt-14">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-5 md:gap-8 mb-8 md:mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-2 gap-5 md:gap-8 mb-8 md:mb-12">
             <AgentCard />
           </div>
           <div className="text-center">

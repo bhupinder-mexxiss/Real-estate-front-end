@@ -109,10 +109,10 @@ const AgentDetail = () => {
                       </p>
                     </div>
                     <div className="flex gap-3">
-                      <div className="text-base text-white border-[1.8px] border-white rounded-full px-3 py-1 h-[35px]">
+                      <div className="text-sm text-white border-[1.8px] border-white rounded-full px-3 py-1 h-[35px] flex items-center justify-center">
                         For Sale: <span>12</span>
                       </div>
-                      <div className="text-base text-white border-[1.8px] border-white rounded-full px-3 py-1 h-[35px]">
+                      <div className="text-sm text-white border-[1.8px] border-white rounded-full px-3 py-1 h-[35px] flex items-center justify-center">
                         For Rent: <span>123</span>
                       </div>
                     </div>
@@ -125,7 +125,7 @@ const AgentDetail = () => {
                     </button>
                   </div>
                   <div className="flex xl:block gap-4">
-                    <button className="flex items-center justify-center xl:mb-[18px] lg:min-w-[250px] w-full text-sm xs:text-base sm:text-xl text-primary text-center bg-white py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                    <button className="flex items-center justify-center xl:mb-[18px] lg:min-w-[250px] w-full text-sm xs:text-base sm:text-lg text-primary text-center bg-white py-2.5 pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                       <img
                         src={phone}
                         alt=""
@@ -133,7 +133,7 @@ const AgentDetail = () => {
                       />
                       Call
                     </button>
-                    <button className="flex items-center justify-center lg:min-w-[250px] w-full text-sm xs:text-base sm:text-xl text-white text-center bg-[#008E17] py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                    <button className="flex items-center justify-center lg:min-w-[250px] w-full text-sm xs:text-base sm:text-lg text-white text-center bg-[#008E17] py-2.5 pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                       <img
                         src={whatsapp}
                         alt=""
@@ -294,45 +294,45 @@ const AgentDetail = () => {
               Personal Information
             </p>
             <ul>
-              <li className="flex mb-4 sm:mb-5">
-                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">
+              <li className="flex mb-4">
+                <span className="sm:text-lg text-text2 min-w-44 sm:min-w-52">
                   Specialization:
                 </span>
-                <span className="text-lg sm:text-xl text-[#040404] font-medium">
+                <span className="sm:text-lg sm text-[#040404] font-medium">
                   Senior Client Advisor
                 </span>
               </li>
-              <li className="flex mb-4 sm:mb-5">
-                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">
+              <li className="flex mb-4">
+                <span className="sm:text-lg text-text2 min-w-44 sm:min-w-52">
                   Experience Since:
                 </span>
-                <span className="text-lg sm:text-xl text-[#040404] font-medium">
+                <span className="sm:text-lg sm text-[#040404] font-medium">
                   2023
                 </span>
               </li>
-              <li className="flex mb-4 sm:mb-5">
-                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">
+              <li className="flex mb-4">
+                <span className="sm:text-lg text-text2 min-w-44 sm:min-w-52">
                   BRN#:
                 </span>
-                <span className="text-lg sm:text-xl text-[#040404] font-medium">
+                <span className="sm:text-lg sm text-[#040404] font-medium">
                   66916
                 </span>
               </li>
-              <li className="flex mb-4 sm:mb-5">
-                <span className="text-lg sm:text-xl text-text2 min-w-44 sm:min-w-52">
+              <li className="flex mb-4">
+                <span className="sm:text-lg text-text2 min-w-44 sm:min-w-52">
                   Links:
                 </span>
-                <span className="text-lg sm:text-xl text-[#040404] font-medium border-b-2 border-black cursor-pointer">
+                <span className="sm:text-lg sm text-[#040404] font-medium border-b-2 border-black cursor-pointer">
                   LinkedIn
                 </span>
               </li>
             </ul>
           </div>
           <div className="discription mb-8 sm:mb-10">
-            <p className="text-2xl font-medium text-[#040404] mb-7">
+            <p className="text-2xl font-medium text-[#040404] mb-4">
               Description
             </p>
-            <p className="text-lg sm:text-xl text-text2">
+            <p className=" text-text2">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -349,11 +349,11 @@ const AgentDetail = () => {
               My Properties
             </p>
             <div
-              className="my-3 md:my-0 py-2.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit min-w-[130px]"
+              className="my-3 md:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit min-w-[130px]"
               onClick={toggleoption}
             >
               <div
-                className={`select-menu flex text-text2 text-base md:text-xl xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                className={`select-menu flex text-text2 text-base md:text-lg font-normal leading-4 ${
                   optionShow ? "active" : ""
                 }`}
               >
@@ -364,13 +364,13 @@ const AgentDetail = () => {
                   <div className="w-full lg:w-[84%] left-1/2 top-full absolute z-[1] mt-2.5 -translate-x-1/2">
                     <ul className="options">
                       <li
-                        className=" md:text-lg flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5"
+                        className=" md:text-lg flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1"
                         onClick={() => setSelectedOption("Buy")}
                       >
                         <span className="text-base md:text-lg">Buy</span>
                       </li>
                       <li
-                        className=" md:text-lg flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5"
+                        className=" md:text-lg flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1"
                         onClick={() => setSelectedOption("Rent")}
                       >
                         <span className="text-base md:text-lg">Rent</span>

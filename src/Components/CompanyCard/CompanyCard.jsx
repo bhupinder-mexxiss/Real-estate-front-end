@@ -54,18 +54,18 @@ const CompanyCard = () => {
   return (
     <>
       {companiesList.map((e) => (
-        <div className="grid sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 bg-white rounded-2xl sm:rounded-3xl md:rounded-[32px] 2xl:rounded-[58px] overflow-hidden card cursor-pointer  p-4 sm:p-0 md:p-4 xl:p-0">
+        <div className="grid xs:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 bg-white rounded-2xl sm:rounded-3xl md:rounded-[32px] 2xl:rounded-[58px] overflow-hidden card cursor-pointer  p-4 xs:p-0 md:p-4 xl:p-0">
           <div className="h-full w-full overflow-hidden rounded-2xl sm:rounded-none md:rounded-3xl xl:rounded-none">
             <img src={e.img} alt="" className="h-full w-full object-cover" />
           </div>
           <div className=" pt-5 pb-2  sm:py-6 2xl:py-8 px-3 md:px-2 xl:px-4 2xl:pr-9">
-            <Link to="/broker/1" className="text-xl font-medium text-[#040404] mb-2.5 leading-5 w-full overflow-hidden text-nowrap text-ellipsis">
+            <Link to="/broker/1" className="block text-xl font-medium text-[#040404] mb-2.5 leading-5 w-full overflow-hidden text-nowrap text-ellipsis">
               {e.title}
             </Link>
-            <p className="text-sm text-text2 mb-2 xs:mb-3 sm:mb-4 xl:mb-6 2xl:mb-8">
+            <p className="text-sm text-text2 mb-2 xs:mb-3 sm:mb-4 xl:mb-6">
               <span>{e.office}</span>
             </p>
-            <div className="mb-8">
+            <div className="mb-6">
               <p
                 className="text-sm mb-2
                flex items-center gap-1.5 text-text2 "
@@ -88,11 +88,11 @@ const CompanyCard = () => {
                 <span className="font-medium">{e.superAgent}</span>
               </p>
             </div>
-            <div className="flex gap-2">
-                <div className="text-base text-primary border border-primary rounded-full px-2.5 py-2">
+            <div className="flex xs:flex-col sm:flex-row gap-2">
+                <div className="text-sm flex-1 text-center text-primary border border-primary rounded-full px-2.5 py-2">
                 For Sale: <span>{e.forSale}</span>
                 </div>
-                <div className="text-base text-primary border border-primary rounded-full px-2.5 py-2">
+                <div className="text-sm flex-1 text-center text-primary border border-primary rounded-full px-2.5 py-2">
                 For Rent: <span>{e.forRent}</span>
                 </div>
             </div>

@@ -48,15 +48,15 @@ const FindBroker = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-40 md:pb-32 lg:pt-[220px] lg:pb-[160px] banner relative"
+          className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-40 md:pb-32 lg:pt-[180px] lg:pb-[140px] banner relative"
         >
           <div className="container mx-auto relative z-0">
             <div className="">
               <h3 className=" flex flex-col">
-                <span className="text-[#E2DAD7] text-[28px] 2xs:text-[34px] xs:text-4xl sm:text-[50px] md:text-[70px] lg:text-[90px] xl:text-[110px] 2xs:leading-[50px] md:leading-[70px] lg:leading-[90px] xl:leading-[110px]">
+                <span className="text-[#E2DAD7] text-[28px] 2xs:text-[34px] xs:text-4xl sm:text-[50px] md:text-[60px] 2xs:leading-[50px] md:leading-[70px] lg:leading-[90px]">
                   Find the best Real
                 </span>
-                <span className="text-[34px] 2xs:text-[44px] xs:text-5xl sm:text-[60px] md:text-[80px] lg:text-[110px] xl:text-[130px] text-white leading-10 xs:leading-[60px] sm:leading-[80px] md:leading-[110px] lg:leading-[130px] xl:leading-[150px]">
+                <span className="text-[34px] 2xs:text-[44px] xs:text-5xl sm:text-[60px] md:text-[80px] lg:text-[100px]  text-white leading-10 xs:leading-[60px] sm:leading-[80px] md:leading-[110px] lg:leading-[120px]">
                   Estate Companies
                 </span>
               </h3>
@@ -65,62 +65,67 @@ const FindBroker = () => {
         </div>
         <div className="relative z-0 mt-[-60px] sm:mt-[-66px] md:-mt-[83px] seachTab">
           <div className="container mx-auto">
-            <div className="p-3 sm:p-5 lg:px-7 lg:py-3 xl:py-5 bg-white rounded-xl lg:rounded-[58px] max-w-[970px] mx-auto">
+            <div className="p-3 sm:p-5 lg:px-7 lg:py-3 xl:py-5 bg-white rounded-xl lg:rounded-[38px] max-w-[970px] mx-auto">
               <div className="">
-                <div className="flex flex-wrap xs:flex-nowrap lg:w-full gap-1.5 xs:gap-2 xl:gap-4 mb-5">
+                <div className="flex flex-wrap xl:flex-nowrap lg:w-full gap-1.5 xs:gap-2 xl:gap-4 mb-5">
                   <Link
                     to="/find-agent"
-                    className="py-2.5 md:py-3 text-nowrap px-8 lg:px-10 rounded-xl  sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text-base md:text-lg xl:text-[22px] font-normal"
+                    className="py-2 text-nowrap px-5 sm:px-8 rounded-xl sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text-base md:text-lg font-normal"
                   >
                     Agent
                   </Link>
                   <Link
                     to="/find-broker"
-                    className="py-2.5 md:py-3text-nowrap px-8 lg:px-10 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg xl:text-[22px] font-medium"
+                    className="py-2 text-nowrap px-5 sm:px-8 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg font-medium"
                   >
                     Companies
                   </Link>
                 </div>
-                <div className="md:flex items-center gap-3 lg:gap-5">
-                  <div className="py-2.5 pl-4 lg:pl-6 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary w-full">
+                <div className="sm:flex items-center gap-3 lg:gap-5">
+                  <div className="py-[7px] md:py-1.5 pl-4 md:pl-2 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary w-full">
                     <input
                       type="text"
-                      className="w-full border-none ring-0 focus:ring-0 text-text2 text-base md:text-xl xl:text-[22px] font-normal px-0 py-0 pl-6 md:pl-10 leading-4 md:leading-8 placeholder:text-text2"
+                      className="w-full border-none ring-0 focus:ring-0 text-text2 text-base md:text-lg font-normal px-0 py-0 pl-6 md:pl-10 leading-4 md:leading-8 placeholder:text-text2"
                       placeholder="Enter location or company name"
                     />
-                    <span className=" absolute left-4 md:left-6 top-1/2 -translate-y-1/2 z-0 inline-block ">
+                    <span className=" absolute left-4 top-1/2 -translate-y-1/2 z-0 inline-block ">
                       <img
                         src={searchIcon}
                         alt=""
-                        className=" w-4 md:w-5 lg:w-6 brightness-0"
+                        className=" w-4 md:w-5 brightness-0"
                       />
                     </span>
                   </div>
                   <div
-                    className="my-3 md:my-0 py-2.5  px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer min-w-[250px] lg:min-w-[300px]"
+                    className="my-3 sm:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-[170px] md:w-full md:min-w-[250px] lg:min-w-[300px]"
                     onClick={toggleMenu}
                     ref={serviceRef}
                   >
                     <div
-                      className={`select-menu flex text-text2 text-base md:text-xl xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                      className={`select-menu flex text-text2 text-base md:text-lg font-normal leading-4 md:leading-8 ${
                         sortShow ? "active" : ""
                       }`}
                     >
                       <div className="select-btn">
-                        <span className="sBtn-text">{selectedOption}</span>
+                        <p className="sBtn-text text-nowrap text-ellipsis overflow-hidden w-[120px]">
+                          {selectedOption}
+                        </p>
                       </div>
                       {sortShow && (
-                        <div className="w-full lg:w-[84%] left-1/2 top-full absolute z-[0] mt-2.5 -translate-x-1/2">
-                          <ul className="options">
+                        <div className="w-full sm:w-fit lg:w-[84%] left-1/2 top-full absolute z-[0] mt-2.5 -translate-x-1/2">
+                          <ul className="options w-fit">
                             {options.map((option, index) => (
                               <li
                                 key={index}
-                                className=" flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5"
+                                className={`flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5 ${
+                                  option.text === selectedOption &&
+                                  "bg-[#f2f2f2]"
+                                }`}
                                 onClick={() => handleOptionClick(option)}
                               >
-                                <span className="text-base md:text-lg">
+                                <p className="text-base md:text-lg text-nowrap">
                                   {option.text}
-                                </span>
+                                </p>
                               </li>
                             ))}
                           </ul>
@@ -131,13 +136,13 @@ const FindBroker = () => {
                       <KeyboardArrowUpOutlined />
                     </span>
                   </div>
-                  <button className="w-full md:w-fit md:min-w-[53px] h-[45px] md:h-[53px] rounded-full flex items-center justify-center bg-primary">
+                  <button className="w-full sm:w-fit sm:min-w-[40px] md:min-w-[45px] h-[40px] md:h-[45px] rounded-full flex items-center justify-center bg-primary">
                     <img
                       src={searchIcon}
                       alt=""
-                      className=" w-3 md:w-6 hidden md:inline-block"
+                      className=" w-3 sm:w-4 md:w-5 hidden sm:inline-block"
                     />
-                    <span className="text-xl tracking-wider text-white font-medium inline-block md:hidden">
+                    <span className="text-xl tracking-wider text-white font-medium inline-block sm:hidden">
                       Find
                     </span>
                   </button>
@@ -147,9 +152,9 @@ const FindBroker = () => {
           </div>
         </div>
       </div>
-      <div className="mt-14 lg:mt-20">
+      <div className="mt-10 sm:mt-14">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-5 md:gap-8 mb-8 md:mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-5 md:gap-8 mb-8 md:mb-12">
             <CompanyCard />
           </div>
           <div className="text-center">

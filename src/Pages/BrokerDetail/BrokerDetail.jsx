@@ -72,7 +72,7 @@ const BrokerDetail = () => {
         <div className="brokerInfo">
           <div className=" bg-primary py-5 md:py-10 xl:py-0 xl:pl-10 xl:pr-7 px-4 md:px-7 rounded-xl sm:rounded-2xl md:rounded-[30px] relative">
             <div className="xl:flex justify-between">
-              <div className=" md:flex items-start xl:py-10">
+              <div className=" md:flex items-start md:items-center xl:py-10">
                 <div className="mx-auto w-60 md:w-72 rounded-xl md:rounded-[20px] overflow-hidden">
                   <img src={comp1} alt="" className=" w-full" />
                 </div>
@@ -87,12 +87,12 @@ const BrokerDetail = () => {
                       <img src={shareIcon} alt="" className="w-4" />
                     </button>
                   </p>
-                  <h5 className="text-2xl md:text-3xl font-medium text-white mb-5 md:mb-8 leading-5 w-full overflow-hidden text-nowrap text-ellipsis text-center md:text-left">
+                  <h5 className="text-2xl md:text-3xl font-medium text-white mb-5 leading-5 w-full overflow-hidden text-nowrap text-ellipsis text-center md:text-left">
                     AGCO PROPERTIES
                   </h5>
                   <div className="mb-5 md:mb-8">
                     <p
-                      className="text-base md:text-lg mb-2
+                      className="text-base mb-2
                flex items-center gap-1.5 text-white "
                     >
                       <span className="min-w-[80px] md:min-w-[100px] text-[#ECECEC]">
@@ -101,7 +101,7 @@ const BrokerDetail = () => {
                       <span className="font-medium">26074</span>
                     </p>
                     <p
-                      className="text-base md:text-lg
+                      className="text-base
                flex sm:items-start gap-1.5 text-white "
                     >
                       <span className="min-w-[80px] md:min-w-[100px] text-[#ECECEC]">
@@ -114,10 +114,10 @@ const BrokerDetail = () => {
                     </p>
                   </div>
                   <div className="flex gap-3">
-                    <div className="text-base text-white border-[1.8px] border-white rounded-full px-3 py-1 h-[35px]">
+                    <div className="text-sm text-white border-[1.8px] border-white rounded-full px-5 py-1 h-[35px] flex items-center justify-center">
                       Active Listing: <span>872</span>
                     </div>
-                    <div className="text-base text-white border-[1.8px] border-white rounded-full px-3 py-1 h-[35px]">
+                    <div className="text-sm text-white border-[1.8px] border-white rounded-full px-5 py-1 h-[35px] flex items-center justify-center">
                       Agent: <span>12</span>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ const BrokerDetail = () => {
                   </button>
                 </div>
                 <div className="flex xl:block flex-col xs:flex-row gap-2 sm:gap-4">
-                  <button className="flex items-center justify-center xl:mb-[18px] lg:min-w-[270px] w-full text-sm xs:text-base sm:text-xl text-primary text-center bg-white py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                  <button className="flex items-center justify-center xl:mb-[18px] lg:min-w-[270px] w-full text-sm xs:text-base sm:text-lg text-primary text-center bg-white py-2.5 pl-2 pr-3 xs:px-6 rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                     <img
                       src={phone}
                       alt=""
@@ -138,7 +138,7 @@ const BrokerDetail = () => {
                     />
                     Call Company
                   </button>
-                  <button className="flex items-center justify-center lg:min-w-[270px] w-full text-sm xs:text-base sm:text-xl text-white text-center bg-[#0D3DB7] py-2.5 lg:py-[14px] pl-2 pr-3 xs:px-[50] rounded-lg xs:font-medium tracking-wider lg:rounded-full">
+                  <button className="flex items-center justify-center lg:min-w-[270px] w-full text-sm xs:text-base sm:text-lg text-white text-center bg-[#0D3DB7] py-2.5 pl-2 pr-3 xs:px-[50] rounded-lg xs:font-medium tracking-wider lg:rounded-full">
                     <img
                       src={email}
                       alt=""
@@ -153,10 +153,10 @@ const BrokerDetail = () => {
         </div>
         <div className="mt-14">
           <div className="discription mb-8 sm:mb-16">
-            <p className="text-2xl font-medium text-[#040404] mb-7">
+            <p className="text-2xl font-medium text-[#040404] mb-4">
               About AGCO PROPERTIES
             </p>
-            <p className="text-lg sm:text-xl text-text2">
+            <p className=" text-text2">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -195,11 +195,11 @@ const BrokerDetail = () => {
             </div>
             {isActive === "properties" && (
               <div
-                className="my-3 md:my-0 py-2.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit min-w-[150px]"
+                className="my-3 md:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-fit min-w-[150px]"
                 onClick={toggleoption}
               >
                 <div
-                  className={`select-menu flex text-text2 text-base md:text-xl xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                  className={`select-menu flex text-text2 text-base md:text-lg font-normal leading-4 md:leading-8 ${
                     optionShow ? "active" : ""
                   }`}
                 >
