@@ -114,7 +114,7 @@ const FindAgent = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
-          className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-40 md:pb-32 lg:pt-[180px] lg:pb-[160px] banner relative"
+          className="pt-24 2xs:pt-28 pb-24 sm:pt-36 sm:pb-28 md:pt-40 md:pb-32 lg:pt-[180px] lg:pb-[140px] banner relative"
         >
           <div className="container mx-auto relative z-0">
             <div className="">
@@ -136,57 +136,56 @@ const FindAgent = () => {
                 <div className="flex flex-wrap xl:flex-nowrap lg:w-full gap-1.5 xs:gap-2 xl:gap-4 mb-5">
                   <Link
                     to="/find-agent"
-                    className="py-2 text-nowrap px-8 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg font-medium"
+                    className="py-2 text-nowrap px-5 sm:px-8 rounded-xl sm:rounded-3xl md:rounded-full bg-primary border border-primary text-white text-base md:text-lg font-medium"
                   >
                     Agent
                   </Link>
                   <Link
                     to="/find-broker"
-                    className="py-2 text-nowrap px-8 rounded-xl  sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text:text-[22px] font-normal"
+                    className="py-2 text-nowrap px-5 sm:px-8 rounded-xl sm:rounded-3xl md:rounded-full border border-border1 hover:border-primary text-text2 hover:text-primary text-base md:text-lg font-normal"
                   >
                     Companies
                   </Link>
                 </div>
-                <div className="md:flex flex-wrap xl:flex-nowrap items-center gap-2 gap-y-3 lg:gap-[15px]">
-                  <div className="py-2 pl-4 lg:pl-4 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary md:w-[90%] xl:w-full">
+                <div className="sm:flex flex-wrap lg:flex-nowrap items-center justify-between lg:justify-start gap-2 gap-y-2 lg:gap-[15px]">
+                  <div className="py-[7px] md:py-1.5 pl-4 md:pl-2 pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary sm:w-[83%] lg:w-full">
                     <input
                       type="text"
-                      className="w-full border-none ring-0 focus:ring-0 text-text2 text-base md:text-xl font-normal px-0 py-0 pl-6 md:pl-10 leading-4 md:leading-8 placeholder:text-text2"
+                      className="w-full border-none ring-0 focus:ring-0 text-text2 text-base md:text-lg font-normal px-0 py-0 pl-6 md:pl-10 leading-4 md:leading-8 placeholder:text-text2"
                       placeholder="Search"
                     />
                     <span className=" absolute left-4 top-1/2 -translate-y-1/2 z-0 inline-block ">
                       <img
                         src={searchIcon}
                         alt=""
-                        className=" w-4 md:w-5 lg:w-6 brightness-0"
+                        className=" w-4 md:w-5 brightness-0"
                       />
                     </span>
                   </div>
-                  <div
-                    className="my-3 md:my-0 py-2.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer md:min-w-[229px] md:w-[32%] xl:min-w-[290px] order-3 xl:order-2"
+                  <div className="my-3 md:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer sm:w-[32%] lg:w-[18%] lg:min-w-[200px] order-3 lg:order-2"
                     onClick={toggleServieMenu}
                     ref={serviceRef}
                   >
                     <div
-                      className={`select-menu flex text-text2 text-base md:text-xl xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                      className={`select-menu flex text-text2 text-base md:text-lg font-normal leading-4 md:leading-8 ${
                         serviceShow ? "active" : ""
                       }`}
                     >
                       <div className="select-btn">
-                        <span className="sBtn-text">
+                        <p className="sBtn-text text-nowrap text-ellipsis overflow-hidden sm:w-[112px] md:w-[134px]">
                           {selectedServiceOption}
-                        </span>
+                        </p>
                       </div>
                       {serviceShow && (
-                        <div className="w-full lg:w-[84%] left-1/2 top-full absolute z-[1] mt-2.5 -translate-x-1/2">
-                          <ul className="options">
+                        <div className="w-full lg:w-fit left-1/2 top-full absolute z-[1] mt-2.5 -translate-x-1/2">
+                          <ul className="options w-fit">
                             {seviceOptions.map((option, index) => (
                               <li
                                 key={index}
-                                className=" flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5"
+                                className={`flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5 mb-1 ${option.text === selectedServiceOption && "bg-[#f2f2f2]"}`}
                                 onClick={() => handleOptionClick(option)}
                               >
-                                <span className="text-base md:text-lg">
+                                <span className="text-base text-nowrap">
                                   {option.text}
                                 </span>
                               </li>
@@ -199,13 +198,12 @@ const FindAgent = () => {
                       <KeyboardArrowUpOutlined />
                     </span>
                   </div>
-                  <div
-                    className="my-3 md:my-0 py-2.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer md:min-w-[229px] md:w-[32%] xl:min-w-[200px] order-4 xl:order-3"
+                  <div className="my-3 md:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer sm:w-[32%] lg:w-[18%] lg:min-w-[180px] order-4 lg:order-3"
                     onClick={toggleLangMenu}
                     ref={languageRef}
                   >
                     <div
-                      className={`select-menu flex text-text2 text-base md:text-xl xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                      className={`select-menu flex text-text2 text-base md:text-lg font-normal leading-4 md:leading-8 ${
                         languageShow ? "active" : ""
                       }`}
                     >
@@ -213,15 +211,15 @@ const FindAgent = () => {
                         <span className="sBtn-text">{selectedLanguage}</span>
                       </div>
                       {languageShow && (
-                        <div className="w-full lg:w-[84%] left-1/2 top-full absolute z-[1] mt-2.5 -translate-x-1/2">
-                          <ul className="options">
+                        <div className="w-full lg:w-fit left-1/2 top-full absolute z-[1] mt-2.5 -translate-x-1/2">
+                          <ul className="options w-fit">
                             {langOption.map((option, index) => (
                               <li
                                 key={index}
-                                className=" flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5"
+                                className={`flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5 mb-1 ${selectedLanguage === option.lang && "bg-[#f2f2f2]"}`}
                                 onClick={() => handleLangClick(option)}
                               >
-                                <span className="text-base md:text-lg">
+                                <span className="text-base md:text-lg text-nowrap">
                                   {option.lang}
                                 </span>
                               </li>
@@ -236,13 +234,12 @@ const FindAgent = () => {
                       <KeyboardArrowUpOutlined />
                     </span>
                   </div>
-                  <div
-                    className="my-3 md:my-0 py-2.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer md:min-w-[229px] md:w-[32%] xl:min-w-[220px] order-5 xl:order-4"
+                  <div className="my-3 md:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer sm:w-[32%] lg:w-[18%] lg:min-w-[180px] order-5 lg:order-4"
                     onClick={toggleNationality}
                     ref={nationalityRef}
                   >
                     <div
-                      className={`select-menu flex text-text2 text-base md:text-xl xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                      className={`select-menu flex text-text2 text-base md:text-lg font-normal leading-4 md:leading-8 ${
                         nationalityShow ? "active" : ""
                       }`}
                     >
@@ -250,15 +247,15 @@ const FindAgent = () => {
                         <span className="sBtn-text">{selectedNationality}</span>
                       </div>
                       {nationalityShow && (
-                        <div className="w-full lg:w-[84%] left-1/2 top-full absolute z-[1] mt-2.5 -translate-x-1/2">
-                          <ul className="options">
+                        <div className="w-full lg:w-fit left-1/2 top-full absolute z-[1] mt-2.5 -translate-x-1/2">
+                          <ul className="options w-fit">
                             {nationalityOption.map((option, index) => (
                               <li
                                 key={index}
-                                className=" flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5"
+                                className={`flex cursor-pointer items-center bg-white hover:bg-[#f2f2f2] rounded-lg px-3 sm:px-4 py-1.5 mb-1 ${option.nationality === selectedNationality && "bg-[#f2f2f2]"}`}
                                 onClick={() => handleNationalityClick(option)}
                               >
-                                <span className="text-base md:text-lg">
+                                <span className="text-base md:text-lg text-nowrap">
                                   {option.nationality}
                                 </span>
                               </li>
@@ -273,13 +270,13 @@ const FindAgent = () => {
                       <KeyboardArrowUpOutlined />
                     </span>
                   </div>
-                  <button className="w-full md:w-fit md:min-w-[53px] h-[45px] md:h-[53px] rounded-full flex items-center justify-center bg-primary order-2 xl:order-5">
+                  <button className="w-full sm:w-[15%] lg:min-w-[45px] lg:w-[45px] h-10 md:h-[45px] rounded-full flex items-center justify-center bg-primary order-2 lg:order-5">
                     <img
                       src={searchIcon}
                       alt=""
-                      className=" w-3 md:w-6 hidden md:inline-block"
+                      className=" w-3 md:w-5 hidden lg:inline-block"
                     />
-                    <span className="text-base md:text-xl tracking-wider text-white font-medium inline-block md:hidden">
+                    <span className="md:text-lg tracking-wider text-white font-medium inline-block lg:hidden">
                       Search
                     </span>
                   </button>
@@ -289,7 +286,7 @@ const FindAgent = () => {
           </div>
         </div>
       </div>
-      <div className="mt-14 lg:mt-20">
+      <div className="mt-14">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-5 md:gap-8 mb-8 md:mb-12">
             <AgentCard />

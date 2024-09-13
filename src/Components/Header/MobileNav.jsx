@@ -80,7 +80,7 @@ const MobileNav = ({ isActive, setIsActive }) => {
                   }`
                 }
               >
-                Rent
+                Rentals
               </NavLink>
             </li>
             <li>

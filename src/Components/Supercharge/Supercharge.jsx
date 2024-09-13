@@ -57,7 +57,7 @@ const Supercharge = () => {
   return (
     <div className="supercharge pb-12 xs:pb-16 md:pb-20 lg:pb-28 ">
       <div className="container mx-auto">
-        <h4 className="text-[22px] sm:text-2xl md:text-3xl lg:text- my-5[md:38px] text-text1 font-medium text-center mb-3 lg:mb-5">
+        <h4 className="capitalize text-[22px] sm:text-2xl md:text-3xl lg:text- my-5[md:38px] text-text1 font-medium text-center mb-3 lg:mb-5">
           Supercharge your <span className="title_Border pb-2">search</span>
         </h4>
         <div className="mt-4 xs:mt-6 md:mt-9">

@@ -40,7 +40,7 @@ const NavMenu = () => {
               }`
             }
           >
-            Rent
+            Rentals
           </NavLink>
         </li>
         <li>

@@ -6,6 +6,7 @@ import DownloadApp from '../Components/DownloadApp/DownloadApp'
 import Advertise from '../Components/Advertise/Advertise'
 import NewProject from '../Components/NewProject/NewProject'
 import Explore from '../Components/Explore/Explore'
+import MapSec from '../Components/MapSec/MapSec'
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <DownloadApp/>
       <NewProject/>
       <Explore/>
+      <MapSec/>
       <Advertise/>
     </div>
   )

@@ -58,7 +58,7 @@ const NewProject = () => {
   return (
     <div className="newProject sm:pb-16 py-12 sm:pt-20">
       <div className="container mx-auto">
-        <h4 className="text-xl sm:text-2xl  md:text-3xl  text-text1 font-medium text-center mb-3 lg:mb-5">
+        <h4 className="text-xl sm:text-2xl  md:text-3xl  text-text1 font-medium text-center mb-3 lg:mb-5 capitalize">
           Explore new projects in the{" "}
           <span className="title_Border pb-2">UAE</span>
         </h4>

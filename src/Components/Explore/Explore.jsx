@@ -52,7 +52,7 @@ const Explore = () => {
     <div className="explore">
       <div className="container mx-auto">
         <div className="md:max-w-[660px] mx-auto mb-8 ">
-          <h4 className="text-xl sm:text-2xl  md:text-3xl  text-text1 font-medium text-center mb-3 lg:mb-5">
+          <h4 className="text-xl sm:text-2xl  md:text-3xl  text-text1 font-medium text-center mb-3 lg:mb-5 capitalize">
             Explore the UAE <span className="title_Border pb-2">market</span>
           </h4>
           <p className="text-center text-base text-text3">
