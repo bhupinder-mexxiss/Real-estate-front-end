@@ -96,8 +96,7 @@ const FindBroker = () => {
                       />
                     </span>
                   </div>
-                  <div
-                    className="my-3 sm:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer w-[170px] md:w-full md:min-w-[250px] lg:min-w-[300px]"
+                  <div className="my-3 sm:my-0 py-1.5 px-3 lg:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex justify-between items-center cursor-pointer sm:w-[170px] lg:w-full md:min-w-[250px] lg:min-w-[300px]"
                     onClick={toggleMenu}
                     ref={serviceRef}
                   >
@@ -107,7 +106,7 @@ const FindBroker = () => {
                       }`}
                     >
                       <div className="select-btn">
-                        <p className="sBtn-text text-nowrap text-ellipsis overflow-hidden w-[120px]">
+                        <p className="sBtn-text text-nowrap text-ellipsis overflow-hidden sm:w-[120px] md:w-full">
                           {selectedOption}
                         </p>
                       </div>

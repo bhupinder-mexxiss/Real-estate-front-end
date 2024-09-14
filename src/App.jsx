@@ -41,6 +41,10 @@ import SendResetLink from "./Admin/Auth/SendResetLink";
 import AdminDashboard from "./Admin/Dashboard/AdminDashboard";
 import AdminDashboardHome from "./Components/AdminDashboard/Dashboard/Dashboard";
 import Users from "./Components/AdminDashboard/Users/Users";
+import Sellers from "./Components/AdminDashboard/Sellers/Sellers";
+import PropertyList from "./Components/AdminDashboard/PropertyList/PropertyList";
+import AdminChangePassword from "./Components/AdminDashboard/AdminChangePassword/AdminChangePassword";
+import AdminAccountSetting from "./Components/AdminDashboard/AdminAccountSetting/AdminAccountSetting";
 
 const router = createBrowserRouter([
   {
@@ -214,6 +218,22 @@ const router = createBrowserRouter([
       {
         path:"users",
         element: <Users/>
+      },
+      {
+        path:"sellers",
+        element: <Sellers/>
+      },
+      {
+        path:"properties",
+        element: <PropertyList/>
+      },
+      {
+        path:"change-password",
+        element: <AdminChangePassword/>
+      },
+      {
+        path:"account-setting",
+        element: <AdminAccountSetting/>
       }
     ],
   },

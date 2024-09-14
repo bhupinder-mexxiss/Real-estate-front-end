@@ -1,0 +1,26 @@
+.toggleBtn div[data-testid="flowbite-toggleswitch-toggle"] {
+    width: 30px;
+    min-width: 30px;
+    height: 16px;
+  }
+  .toggleBtn div[data-testid="flowbite-toggleswitch-toggle"].bg-gray-200{
+    background: white;
+    border-color: #8B8B8B;
+  }
+  .toggleBtn div[data-testid="flowbite-toggleswitch-toggle"].bg-gray-200::after{
+    background: #8B8B8B;
+  }
+  .toggleBtn div[data-testid="flowbite-toggleswitch-toggle"].bg-cyan-700 {
+    background: #040404;
+    border-color: #040404;
+  }
+  
+  .toggleBtn div[data-testid="flowbite-toggleswitch-toggle"]::after {
+    width: 11.82px;
+    height: 11.82px;
+    left: 2.5px;
+  }
+  
+  .toggleBtn span[data-testid="flowbite-toggleswitch-label"] {
+    margin-top: 0;
+  }

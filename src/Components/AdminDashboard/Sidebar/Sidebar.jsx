@@ -4,35 +4,14 @@ import sellers from "../../../assets/icons/sellers.png";
 import properties from "../../../assets/icons/properties.png";
 import dashboard from "../../../assets/icons/dashboard.png";
 import settingIcon from "../../../assets/icons/settingIcon.png";
+import logout from "../../../assets/icons/logout.png";
 import changepassword from "../../../assets/icons/changepassword.png";
 import { NavLink } from "react-router-dom";
-import {
-  KeyboardArrowLeftOutlined,
-  KeyboardArrowRightOutlined,
-} from "@mui/icons-material";
 
-const Sidebar = () => {
-  const [isActiveMenu, setIsActiveMenu] = useState(false);
-  const handleToggle = () => {
-    setIsActiveMenu(!isActiveMenu);
-  };
+const Sidebar = ({ isActiveMenu }) => {
   return (
-    <div
-      className={`${
-        isActiveMenu ? "min-w-[86px] w-[86px]" : "min-w-[250px] w-[250px]"
-      } duration-100 h-screen rounded-r-[30px] bg-white relative`}
-    >
-      <button
-        className="w-10 h-10 rounded-full border-[#4E307A1A] bg-white border-2 flex items-center justify-center absolute -right-5 top-1/2 -translate-y-1/2 text-[#8B8B8B]"
-        onClick={handleToggle}
-      >
-        {isActiveMenu ? (
-          <KeyboardArrowRightOutlined />
-        ) : (
-          <KeyboardArrowLeftOutlined />
-        )}
-      </button>
-      <div className="pt-36 h-screen overflow-auto pb-10 ">
+    <div>
+      <div className="pt-36 h-screen overflow-auto pb-10 flex flex-col justify-between">
         <ul>
           <li className="py-2">
             <NavLink
@@ -121,7 +100,7 @@ const Sidebar = () => {
           </li>
           <li className="py-2">
             <NavLink
-              to="/admin/reset-assword"
+              to="/admin/change-password"
               className={({ isActive }) =>
                 `flex gap-3 items-center text-[#8B8B8B] px-8 text-nowrap py-2 ${
                   isActive
@@ -141,6 +120,14 @@ const Sidebar = () => {
             </NavLink>
           </li>
         </ul>
+        <div className="px-6 mt-6">
+          <div className="pt-10 border-t border-[#DDDEED] px-2">
+            <button className="flex items-center gap-3 text-[#8B8B8B]">
+              <img src={logout} className=" w-6" alt="" />
+              <span className={`${isActiveMenu && "hidden"}`}>Logout</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
