@@ -7,8 +7,8 @@ const ChangePassword = () => {
   return (
     <>
       <div className="">
-        <h6 className="text-2xl font-medium">Change Password</h6>
-        <div className="mt-12 flex items-center justify-center">
+        <h6 className="text-2xl font-medium hidden lg:block">Change Password</h6>
+        <div className="lg:mt-12 flex items-center justify-center">
           <div>
             <form>
               <div className="mb-5">

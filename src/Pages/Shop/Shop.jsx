@@ -110,28 +110,28 @@ const Shop = () => {
                   328 results found
                 </p>
               </div>
-              <div className="w-full lg:w-1/2  xl:w-[40%] order-1  lg:order-2 relative ">
+              <div className="w-full lg:w-1/2  xl:w-[42%] order-1  lg:order-2 relative ">
                 <div className="py-1.5 pl-3 md:pl-6 pr-2 md:pr-3 rounded-full border border-border1 hover:border-primary relative hover:text-primary flex">
                   <input
                     type="text"
-                    className="inline-block w-full border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg xl:text-[22px] font-normal px-0 py-0 leading-4 md:leading-8 pr-4 placeholder:text-text2"
+                    className="inline-block w-full border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg font-normal px-0 py-0 leading-4 md:leading-8 pr-4 placeholder:text-text2"
                     placeholder="Search"
                   />
-                  <span className="min-w-8 min-h-8 md:min-w-10 md:h-10 rounded-full flex items-center justify-center bg-primary ">
+                  <span className="min-w-8 min-h-8 rounded-full flex items-center justify-center bg-primary ">
                     <img src={searchIcon} alt="" className=" w-3 md:w-[15px]" />
                   </span>
                 </div>
               </div>
-              <div className="w-full lg:w-fit xl:w-[30%] order-3 flex items-center justify-between lg:block relative sm:static">
+              <div className="w-full lg:w-fit xl:w-[28%] order-3 flex items-center justify-between lg:block relative sm:static">
                 <p className="text-sm sm:text-base text-text2 block lg:hidden">
                   328 results found
                 </p>
                 <div
-                  className="py-1.5 md:py-2.5 px-3 md:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary hidden xl:flex justify-between items-center cursor-pointer"
+                  className="py-1.5 px-3 md:px-5 rounded-full border border-border1 hover:border-primary relative hover:text-primary hidden xl:flex justify-between items-center cursor-pointer"
                   onClick={toggleMenu}
                 >
                   <div
-                    className={`select-menu flex text-text2 text-sm xs:text-base md:text-xl 2xl:text-[22px] font-normal leading-4 md:leading-8 ${
+                    className={`select-menu flex text-text2 text-sm xs:text-base md:text-lg font-normal leading-4 md:leading-8 ${
                       sortShow ? "active" : ""
                     }`}
                   >

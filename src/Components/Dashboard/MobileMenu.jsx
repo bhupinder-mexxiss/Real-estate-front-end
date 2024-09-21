@@ -22,7 +22,7 @@ const MobileMenu = ({ isActiveMobileMenu, setIsActiveMobileMenu }) => {
             <li>
               <NavLink
                 onClick={() => setIsActiveMobileMenu(false)}
-                to="/admin/dashboard"
+                to="/user-panel/dashboard"
                 className={({ isActive, isPending }) =>
                   ` py-2.5 border-b hover:text-primary hover:bg-[#00858e09] w-full border-l-4 border-l-white pl-4 inline-block ${
                     isActive
@@ -39,7 +39,7 @@ const MobileMenu = ({ isActiveMobileMenu, setIsActiveMobileMenu }) => {
             <li>
               <NavLink
                 onClick={() => setIsActiveMobileMenu(false)}
-                to="/admin/users"
+                to="/user-panel/leads"
                 className={({ isActive, isPending }) =>
                   ` py-2.5 border-b hover:text-primary hover:bg-[#00858e09] w-full border-l-4 border-l-white pl-4 inline-block ${
                     isActive
@@ -50,13 +50,13 @@ const MobileMenu = ({ isActiveMobileMenu, setIsActiveMobileMenu }) => {
                   }`
                 }
               >
-                Users
+                Leads
               </NavLink>
             </li>
             <li>
               <NavLink
                 onClick={() => setIsActiveMobileMenu(false)}
-                to="/admin/sellers"
+                to="/user-panel/my-listings"
                 className={({ isActive, isPending }) =>
                   ` py-2.5 border-b hover:text-primary hover:bg-[#00858e09] w-full border-l-4 border-l-white pl-4 inline-block ${
                     isActive
@@ -67,13 +67,13 @@ const MobileMenu = ({ isActiveMobileMenu, setIsActiveMobileMenu }) => {
                   }`
                 }
               >
-                Sellers
+                Listing
               </NavLink>
             </li>
             <li>
               <NavLink
                 onClick={() => setIsActiveMobileMenu(false)}
-                to="/admin/properties"
+                to="/user-panel/my-profile"
                 className={({ isActive, isPending }) =>
                   ` py-2.5 border-b hover:text-primary hover:bg-[#00858e09] w-full border-l-4 border-l-white pl-4 inline-block ${
                     isActive
@@ -84,13 +84,13 @@ const MobileMenu = ({ isActiveMobileMenu, setIsActiveMobileMenu }) => {
                   }`
                 }
               >
-                Properties
+                My Profile
               </NavLink>
             </li>
             <li>
               <NavLink
                 onClick={() => setIsActiveMobileMenu(false)}
-                to="/admin/account-setting"
+                to="/user-panel/change-password"
                 className={({ isActive, isPending }) =>
                   ` py-2.5 border-b hover:text-primary hover:bg-[#00858e09] w-full border-l-4 border-l-white pl-4 inline-block ${
                     isActive
@@ -101,13 +101,13 @@ const MobileMenu = ({ isActiveMobileMenu, setIsActiveMobileMenu }) => {
                   }`
                 }
               >
-                Account Setting
+                Change Password
               </NavLink>
             </li>
             <li>
               <NavLink
                 onClick={() => setIsActiveMobileMenu(false)}
-                to="/admin/change-password"
+                to="/"
                 className={({ isActive, isPending }) =>
                   ` py-2.5 border-b hover:text-primary hover:bg-[#00858e09] w-full border-l-4 border-l-white pl-4 inline-block ${
                     isActive
@@ -118,7 +118,24 @@ const MobileMenu = ({ isActiveMobileMenu, setIsActiveMobileMenu }) => {
                   }`
                 }
               >
-               Change Password
+                Back to website
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                onClick={() => setIsActiveMobileMenu(false)}
+                to="/"
+                className={({ isActive, isPending }) =>
+                  ` py-2.5 border-b hover:text-primary hover:bg-[#00858e09] w-full border-l-4 border-l-white pl-4 inline-block ${
+                    isActive
+                      ? "bg-[#00858e18] text-primary border-l-primary font-medium"
+                      : isPending
+                      ? "pending"
+                      : ""
+                  }`
+                }
+              >
+                Log Out
               </NavLink>
             </li>
           </ul>

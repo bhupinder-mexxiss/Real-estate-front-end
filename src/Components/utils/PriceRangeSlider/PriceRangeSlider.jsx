@@ -80,7 +80,7 @@ const CustomBarChart = () => {
   }, [data]);
 
   return (
-    <div className="sm:max-w-60">
+    <div className="lg:max-w-60">
       <div className="flex items-center mb-5">
         <span className="text-base text-[#040404] mr-1">${priceRange[0]}</span>
         <span>-</span>

@@ -7,8 +7,8 @@ const MyProfile = () => {
   return (
     <>
       <div className="">
-        <h6 className="text-2xl font-medium">My Profile</h6>
-        <div className="mt-6 flex items-center justify-between">
+        <h6 className="text-2xl font-medium hidden lg:block">My Profile</h6>
+        <div className="lg:mt-6 flex items-center justify-between">
           <p className="text-lg font-medium">Edit Profile</p>
           <div className="flex items-center gap-3 sm:gap-6">
             <button className="text-sm text-primary leading-4 py-2.5 px-6 sm:w-[176px] border border-primary rounded-lg">

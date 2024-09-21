@@ -3,6 +3,7 @@ import loginBg from "../../assets/images/loginBg.png";
 import USAFlag from "../../assets/images/USAFlag.png";
 import { Link } from "react-router-dom";
 import "./AddProperties.css";
+import { KeyboardArrowLeftOutlined } from "@mui/icons-material";
 
 const step2 = () => {
   const [isActive, setIsActive] = useState("Owner");
@@ -22,7 +23,7 @@ const step2 = () => {
               <div className="bg-white py-8 px-4 sm:p-8 rounded-lg lg:p-0 sm:min-w-[370px] ">
                 <ul className="flex justify-between gap-2.5 mb-6 sm:mb-12">
                   <li
-                    className={`text-center text-lg sm:text-xl  py-1.5 sm:py-3 px-4 sm:px-6 cursor-pointer rounded-lg sm:rounded-full border  ${
+                    className={`text-center sm:text-lg py-1.5 px-3 xs:px-4 sm:px-6 cursor-pointer rounded-lg sm:rounded-full border  ${
                       isActive === "Owner"
                         ? "border-primary bg-primary text-white font-medium"
                         : "border-border1 text-text2"
@@ -32,7 +33,7 @@ const step2 = () => {
                     Owner
                   </li>
                   <li
-                    className={`text-center text-lg sm:text-xl  py-1.5 sm:py-3 px-4 sm:px-6 cursor-pointer rounded-lg sm:rounded-full border  ${
+                    className={`text-center sm:text-lg py-1.5 px-3 xs:px-4 sm:px-6 cursor-pointer rounded-lg sm:rounded-full border  ${
                       isActive === "Broker"
                         ? "border-primary bg-primary text-white font-medium"
                         : "border-border1 text-text2"
@@ -42,7 +43,7 @@ const step2 = () => {
                     Broker
                   </li>
                   <li
-                    className={`text-center text-lg sm:text-xl  py-1.5 sm:py-3 px-4 sm:px-6 cursor-pointer rounded-lg sm:rounded-full border  ${
+                    className={`text-center sm:text-lg py-1.5 px-3 xs:px-4 sm:px-6 cursor-pointer rounded-lg sm:rounded-full border  ${
                       isActive === "Builder"
                         ? "border-primary bg-primary text-white font-medium"
                         : "border-border1 text-text2"
@@ -52,9 +53,14 @@ const step2 = () => {
                     Builder
                   </li>
                 </ul>
-                <h3 className="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#040404] sm:leading-[44px]">
-                  Welcome
-                </h3>
+                <div className="flex gap-4 items-center">
+                  <Link to="/add-property" className="text-white bg-primary rounded-lg inline-block px-3 py-1.5">
+                    <KeyboardArrowLeftOutlined />
+                  </Link>
+                  <h3 className="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#040404] sm:leading-[44px]">
+                    Welcome
+                  </h3>
+                </div>
                 <p className="text-lg sm:text-xl text-[#040404] mt-4 sm:mt-6">
                   Tell us more about yourself
                 </p>
@@ -131,7 +137,7 @@ const step2 = () => {
                     </div>
                     <div className=" mb-5">
                       <label className="text-[15px] text-[#040404]">
-                      Contact Number
+                        Contact Number
                       </label>
                       <div className="py-[9px] px-4 rounded border-[#E2E2EC] border mt-2 bg-[#F7F8FF]">
                         <input
