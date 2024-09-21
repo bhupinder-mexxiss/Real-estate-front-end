@@ -1,5 +1,7 @@
 import React from "react";
 import loginBg from "../../assets/images/loginBg.png";
+import { ArrowBack } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const ResetPassword = () => {
   return (
@@ -15,10 +17,16 @@ const ResetPassword = () => {
             <div></div>
             <div className="lg:max-w-[600px] py-14 sm:px-6 md:px-28 flex items-center min-h-screen relative lg:bg-white lg:rounded-l-[40px] ov">
               <div className="bg-white py-8 px-4 sm:p-8 rounded-lg lg:p-0">
+                <Link
+                  to="/"
+                  className="text-primary text-lg lg:absolute top-4 left-6 flex items-center -translate-y-4 md:-translate-x-3 lg:translate-x-0 lg:translate-y-0"
+                >
+                  <ArrowBack />
+                </Link>
                 <h3 className="text-3xl 2xs:text-4xl sm:text-[44px] font-bold text-[#040404] leading-[44px]">
                   Reset Password
                 </h3>
-                <p className="text-lg sm:text-xl text-[#040404] mt-4 sm:mt-6">
+                <p className="sm:text-lg text-[#040404] mt-3 md:mt-6">
                   Please create a new password
                 </p>
                 <div className="mt-6 sm:mt-10">

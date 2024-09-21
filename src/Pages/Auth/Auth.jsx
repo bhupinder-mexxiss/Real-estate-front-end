@@ -30,7 +30,7 @@ const Auth = () => {
                     Welcome 👋
                   </h3>
                 </div>
-                <p className="sm:text-lg  text-[#040404] mt-4 sm:mt-6">
+                <p className="sm:text-lg  text-[#040404] mt-3 sm:mt-6">
                   See which properties you have contacted.
                 </p>
                 <div className="my-6 sm:mt-10 sm:mb-110">
