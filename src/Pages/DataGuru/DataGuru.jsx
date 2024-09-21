@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import InsigntHubBg from "../../assets/images/InsigntHubBg.png";
 import house1 from "../../assets/images/house1.png";
 import map_img from "../../assets/images/map_img.png";
+import ValueEstimator from "../../assets/images/ValueEstimator2.svg";
+import map from "../../assets/images/map.svg";
 import NewProject from "../../assets/icons/NewProjects.png";
 import greenAreas from "../../assets/icons/greenAreas.png";
 import Slider from "react-slick";
@@ -233,10 +235,10 @@ const DataGuru = () => {
                 </div>
               </div>
               <div className="px-2.5">
-                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
+                <Link to="/explore-price/map" className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
                   <div className="mb-6 ">
                     <img
-                      src={NewProject}
+                      src={map}
                       alt=""
                       className="w-[175px] max-h-[171px] object-cover mx-auto"
                     />
@@ -253,30 +255,33 @@ const DataGuru = () => {
                       Explore Area Price
                     </span>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="px-2.5">
-                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
+                <Link
+                  to="/home-value-estimator"
+                  className="py-10 px-6 bg-white rounded-3xl flex flex-col "
+                >
                   <div className="mb-6 ">
                     <img
-                      src={NewProject}
+                      src={ValueEstimator}
                       alt=""
                       className="w-[175px] max-h-[171px] object-cover mx-auto"
                     />
                   </div>
                   <div>
                     <p className="text-lg text-text3 font-medium mb-3">
-                      Explore Area Price
+                      Home Value Estimator
                     </p>
                     <p className="text-sm text-text3 mb-5">
-                      Are you looking for new and upcoming properties? View all
-                      new projects in the UAE.
+                      Wonder about the current value of your home? Let us
+                      estimate rent and sale price for you.
                     </p>
                     <span className="text-primary font-medium">
-                      Explore New Projects
+                      Calculate property value
                     </span>
                   </div>
-                </div>
+                </Link>
               </div>
             </Slider>
           </div>

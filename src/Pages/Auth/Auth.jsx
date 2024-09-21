@@ -3,7 +3,7 @@ import loginBg from "../../assets/images/loginBg.png";
 import facebook1 from "../../assets/icons/facebook1.png";
 import Google from "../../assets/icons/Google.png";
 import { Link } from "react-router-dom";
-import { KeyboardArrowLeftOutlined } from "@mui/icons-material";
+import { ArrowBack, KeyboardArrowLeftOutlined } from "@mui/icons-material";
 
 const Auth = () => {
   return (
@@ -17,20 +17,20 @@ const Auth = () => {
         <div className="container mx-auto">
           <div className="flex lg:justify-end justify-center">
             <div></div>
-            <div className="lg:max-w-[600px] py-14 sm:px-6 md:px-28 flex items-center min-h-screen relative lg:bg-white lg:rounded-l-[40px] ov">
+            <div className="lg:max-w-[600px] py-14 sm:px-6 md:px-28 flex items-center min-h-screen relative lg:bg-white lg:rounded-l-[40px]  first-line:">
               <div className="bg-white py-8 px-4 sm:p-8 rounded-lg lg:p-0">
+                <Link
+                  to="/"
+                  className="text-primary text-lg lg:absolute top-4 left-6 flex items-center -translate-y-4 md:-translate-x-3 lg:translate-x-0 lg:translate-y-0"
+                >
+                  <ArrowBack />
+                </Link>
                 <div className="flex gap-4 items-center">
-                  <Link
-                    to="/"
-                    className="text-white bg-primary rounded-lg inline-block px-3 py-1.5"
-                  >
-                    <KeyboardArrowLeftOutlined />
-                  </Link>
                   <h3 className="text-4xl sm:text-[44px] font-bold text-[#040404] leading-[44px]">
                     Welcome 👋
                   </h3>
                 </div>
-                <p className="text-lg sm:text-xl text-[#040404] mt-4 sm:mt-6">
+                <p className="sm:text-lg  text-[#040404] mt-4 sm:mt-6">
                   See which properties you have contacted.
                 </p>
                 <div className="my-6 sm:mt-10 sm:mb-110">

@@ -45,6 +45,10 @@ import Sellers from "./Components/AdminDashboard/Sellers/Sellers";
 import PropertyList from "./Components/AdminDashboard/PropertyList/PropertyList";
 import AdminChangePassword from "./Components/AdminDashboard/AdminChangePassword/AdminChangePassword";
 import AdminAccountSetting from "./Components/AdminDashboard/AdminAccountSetting/AdminAccountSetting";
+import ValueEstimator from "./Pages/ValueEstimator/ValueEstimator";
+import ExplorePriceMap from "./Pages/ExplorePriceMap/ExplorePriceMap";
+import MapSearch from "./Pages/MapSearch/MapSearch";
+import UserProfile from "./Pages/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -126,6 +130,22 @@ const router = createBrowserRouter([
       {
         path: "/user/saved-properties",
         element: <SavedProperties />,
+      },
+      {
+        path: "/home-value-estimator",
+        element: <ValueEstimator />,
+      },
+      {
+        path: "/explore-price/map",
+        element: <ExplorePriceMap />,
+      },
+      {
+        path: "/map-search",
+        element: <MapSearch />,
+      },
+      {
+        path: "/user-profile",
+        element: <UserProfile />,
       },
     ],
   },

@@ -3,7 +3,7 @@ import loginBg from "../../assets/images/loginBg.png";
 import USAFlag from "../../assets/images/USAFlag.png";
 import { Link } from "react-router-dom";
 import "./AddProperties.css";
-import { KeyboardArrowLeftOutlined } from "@mui/icons-material";
+import { ArrowBack, KeyboardArrowLeftOutlined } from "@mui/icons-material";
 
 const step2 = () => {
   const [isActive, setIsActive] = useState("Owner");
@@ -21,6 +21,13 @@ const step2 = () => {
           <div className="flex lg:justify-end justify-center">
             <div className="lg:max-w-[600px] py-14 sm:px-6 md:pl-28 md:pr-12 flex items-center min-h-screen relative lg:bg-white lg:rounded-l-[40px] ov">
               <div className="bg-white py-8 px-4 sm:p-8 rounded-lg lg:p-0 sm:min-w-[370px] ">
+                {" "}
+                <Link
+                  to="/add-property"
+                  className="text-primary text-lg lg:absolute top-4 left-6 flex items-center -translate-y-4 md:-translate-x-3 lg:translate-x-0 lg:translate-y-0"
+                >
+                  <ArrowBack />
+                </Link>
                 <ul className="flex justify-between gap-2.5 mb-6 sm:mb-12">
                   <li
                     className={`text-center sm:text-lg py-1.5 px-3 xs:px-4 sm:px-6 cursor-pointer rounded-lg sm:rounded-full border  ${
@@ -54,14 +61,11 @@ const step2 = () => {
                   </li>
                 </ul>
                 <div className="flex gap-4 items-center">
-                  <Link to="/add-property" className="text-white bg-primary rounded-lg inline-block px-3 py-1.5">
-                    <KeyboardArrowLeftOutlined />
-                  </Link>
                   <h3 className="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#040404] sm:leading-[44px]">
                     Welcome
                   </h3>
                 </div>
-                <p className="text-lg sm:text-xl text-[#040404] mt-4 sm:mt-6">
+                <p className="sm:text-lg text-[#040404] mt-3 md:mt-6">
                   Tell us more about yourself
                 </p>
                 <div className="mt-6 sm:mt-10">
@@ -183,7 +187,7 @@ const step2 = () => {
                     )}
                     <Link
                       to="/list-property/new"
-                      className="text-center text-xl leading-5 font-medium text-white bg-primary rounded-lg sm:rounded-2xl py-3 sm:py-[15px] px-6 block w-full"
+                      className="text-center md:text-lg leading-5 font-medium text-white bg-primary rounded-lg sm:rounded-xl py-3 px-6 block w-full"
                     >
                       Next
                     </Link>

@@ -66,7 +66,7 @@ const Header = () => {
     <>
       <header
         className={`w-full z-[999] header duration-300  ${
-          isSticky ? "sticky_header" : "absolute  py-2 sm:py-4 lg:py-9 top-0"
+          isSticky ? "sticky_header" : "absolute  py-2 sm:py-4 lg:pt-9 lg:pb-8 top-0"
         } ${!isPaths && "border-b border-border1"}`}
         ref={headerRef}
       >

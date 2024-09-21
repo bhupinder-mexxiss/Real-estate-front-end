@@ -3,7 +3,7 @@ import loginBg from "../../assets/images/loginBg.png";
 import facebook1 from "../../assets/icons/facebook1.png";
 import Google from "../../assets/icons/Google.png";
 import { Link } from "react-router-dom";
-import { KeyboardArrowLeftOutlined } from "@mui/icons-material";
+import { ArrowBack, KeyboardArrowLeftOutlined } from "@mui/icons-material";
 
 const Step1 = () => {
   return (
@@ -18,18 +18,18 @@ const Step1 = () => {
           <div className="flex lg:justify-end justify-center">
             <div className="lg:max-w-[600px] py-14 sm:px-6 md:pl-28 md:pr-12 flex items-center min-h-screen relative lg:bg-white lg:rounded-l-[40px] ov">
               <div className="bg-white py-8 px-4 sm:p-8 rounded-lg lg:p-0 sm:min-w-[370px] ">
+                <Link
+                  to="/"
+                  className="text-primary text-lg lg:absolute top-4 left-6 flex items-center -translate-y-4 md:-translate-x-3 lg:translate-x-0 lg:translate-y-0"
+                >
+                  <ArrowBack />
+                </Link>
                 <div className="flex gap-4 items-center">
-                  <Link
-                    to="/"
-                    className="text-white bg-primary rounded-lg inline-block px-3 py-1.5"
-                  >
-                    <KeyboardArrowLeftOutlined />
-                  </Link>
                   <h3 className="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#040404] sm:leading-[44px]">
                     Welcome
                   </h3>
                 </div>
-                <p className="text-lg sm:text-xl text-[#040404] mt-4 sm:mt-6">
+                <p className="sm:text-lg text-[#040404] mt-3 md:mt-6">
                   Let’s get you started
                 </p>
                 <div className="my-6 sm:mt-10 sm:mb-11">
@@ -43,7 +43,7 @@ const Step1 = () => {
                   </div>
                   <Link
                     to="/add-property/step-2"
-                    className="text-center text-xl leading-5 font-medium text-white bg-primary rounded-lg sm:rounded-2xl py-3 sm:py-[15px] px-6 block w-full"
+                    className="text-center text-lg leading-5 font-medium text-white bg-primary rounded-lg sm:rounded-xl py-3 px-6 block w-full"
                   >
                     Continue
                   </Link>
@@ -54,7 +54,7 @@ const Step1 = () => {
                   </div>
                 </div>
                 <div>
-                  <button className="text-[#040404] text-[15px] py-3 px-6 flex w-full justify-center items-center border border-[#E2E2EC] bg-[#F7F8FF] rounded">
+                  <button className="text-[#040404] text-[15px] py-2 px-6 flex w-full justify-center items-center border border-[#E2E2EC] bg-[#F7F8FF] rounded">
                     <img src={Google} alt="" className="w-[26px] mr-4" />
                     Sign in with Google
                   </button>
