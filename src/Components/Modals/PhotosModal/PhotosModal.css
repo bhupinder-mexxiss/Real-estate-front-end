@@ -1,0 +1,8 @@
+
+.PhotosModal div[tabindex="-1"] .bg-white{
+    background-color: transparent;
+    max-height: 100vh;
+}
+.PhotosModal .slick-dots li{
+ width: 100px;
+}

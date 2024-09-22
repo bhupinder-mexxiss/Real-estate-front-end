@@ -11,10 +11,12 @@ import {
   FilterAltOutlined,
   KeyboardArrowDownOutlined,
   KeyboardArrowUpOutlined,
+  NotificationsNoneOutlined,
+  PlaceOutlined,
 } from "@mui/icons-material";
 import Filter from "../../Components/Filter/Filter";
 import ProductCard from "../../Components/ProductCard/ProductCard";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NewProjectCard from "../../Components/ProductCard/NewProjectCard";
 
 const Shop = () => {
@@ -297,6 +299,21 @@ const Shop = () => {
             }`}
             onClick={() => setFilterShow(false)}
           ></div>
+        </div>
+        <div className="fixed md:bottom-10 lg:right-10 bottom-5 right-1/2 translate-x-1/2 lg:translate-x-0 z-20 text-sm text-white duration-300 rounded overflow-hidden shadow-lg flex">
+          <button className=" bg-primary bg-opacity-80 hover:bg-opacity-100 py-2 flex items-center gap-1 ">
+            <span className="px-2 border-r border-white">
+              <NotificationsNoneOutlined className="!text-lg" /> Create Alert
+            </span>
+          </button>
+          <Link
+            to="/map-search"
+            className=" bg-primary bg-opacity-80 hover:bg-opacity-100 py-2 flex items-center gap-1"
+          >
+            <span className="px-2">
+              <PlaceOutlined className="!text-lg" /> Map View
+            </span>
+          </Link>
         </div>
       </div>
     </div>

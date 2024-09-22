@@ -29,16 +29,27 @@ import whatsapp from "../../assets/icons/whatsapp.png";
 import userImg from "../../assets/images/userImg.png";
 import { data } from "autoprefixer";
 import {
+  FavoriteBorderRounded,
+  FavoriteRounded,
+  FlagOutlined,
   KeyboardArrowLeftOutlined,
   PhotoCameraOutlined,
+  ShareOutlined,
 } from "@mui/icons-material";
 import Slider from "react-slick";
 import "./productDetail.css";
+import PhotosModal from "../../Components/Modals/PhotosModal/PhotosModal";
 
 const ProductDetail = () => {
   let sliderRef = useRef(null);
+  const [openModal, setOpenModal] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [favorites, setFavorites] = useState(false);
+
+  const toggleFavorite = () => {
+    setFavorites(!favorites);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -119,9 +130,34 @@ const ProductDetail = () => {
   return (
     <div className="pt-6 pb-12 productDetail">
       <div className="container mx-auto">
-        <button className="mb-6 text-text2 text-xl font-medium flex items-center">
-          <KeyboardArrowLeftOutlined className="!text-2xl" /> Back
-        </button>
+        <div className="flex justify-between items-center mb-6">
+          <button className=" text-text2 text-xl font-medium flex items-center">
+            <KeyboardArrowLeftOutlined className="!text-2xl" /> Back
+          </button>
+          <div className="flex gap-3 sm:gap-2">
+            <button
+              onClick={toggleFavorite}
+              className="flex gap-1 items-center justify-center rounded-full sm:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 sm:px-3"
+            >
+              {favorites ? (
+                <FavoriteRounded className="text-primary !text-xl" />
+              ) : (
+                <FavoriteBorderRounded className="text-primary !text-xl" />
+              )}{" "}
+              <span className="text-primary hidden sm:inline-block">Save</span>
+            </button>
+            <button className="flex gap-1 items-center justify-center rounded-full sm:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 sm:px-3">
+              <FlagOutlined className="text-primary !text-xl" />
+              <span className="text-primary hidden sm:inline-block">
+                Report
+              </span>
+            </button>
+            <button className="flex gap-1 items-center justify-center rounded-full sm:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 sm:px-3">
+              <ShareOutlined className="text-primary !text-lg" />
+              <span className="text-primary hidden sm:inline-block">Share</span>
+            </button>
+          </div>
+        </div>
         <div className="product_imgs mb-6 sm:mb-10 md:mb-16">
           <div className="hidden md:flex gap-5 2xl:gap-9">
             <div className="w-[65%] rounded-2xl overflow-hidden relative">
@@ -132,7 +168,7 @@ const ProductDetail = () => {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="bg-white rounded-lg border border-border1 absolute bottom-3 right-3 px-2.5 py-1 flex items-center justify-center gap-1.5 !text-text2 cursor-pointer">
+              <div className="bg-white rounded-lg border border-border1 absolute bottom-3 right-3 px-2.5 py-1 flex items-center justify-center gap-1.5 !text-text2 cursor-pointer" onClick={() => setOpenModal(true)}>
                 <span>
                   <PhotoCameraOutlined />
                 </span>
@@ -280,7 +316,9 @@ const ProductDetail = () => {
                         <span className="text-text2 leading-4 mb-1.5 text-sm">
                           {item.title}
                         </span>
-                        <span className="text-[#040404] text-sm">{item.value}</span>
+                        <span className="text-[#040404] text-sm">
+                          {item.value}
+                        </span>
                       </div>
                     </div>
                   ))}
@@ -301,7 +339,9 @@ const ProductDetail = () => {
                         />
                       </div>
                       <div className="flex flex-col">
-                        <span className="text-[#040404] text-sm">{item.title}</span>
+                        <span className="text-[#040404] text-sm">
+                          {item.title}
+                        </span>
                       </div>
                     </div>
                   ))}
@@ -370,6 +410,7 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
+      <PhotosModal openModal={openModal} setOpenModal={setOpenModal}/>
     </div>
   );
 };
