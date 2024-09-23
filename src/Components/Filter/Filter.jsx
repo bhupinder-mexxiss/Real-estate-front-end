@@ -39,36 +39,36 @@ const Filter = () => {
               <input
                 type="checkbox"
                 className="text-primary rounded w-5 md:w-6 h-5 md:h-6 border-2"
-                id="Townhouses"
+                id="Commercial_Rent"
                 name="purpose"
-                value="Townhouses"
+                value="Commercial Rent"
               />
-              <label className="text-text2" htmlFor="buy">
-                Townhouses
+              <label className="text-text2" htmlFor="Commercial_Rent">
+                Commercial Rent
               </label>
             </li>
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
                 className="text-primary rounded w-5 md:w-6 h-5 md:h-6 border-2"
-                id="Land"
+                id="Commercial_Buy"
                 name="purpose"
-                value="Land"
+                value="Commercial Buy"
               />
-              <label className="text-text2" htmlFor="Land">
-                Land
+              <label className="text-text2" htmlFor="Commercial_Buy">
+                Commercial Buy
               </label>
             </li>
             <li className="mb-3 flex items-center gap-3">
               <input
                 type="checkbox"
                 className="text-primary rounded w-5 md:w-6 h-5 md:h-6 border-2"
-                id="Duplexes"
+                id="New_Project"
                 name="purpose"
-                value="Duplexes"
+                value="New Project"
               />
-              <label className="text-text2" htmlFor="Duplexes">
-                Duplexes
+              <label className="text-text2" htmlFor="New_Project">
+                New Project
               </label>
             </li>
           </ul>
@@ -139,6 +139,7 @@ const Filter = () => {
               </label>
             </li>
           </ul>
+          <button className="text-primary font-medium">Show More</button> 
         </div>
         <div className="md-6 md:mb-10">
           <p className="mb-4 sm:mb-6 sm:text-lg text-[#040404] font-medium">

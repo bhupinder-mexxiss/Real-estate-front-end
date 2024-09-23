@@ -18,8 +18,10 @@ import Filter from "../../Components/Filter/Filter";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import { Link, useLocation } from "react-router-dom";
 import NewProjectCard from "../../Components/ProductCard/NewProjectCard";
+import CreateAlert from "../../Components/Modals/CreateAlert/CreateAlert";
 
 const Shop = () => {
+  const [openAlert, setOpenAlert] = useState(false);
   const [sortShow, setSortShow] = useState(false);
   const [filterShow, setFilterShow] = useState(false);
   const [title, setTitle] = useState("");
@@ -29,13 +31,13 @@ const Shop = () => {
 
   useEffect(() => {
     if (location.pathname === "/buy") {
-      setTitle("Available for Sale");
+      setTitle("Available for Sale in UAE");
       setLink("buy");
     } else if (location.pathname === "/rent") {
-      setTitle("Available for Rent");
+      setTitle("Available for Rent in UAE");
       setLink("rent");
     } else if (location.pathname === "/commercial") {
-      setTitle("Commercial Properties for Rent");
+      setTitle("Commercial Properties for Rent in UAE");
       setLink("commercial");
     } else {
       setTitle("New Projects in UAE"); // Fallback or other titles based on pathname
@@ -117,7 +119,7 @@ const Shop = () => {
                   <input
                     type="text"
                     className="inline-block w-full border-none ring-0 focus:ring-0 text-text2 text-sm xs:text-base md:text-lg font-normal px-0 py-0 leading-4 md:leading-8 pr-4 placeholder:text-text2"
-                    placeholder="Search"
+                    placeholder="Search City, community or building"
                   />
                   <span className="min-w-8 min-h-8 rounded-full flex items-center justify-center bg-primary ">
                     <img src={searchIcon} alt="" className=" w-3 md:w-[15px]" />
@@ -301,7 +303,7 @@ const Shop = () => {
           ></div>
         </div>
         <div className="fixed md:bottom-10 lg:right-10 bottom-5 right-1/2 translate-x-1/2 lg:translate-x-0 z-20 text-sm text-white duration-300 rounded overflow-hidden shadow-lg flex">
-          <button className=" bg-primary bg-opacity-80 hover:bg-opacity-100 py-2 flex items-center gap-1 ">
+          <button className=" bg-primary bg-opacity-80 hover:bg-opacity-100 py-2 flex items-center gap-1 " onClick={() => setOpenAlert(true)}>
             <span className="px-2 border-r border-white">
               <NotificationsNoneOutlined className="!text-lg" /> Create Alert
             </span>
@@ -316,6 +318,7 @@ const Shop = () => {
           </Link>
         </div>
       </div>
+      <CreateAlert setOpenAlert={setOpenAlert} openAlert={openAlert}/>
     </div>
   );
 };

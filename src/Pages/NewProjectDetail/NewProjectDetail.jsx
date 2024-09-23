@@ -122,7 +122,10 @@ const NewProjectDetail = () => {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="bg-white rounded-lg border border-border1 absolute bottom-3 right-3 px-2.5 py-1 flex items-center justify-center gap-1.5 !text-text2 cursor-pointer" onClick={() => setOpenModal(true)}>
+              <div
+                className="bg-white rounded-lg border border-border1 absolute bottom-3 right-3 px-2.5 py-1 flex items-center justify-center gap-1.5 !text-text2 cursor-pointer"
+                onClick={() => setOpenModal(true)}
+              >
                 <span>
                   <PhotoCameraOutlined />
                 </span>
@@ -388,7 +391,7 @@ const NewProjectDetail = () => {
           </div>
         </div>
       </div>
-      <PhotosModal openModal={openModal} setOpenModal={setOpenModal}/>
+      <PhotosModal openModal={openModal} setOpenModal={setOpenModal} />
     </div>
   );
 };
