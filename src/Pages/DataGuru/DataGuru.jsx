@@ -4,6 +4,10 @@ import house1 from "../../assets/images/house1.png";
 import map_img from "../../assets/images/map_img.png";
 import ValueEstimator from "../../assets/images/ValueEstimator2.svg";
 import map from "../../assets/images/map.svg";
+import rentBuyCal from "../../assets/images/rentBuyCal.svg";
+import ResidentialInsight from "../../assets/images/ResidentialInsight.svg";
+import community from "../../assets/images/community.svg";
+import historicalTransactions from "../../assets/images/historical-transactions.svg";
 import NewProject from "../../assets/icons/NewProjects.png";
 import greenAreas from "../../assets/icons/greenAreas.png";
 import Slider from "react-slick";
@@ -190,7 +194,7 @@ const DataGuru = () => {
           <div>
             <Slider {...featureSettings} ref={featureSliderRef}>
               <div className="px-2.5">
-                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
+                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col min-h-[420px]">
                   <div className="mb-6 ">
                     <img
                       src={NewProject}
@@ -213,10 +217,10 @@ const DataGuru = () => {
                 </div>
               </div>
               <div className="px-2.5">
-                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
+                <div className="py-10 px-6 bg-white rounded-3xl flex flex-col min-h-[420px]">
                   <div className="mb-6 ">
                     <img
-                      src={NewProject}
+                      src={historicalTransactions}
                       alt=""
                       className="w-[175px] max-h-[171px] object-cover mx-auto"
                     />
@@ -235,7 +239,7 @@ const DataGuru = () => {
                 </div>
               </div>
               <div className="px-2.5">
-                <Link to="/explore-price/map" className="py-10 px-6 bg-white rounded-3xl flex flex-col ">
+                <Link to="/explore-price/map" className="py-10 px-6 bg-white rounded-3xl flex flex-col min-h-[420px]">
                   <div className="mb-6 ">
                     <img
                       src={map}
@@ -260,7 +264,7 @@ const DataGuru = () => {
               <div className="px-2.5">
                 <Link
                   to="/home-value-estimator"
-                  className="py-10 px-6 bg-white rounded-3xl flex flex-col "
+                  className="py-10 px-6 bg-white rounded-3xl flex flex-col min-h-[420px]"
                 >
                   <div className="mb-6 ">
                     <img
@@ -279,6 +283,81 @@ const DataGuru = () => {
                     </p>
                     <span className="text-primary font-medium">
                       Calculate property value
+                    </span>
+                  </div>
+                </Link>
+              </div>
+              <div className="px-2.5">
+                <Link
+                  to="/home-value-estimator"
+                  className="py-10 px-6 bg-white rounded-3xl flex flex-col min-h-[420px]"
+                >
+                  <div className="mb-6 ">
+                    <img
+                      src={ResidentialInsight}
+                      alt=""
+                      className="w-[175px] max-h-[171px] object-cover mx-auto"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-lg text-text3 font-medium mb-3">
+                    Residential Insights
+                    </p>
+                    <p className="text-sm text-text3 mb-5">
+                    Want insights on towers, villas or sub-communities? Have a look at the different residential areas in the city.
+                    </p>
+                    <span className="text-primary font-medium">
+                    Explore towers & villas
+                    </span>
+                  </div>
+                </Link>
+              </div>
+              <div className="px-2.5">
+                <Link
+                  to="/home-value-estimator"
+                  className="py-10 px-6 bg-white rounded-3xl flex flex-col min-h-[420px]"
+                >
+                  <div className="mb-6 ">
+                    <img
+                      src={community}
+                      alt=""
+                      className="w-[175px] max-h-[171px] object-cover mx-auto"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-lg text-text3 font-medium mb-3">
+                    Community Insights
+                    </p>
+                    <p className="text-sm text-text3 mb-5">
+                    Not sure where to live yet in the city? View more details on all the different communities.
+                    </p>
+                    <span className="text-primary font-medium">
+                    Explore communities
+                    </span>
+                  </div>
+                </Link>
+              </div>
+              <div className="px-2.5">
+                <Link
+                  to="/home-value-estimator"
+                  className="py-10 px-6 bg-white rounded-3xl flex flex-col min-h-[420px]"
+                >
+                  <div className="mb-6 ">
+                    <img
+                      src={rentBuyCal}
+                      alt=""
+                      className="w-[175px] max-h-[171px] object-cover mx-auto"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-lg text-text3 font-medium mb-3">
+                    Rent vs Buy Calculator
+                    </p>
+                    <p className="text-sm text-text3 mb-5">
+                    Not sure if you want to rent or buy yet? Calculate your monthly costs with Mortgage Finder.
+                    </p>
+                    <span className="text-primary font-medium">
+                    Explore Rent vs Buy 
                     </span>
                   </div>
                 </Link>
