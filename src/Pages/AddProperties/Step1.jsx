@@ -16,16 +16,15 @@ const Step1 = () => {
       <div className="relative h-screen overflow-auto">
         <div className="container mx-auto">
           <div className="flex lg:justify-end justify-center">
-            <Link
-              to="/"
-              className="text-lg fixed bg-white text-text2 top-4 left-3 sm:left-6 flex items-center rounded-xl pl-1 pr-4 py-1.5"
-            >
-              <KeyboardArrowLeftOutlined /> 
-              Back
-            </Link>
             <div className="lg:max-w-[600px] py-14 sm:pt-16 lg:pt-14 sm:px-6 md:pl-28 md:pr-12 flex items-center min-h-screen relative lg:bg-white lg:rounded-l-[40px] ov">
               <div className="bg-white py-8 px-4 sm:p-8 rounded-lg lg:p-0 sm:min-w-[370px] ">
-                <div className="flex gap-4 items-center">
+                <div className="lg:flex gap-4 items-center">
+                <Link
+                  to="/"
+                  className="text-primary text-lg lg:absolute top-4 left-6 flex items-center -translate-y-4 md:-translate-x-3 lg:translate-x-0 lg:translate-y-0 border border-primary bg-primary rounded-full w-8 h-8 justify-center"
+                >
+                  <ArrowBack className="text-white" />
+                </Link>
                   <h3 className="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#040404] sm:leading-[44px]">
                     Welcome
                   </h3>
