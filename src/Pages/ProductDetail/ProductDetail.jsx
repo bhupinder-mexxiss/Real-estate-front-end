@@ -131,30 +131,33 @@ const ProductDetail = () => {
     <div className="pt-6 pb-12 productDetail">
       <div className="container mx-auto">
         <div className="flex justify-between items-center mb-6">
-          <button className=" text-text2 text-xl font-medium flex items-center">
-            <KeyboardArrowLeftOutlined className="!text-2xl" /> Back
+          <button className=" text-text2 text-sm font-medium flex items-center">
+            <KeyboardArrowLeftOutlined className="!text-2xl" /> Back{" "}
+            <span className="hidden sm:inline-block">
+              / Villas for sale in Dubai / Marina Views
+            </span>
           </button>
-          <div className="flex gap-3 sm:gap-2">
+          <div className="flex gap-3 md:gap-2">
             <button
               onClick={toggleFavorite}
-              className="flex gap-1 items-center justify-center rounded-full sm:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 sm:px-3"
+              className="flex gap-1 items-center justify-center rounded-full md:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 md:px-3"
             >
               {favorites ? (
                 <FavoriteRounded className="text-primary !text-xl" />
               ) : (
                 <FavoriteBorderRounded className="text-primary !text-xl" />
               )}{" "}
-              <span className="text-primary hidden sm:inline-block">Save</span>
+              <span className="text-primary hidden md:inline-block">Save</span>
             </button>
-            <button className="flex gap-1 items-center justify-center rounded-full sm:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 sm:px-3">
+            <button className="flex gap-1 items-center justify-center rounded-full md:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 md:px-3">
               <FlagOutlined className="text-primary !text-xl" />
-              <span className="text-primary hidden sm:inline-block">
+              <span className="text-primary hidden md:inline-block">
                 Report
               </span>
             </button>
-            <button className="flex gap-1 items-center justify-center rounded-full sm:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 sm:px-3">
+            <button className="flex gap-1 items-center justify-center rounded-full md:border border-border1 cursor-pointer hover:border-primary duration-300 fav_btn py-1 md:px-3">
               <ShareOutlined className="text-primary !text-lg" />
-              <span className="text-primary hidden sm:inline-block">Share</span>
+              <span className="text-primary hidden md:inline-block">Share</span>
             </button>
           </div>
         </div>
@@ -168,7 +171,10 @@ const ProductDetail = () => {
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              <div className="bg-white rounded-lg border border-border1 absolute bottom-3 right-3 px-2.5 py-1 flex items-center justify-center gap-1.5 !text-text2 cursor-pointer" onClick={() => setOpenModal(true)}>
+              <div
+                className="bg-white rounded-lg border border-border1 absolute bottom-3 right-3 px-2.5 py-1 flex items-center justify-center gap-1.5 !text-text2 cursor-pointer"
+                onClick={() => setOpenModal(true)}
+              >
                 <span>
                   <PhotoCameraOutlined />
                 </span>
@@ -410,7 +416,7 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-      <PhotosModal openModal={openModal} setOpenModal={setOpenModal}/>
+      <PhotosModal openModal={openModal} setOpenModal={setOpenModal} />
     </div>
   );
 };

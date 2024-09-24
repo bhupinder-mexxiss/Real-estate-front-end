@@ -13,6 +13,22 @@ const NavMenu = () => {
       <ul className="flex gap-6 xl:gap-8 2xl:gap-10">
         <li>
           <NavLink
+            to="/"
+            className={({ isActive, isPending }) =>
+              ` xl:text-lg text-white hover:text-[#00C4F4] nav_item duration-300 ${
+                isActive
+                  ? "!border-primary text-[#00C4F4] !font-medium isActive"
+                  : isPending
+                  ? "pending"
+                  : ""
+              }`
+            }
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/buy"
             className={({ isActive, isPending }) =>
               ` xl:text-lg text-white hover:text-[#00C4F4] nav_item duration-300 ${

@@ -5,6 +5,7 @@ import house1 from "../../assets/images/house1.png";
 import house2 from "../../assets/images/house2.png";
 import house3 from "../../assets/images/house3.png";
 import house4 from "../../assets/images/house4.png";
+import adImg from "../../assets/images/adImg.png";
 import "./Shop.css";
 import {
   CloseOutlined,
@@ -252,16 +253,21 @@ const Shop = () => {
         <div className="lg:bg-white relative">
           <div className="container px-0 mx-auto">
             <div className="lg:flex">
-              <div className="lg:w-[28%] bg-white hidden lg:block">
+              <div className="lg:w-[20%] bg-white hidden lg:block">
                 <Filter />
               </div>
-              <div className="lg:w-[72%] context-box overflow-hidden bg-[#ECECEC] px-0 lg:px-6 pt-5 xl:pl-6 pb-24 xl:pr-32 2xl:pr-44">
+              <div className="lg:w-[60%] context-box overflow-hidden bg-[#ECECEC] px-0 lg:px-6 pt-5 xl:pl-6 pb-24">
                 <div className="grid sm:grid-cols-2 relative z-10 gap-6 sm:gap-y-4 gap-x-3 md:gap-6 xs:px-10 sm:px-0">
                   {link === "new-projects" ? (
                     <NewProjectCard products={products} />
                   ) : (
                     <ProductCard products={products} link={link} />
                   )}
+                </div>
+              </div>
+              <div className="w-[20%] relative z-10 lg:pt-6">
+                <div className="hidden lg:block shadow-md">
+                  <img src={adImg} alt="" className="rounded w-full" />
                 </div>
               </div>
             </div>
@@ -303,7 +309,10 @@ const Shop = () => {
           ></div>
         </div>
         <div className="fixed md:bottom-10 lg:right-10 bottom-5 right-1/2 translate-x-1/2 lg:translate-x-0 z-20 text-sm text-white duration-300 rounded overflow-hidden shadow-lg flex">
-          <button className=" bg-primary bg-opacity-80 hover:bg-opacity-100 py-2 flex items-center gap-1 " onClick={() => setOpenAlert(true)}>
+          <button
+            className=" bg-primary bg-opacity-80 hover:bg-opacity-100 py-2 flex items-center gap-1 "
+            onClick={() => setOpenAlert(true)}
+          >
             <span className="px-2 border-r border-white">
               <NotificationsNoneOutlined className="!text-lg" /> Create Alert
             </span>
@@ -318,7 +327,7 @@ const Shop = () => {
           </Link>
         </div>
       </div>
-      <CreateAlert setOpenAlert={setOpenAlert} openAlert={openAlert}/>
+      <CreateAlert setOpenAlert={setOpenAlert} openAlert={openAlert} />
     </div>
   );
 };

@@ -97,7 +97,7 @@ const ProductCard = ({ products, link }) => {
               </div>
             </div>
             <div className="mt-3 pt-4 border-t border-border1">
-              <div className="flex flex-wrap md:flex-nowrap items-center text-xs justify-between gap-y-2.5 gap-x-2 xl:gap-x-4">
+              <div className="flex flex-wrap 2xl:flex-nowrap items-center text-xs justify-between gap-y-2.5 gap-x-2 xl:gap-x-4">
                 <span className="flex items-center">
                   <img src={size_Icon} alt="" className="w-[14px] mr-1.5" />
                   1108 SQFT
