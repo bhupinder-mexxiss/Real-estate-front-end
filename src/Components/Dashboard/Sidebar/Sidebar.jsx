@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="bg-white w-full rounded-[20px] shadow-[0px_1.67px_83.33px_0px_#0000001A] overflow-hidden my-5">
-      <div className="flex flex-col justify-between py-7 px-5 h-[calc(100vh_-_40px)] overflow-auto">
+    <div className="bg-white w-full rounded-[20px] shadow-[0px_1.67px_83.33px_0px_#0000001A] overflow-hidden my-5 py-3.5">
+      <div className="flex flex-col justify-between py-7 px-5 h-[calc(100vh_-_68px)] overflow-auto">
         <div>
           <div className="text-center mb-[34px]">
             <div className="w-[90px] h-[90px] rounded-full overflow-hidden mx-auto mb-5">
@@ -51,6 +51,18 @@ const Sidebar = () => {
                 }
               >
                 Listing
+              </NavLink>
+            </li>
+            <li className="mb-2.5">
+              <NavLink
+                to="/user-panel/packages"
+                className={({ isActive }) =>
+                  ` rounded-2xl py-3.5 px-6 inline-block w-full duration-200 hover:text-white hover:bg-primary ${
+                    isActive ? "text-white bg-primary" : "text-[#77767A]"
+                  }`
+                }
+              >
+                Packages
               </NavLink>
             </li>
             <li className="mb-2.5">

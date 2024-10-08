@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import NavMenu from "./NavMenu";
 import MobileNav from "./MobileNav";
+import logo from "../../assets/images/logo.png"
 import { FavoriteBorderOutlined, Menu } from "@mui/icons-material";
 import "./header.css";
 
@@ -87,7 +88,7 @@ const Header = () => {
               <Link to="/" className="-m-1.5 p-1.5">
                 <img
                   className="h-12 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  src={logo}
                   alt=""
                 />
               </Link>

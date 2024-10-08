@@ -1,0 +1,103 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1367' height='192' viewBox='0 0 1367 192' fill='none'>
+    <path fill-rule='evenodd' clip-rule='evenodd'
+        d='M0 1H1366V151C1366 173.091 1348.09 191 1326 191H40C17.9086 191 0 173.091 0 151V1Z'
+        fill='url(#paint0_linear_488_17657)' />
+    <mask id='mask0_488_17657' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='-1' y='0'
+        width='1368' height='192'>
+        <path fill-rule='evenodd' clip-rule='evenodd'
+            d='M0 1H1366V151C1366 173.091 1348.09 191 1326 191H40C17.9086 191 0 173.091 0 151V1Z'
+            fill='white' stroke='white' />
+    </mask>
+    <g mask='url(#mask0_488_17657)'>
+        <path fill-rule='evenodd' clip-rule='evenodd'
+            d='M1168.35 -70L1436.68 -70V370.346L1352.73 310.012L1389.26 309.714L1346.59 267.108L1303.92 221.129V214.25L1228.11 215.077L1228.06 165.514V135.155V124.593H1260.07V134.076V143.466H1289.7V106.306V92.8371L1242.29 58.6116L1194.67 91.2643V177.049H1222.46V188.595H1184.78V177.049V89.9889L1242.06 49.6236V37.3387H1212.2L1168.35 0.751892V-70Z'
+            fill='#EBC4FF' />
+        <mask id='mask1_488_17657' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='1168'
+            y='-70' width='269' height='441'>
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1168.35 -70L1436.68 -70V370.346L1352.73 310.012L1389.26 309.714L1346.59 267.108L1303.92 221.129V214.25L1228.11 215.077L1228.06 165.514V135.155V124.593H1260.07V134.076V143.466H1289.7V106.306V92.8371L1242.29 58.6116L1194.67 91.2643V177.049H1222.46V188.595H1184.78V177.049V89.9889L1242.06 49.6236V37.3387H1212.2L1168.35 0.751892V-70Z'
+                fill='white' />
+        </mask>
+        <g mask='url(#mask1_488_17657)'>
+            <ellipse cx='1255.33' cy='-41.9694' rx='42.6708' ry='42.904'
+                transform='rotate(180 1255.33 -41.9694)' fill='#5842CE' />
+            <rect x='1298' y='43.8386' width='85.3416' height='85.808'
+                transform='rotate(180 1298 43.8386)' fill='#A75FD5' />
+            <rect x='1298' y='43.8386' width='42.6708' height='85.808'
+                transform='rotate(180 1298 43.8386)' fill='#C281EB' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1298 43.8386L1212.65 -41.9694H1298V43.8386Z' fill='#A75FD5' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1211.35 43.8386L1296.7 -41.9694H1211.35V43.8386Z' fill='#DBA3FF' />
+            <ellipse cx='1169.98' cy='-41.9694' rx='42.6708' ry='42.904'
+                transform='rotate(180 1169.98 -41.9694)' fill='#5842CE' />
+            <rect x='1211.42' y='43.8386' width='43.9055' height='85.808'
+                transform='rotate(180 1211.42 43.8386)' fill='#4D219C' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1212.01 43.8386L1123.61 -41.9694H1212.01V43.8386Z' fill='#DBA3FF' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1125.11 43.8386L1210.45 -41.9694H1125.11V43.8386Z' fill='#7662E7' />
+            <ellipse cx='42.6708' cy='42.904' rx='42.6708' ry='42.904'
+                transform='matrix(1 0 0 -1 1303.33 0.934814)' fill='#5842CE' />
+            <rect width='42.6708' height='85.808' transform='matrix(1 0 0 -1 1303.33 43.8389)'
+                fill='#C281EB' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1303.33 43.8389L1388.67 -41.9691H1303.33V43.8389Z' fill='#DBA3FF' />
+            <ellipse cx='42.6708' cy='42.904' rx='42.6708' ry='42.904'
+                transform='matrix(-1 0 0 1 1298 92.1057)' fill='#C9C1F5' />
+            <rect width='85.3416' height='85.808' transform='matrix(-1 0 0 1 1298 49.2017)'
+                fill='#A75FD5' />
+            <rect width='42.6708' height='85.808' transform='matrix(-1 0 0 1 1298 49.2017)'
+                fill='#C281EB' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1298 49.2017L1212.66 135.01H1298V49.2017Z' fill='#DBA3FF' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1213.84 49.2017L1298 136.244H1213.84V49.2017Z' fill='#F7F5FF' />
+            <rect width='85.3416' height='85.808' transform='matrix(-1 0 0 1 1298 135.01)'
+                fill='#DBA3FF' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1298 124.558L1255.11 124.608V219.629L1298 219.578V124.558Z' fill='#A75FD5' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1298 135.01L1212.66 220.818H1298V135.01Z' fill='#DBA3FF' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1212.66 135.01L1298 220.818H1212.66V135.01Z' fill='#A75FD5' />
+            <ellipse cx='42.6708' cy='42.904' rx='42.6708' ry='42.904'
+                transform='matrix(-1 0 0 1 1212.66 92.1057)' fill='#5842CE' />
+            <rect width='42.6708' height='85.808' transform='matrix(-1 0 0 1 1212.61 49.2017)'
+                fill='#1C0942' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1212.66 49.2017L1127.31 135.01H1212.66V49.2017Z' fill='#A75FD5' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1127.31 49.2017L1212.66 135.01H1127.31V49.2017Z' fill='#DBA3FF' />
+            <rect width='42.6708' height='85.808' transform='matrix(-1 0 0 1 1212.66 135.01)'
+                fill='#DBA3FF' />
+            <rect width='42.6708' height='85.808' transform='matrix(-1 0 0 1 1169.98 135.01)'
+                fill='#5842CE' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1212.66 135.01L1127.31 220.818H1212.66V135.01Z' fill='#C281EB' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1127.31 135.01L1212.66 220.818H1127.31V135.01Z' fill='#5E47DC' />
+            <ellipse cx='1346.59' cy='134.135' rx='42.6708' ry='42.904' fill='#4669F4' />
+            <rect x='1303.92' y='48.3274' width='85.3416' height='85.808' fill='#C98FFB' />
+            <rect x='1303.92' y='48.3274' width='42.6708' height='85.808' fill='#C281EB' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1303.92 48.3274L1390.5 134.135H1303.92V48.3274Z' fill='#DBA3FF' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1389.26 48.3274L1303.92 134.135H1389.26V48.3274Z' fill='#C281EB' />
+            <rect x='1303.92' y='134.135' width='85.3416' height='85.808' fill='#C98FFB' />
+            <rect x='1303.92' y='134.135' width='42.6708' height='85.808' fill='#A75FD5' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1303.92 134.135L1389.26 219.943H1303.92V134.135Z' fill='#DBA3FF' />
+            <path fill-rule='evenodd' clip-rule='evenodd'
+                d='M1389.26 132.835L1303.92 219.829H1389.26V132.835Z' fill='#A75FD5' />
+        </g>
+        <rect x='1232.8' y='87.0522' width='18.9648' height='18.9648' rx='9.4824' fill='#A75FD4' />
+    </g>
+    <defs>
+        <linearGradient id='paint0_linear_488_17657' x1='1085.21' y1='6.70571' x2='1050.96'
+            y2='304.177' gradientUnits='userSpaceOnUse'>
+            <stop stop-color='#EFC2FF' />
+            <stop offset='1' stop-color='#D0C9FF' />
+        </linearGradient>
+    </defs>
+</svg>

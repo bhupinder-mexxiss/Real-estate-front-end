@@ -33,6 +33,7 @@ import DashboardHome from "./Components/Dashboard/Home";
 import Leads from "./Components/Dashboard/Leads";
 import Listing from "./Components/Dashboard/Listing";
 import MyProfile from "./Components/Dashboard/MyProfile";
+import Packages from "./Components/Dashboard/Packages";
 import ChangePassword from "./Components/Dashboard/ChangePassword";
 import Signin from "./Admin/Auth/Signin";
 import AdminResetPassword from "./Admin/Auth/ResetPassword";
@@ -204,6 +205,10 @@ const router = createBrowserRouter([
       {
         path: "change-password",
         element: <ChangePassword />,
+      },
+      {
+        path: "packages",
+        element: <Packages />,
       },
     ],
   },
